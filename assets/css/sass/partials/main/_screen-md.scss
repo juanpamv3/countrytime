@@ -216,6 +216,20 @@
 .intro-tease {
     padding-top: 5.5em;
 }
+/* products */
+.productsBlock{
+  height: 300px;
+  position: absolute;
+  width: 92%;
+  left: 4%;
+  top: 35%;
+}
+.product{
+  width: 20%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
 
 /* ---------------------------------------------------------------------
  Module: New
@@ -281,6 +295,7 @@
 
 .product-heading {
     text-align: center;
+    color: #faf03a;
 }
 
 /* ---------------------------------------------------------------------

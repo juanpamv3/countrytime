@@ -54,8 +54,37 @@
               <div class="intro-wrap" ng-if="main.isDesktop">
 
                   <!-- day -->
-                  <div class="intro-day">
+                  <div class="intro-day" >
                     <img src="assets/img/bg/bg-intro-lg.jpg" class="intro-video-loop" />
+                    <div>
+                      <div class="productsBlock">
+                        <div class="product">
+                          <img src="assets/img/products/products-half-and-half.png" />
+                          <h1 class="product-heading ng-binding">Half & Half</h1>
+                          <p class="product-desc">Half Lemonade and Half Iced Tea for that classic taste.</p>
+                        </div>
+                        <div class="product">
+                          <img src="assets/img/products/products-lemonade.png" />
+                          <h1 class="product-heading ng-binding">Lemonade</h1>
+                          <p class="product-desc">The Official Lemonade of Lemonade Stands!</p>
+                        </div>
+                        <div class="product">
+                          <img src="assets/img/products/products-pink-lemonade.png" />
+                          <h1 class="product-heading ng-binding">Pink Lemonade</h1>
+                          <p class="product-desc">A little less tart and a little more Pink!</p>
+                        </div>
+                        <div class="product">
+                          <img src="assets/img/products/products-strawberry-lemonade.png" />
+                          <h1 class="product-heading ng-binding">Strawberry Lemonade</h1>
+                          <p class="product-desc">Big lemon taste with a refreshing burst of berry.</p>
+                        </div>
+                        <div class="product">
+                          <img src="assets/img/products/products-black-cherry-lemonade.png" />
+                          <h1 class="product-heading ng-binding">Black Cherry Lemonade</h1>
+                          <p class="product-desc">A new twist on a favorite classic!</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- /day -->
 
@@ -88,7 +117,10 @@
               <!-- /desktop -->
 
               <!-- mobile -->
-              <div class="intro-wrap" ng-if="!main.isDesktop">
+              <div class="intro-wrap mobile" ng-if="!main.isDesktop">
+                <div class="intro-mobile">
+
+                </div>
                   <!-- menu -->
                   <a href="#" class="menu-link" ng-click="main.menuActive = !main.menuActive">
                     <div class="ct-burger" ng-class="{'open':main.menuActive}">
@@ -110,6 +142,17 @@
                 <!-- /mobile -->
             </section>
             <!-- /mod-intro -->
+            <section class="mod-products" ng-controller="ProductCtrl" ng-if="!main.isDesktop">
+                <div class="product-wrap clearfix">
+                    <div class="product-col clearfix" ng-repeat="product in products">
+                        <img class="product-img" ng-src="{{product.image}}" alt="{{product.alt}}">
+                        <div class="product-details">
+                            <h1 class="product-heading" ng-bind-html="product.name"></h1>
+                            <p class="product-desc" ng-bind-html="product.description"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- mod-starter (mobile) -->
             <section class="mod-starter" ng-if="!main.isDesktop">
@@ -169,8 +212,8 @@
             <!-- mod-steps -->
             <section class="mod-steps">
                 <div class="steps-intro">
-                    <h1 class="steps-heading">Country Time Lemonade Starter</h1>
-                    <p class="steps-intro-desc">Flavored with real lemon juice.*</p>
+                    <h1 class="steps-heading">Country Time Lemonade</h1>
+                    <p class="steps-intro-desc">Flavored with real lemon juice for that perfect balance of sweet and tart.</p>
                 </div>
 
                 <div class="steps-img"></div>
@@ -178,10 +221,9 @@
                 <div class="steps-details">
                     <ul class="steps-list clearfix">
                         <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-add.svg" alt="Just add water" class="steps-list-icon"><span class="steps-list-detail">Just add water</span></li>
-                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail">Makes 3 pitchers or 24 glasses**</span></li>
-                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-pour.svg" alt="Re-closable bottle" class="steps-list-icon"><span class="steps-list-detail">Re-closable bottle + easy pour spout</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail">Makes 3 pitchers</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-no.png" alt="Re-closable bottle" class="steps-list-icon"><span class="steps-list-detail">No artificial flavors or preservatives</span></li>
                     </ul>
-                    <em class="steps-legal">*Contains 5% lemon juice when diluted in water as directed.<br>**Makes 3x 2 quart pitchers or 24x 8 fl oz glasses.</em>
                 </div>
 
             </section>
@@ -200,6 +242,9 @@
                 </div>
             </section>
             <!-- /mod-products -->
+            <section class="slider" ng-controller="ProductCtrl">
+
+            </section>
 
             <!-- mod-feed -->
             <section id="ct-feed" class="mod-feed">

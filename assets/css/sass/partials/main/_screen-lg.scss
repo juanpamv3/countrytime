@@ -23,14 +23,26 @@ main {
     max-width: inherit;
     padding: 2em 0;
 }
-
+.productsBlock{
+  height: 300px;
+  position: absolute;
+  width: 92%;
+  left: 4%;
+  top: 50%;
+}
+.product{
+  width: 20%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
 /* ---------------------------------------------------------------------
  Footer
 ------------------------------------------------------------------------ */
 .mod-footer {
     //width: 1280px;
     height: 8em;
-    bottom: -8em;	
+    bottom: -8em;
     padding: 0.5em;
     //left: 50%;
     margin-left: auto; //-640px;
@@ -40,6 +52,6 @@ main {
         @include transition-mixin (all, 170ms, ease-out);
         &:hover {
             @include transform-mixin (scale(1.1));
-        }        
-    }	
+        }
+    }
 }

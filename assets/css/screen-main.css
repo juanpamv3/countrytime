@@ -870,9 +870,10 @@ main {
   width: 100%;
   height: 480px;
   position: relative;
+  background: white url("../img/bg/bg-intro-lg.jpg") center no-repeat;
 }
 
-/* line 222, sass/partials/main/_base.scss */
+/* line 223, sass/partials/main/_base.scss */
 .intro-day {
   background: white url("../img/bg/bg-intro-lg.jpg") center no-repeat;
 }
@@ -882,12 +883,12 @@ main {
   background: white url("../img/bg/bg-lake-night.gif") center no-repeat;
 }
 
-/* line 230, sass/partials/main/_base.scss */
+/* line 232, sass/partials/main/_base.scss */
 .intro-img {
   display: none;
 }
 
-/* line 234, sass/partials/main/_base.scss */
+/* line 236, sass/partials/main/_base.scss */
 .intro-logo {
   width: 100px;
   height: 69px;
@@ -899,7 +900,7 @@ main {
   text-indent: -1000%;
 }
 
-/* line 245, sass/partials/main/_base.scss */
+/* line 247, sass/partials/main/_base.scss */
 .intro-scroll {
   width: 16em;
   margin-left: -8em;
@@ -908,14 +909,14 @@ main {
   bottom: 3em;
 }
 
-/* line 253, sass/partials/main/_base.scss */
+/* line 255, sass/partials/main/_base.scss */
 .intro-link {
   display: block;
   background: url("../img/icons/icon-arrow-down.svg") top center no-repeat;
   text-align: center;
 }
 
-/* line 259, sass/partials/main/_base.scss */
+/* line 261, sass/partials/main/_base.scss */
 .intro-tease {
   padding-top: 3.5em;
   display: block;
@@ -926,7 +927,7 @@ main {
 }
 
 /* burger menu */
-/* line 269, sass/partials/main/_base.scss */
+/* line 271, sass/partials/main/_base.scss */
 .ct-burger {
   width: 40px;
   height: 30px;
@@ -937,7 +938,7 @@ main {
   right: 1.5em;
   z-index: 9999;
 }
-/* line 278, sass/partials/main/_base.scss */
+/* line 280, sass/partials/main/_base.scss */
 .ct-burger span {
   display: block;
   position: absolute;
@@ -951,51 +952,51 @@ main {
   -webkit-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
 }
-/* line 287, sass/partials/main/_base.scss */
+/* line 289, sass/partials/main/_base.scss */
 .ct-burger span:nth-child(1) {
   top: 0px;
 }
-/* line 291, sass/partials/main/_base.scss */
+/* line 293, sass/partials/main/_base.scss */
 .ct-burger span:nth-child(2), .ct-burger span:nth-child(3) {
   top: 12px;
 }
-/* line 294, sass/partials/main/_base.scss */
+/* line 296, sass/partials/main/_base.scss */
 .ct-burger span:nth-child(4) {
   top: 24px;
 }
-/* line 300, sass/partials/main/_base.scss */
+/* line 302, sass/partials/main/_base.scss */
 .ct-burger.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
-/* line 305, sass/partials/main/_base.scss */
+/* line 307, sass/partials/main/_base.scss */
 .ct-burger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 308, sass/partials/main/_base.scss */
+/* line 310, sass/partials/main/_base.scss */
 .ct-burger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 311, sass/partials/main/_base.scss */
+/* line 313, sass/partials/main/_base.scss */
 .ct-burger.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-/* line 321, sass/partials/main/_base.scss */
+/* line 323, sass/partials/main/_base.scss */
 .intro-lg .ct-social {
   position: absolute;
   top: 1em;
 }
-/* line 326, sass/partials/main/_base.scss */
+/* line 328, sass/partials/main/_base.scss */
 .intro-lg .icon-products,
 .intro-lg .icon-recipes {
   height: 2.5em;
@@ -1004,52 +1005,52 @@ main {
   vertical-align: middle;
   text-shadow: 0 1px 3px #555555;
 }
-/* line 333, sass/partials/main/_base.scss */
+/* line 335, sass/partials/main/_base.scss */
 .intro-lg .icon-products {
   width: 55px;
   background: url("../img/icons/icon-products-lg.svg") right no-repeat;
   background-size: 55px;
 }
-/* line 338, sass/partials/main/_base.scss */
+/* line 340, sass/partials/main/_base.scss */
 .intro-lg .icon-recipes {
   width: 37px;
   background: url("../img/icons/icon-recipes-lg.svg") right no-repeat;
   background-size: 37px;
 }
-/* line 343, sass/partials/main/_base.scss */
+/* line 345, sass/partials/main/_base.scss */
 .intro-lg .ct-social {
   padding: 0;
   right: 3em;
 }
-/* line 347, sass/partials/main/_base.scss */
+/* line 349, sass/partials/main/_base.scss */
 .intro-lg .social-heading {
   color: white;
   font-style: normal;
 }
-/* line 351, sass/partials/main/_base.scss */
+/* line 353, sass/partials/main/_base.scss */
 .intro-lg .icon-round {
   background: none;
   color: white;
   border: 0.1em solid white;
 }
-/* line 357, sass/partials/main/_base.scss */
+/* line 359, sass/partials/main/_base.scss */
 .intro-lg .icon-facebook,
 .intro-lg .icon-twitter {
   margin: 0;
   position: absolute;
   right: 0;
 }
-/* line 362, sass/partials/main/_base.scss */
+/* line 364, sass/partials/main/_base.scss */
 .intro-lg .icon-facebook {
   top: 1.5em;
 }
-/* line 365, sass/partials/main/_base.scss */
+/* line 367, sass/partials/main/_base.scss */
 .intro-lg .icon-twitter {
   top: 4.25em;
 }
 
 /* menu overlay */
-/* line 371, sass/partials/main/_base.scss */
+/* line 373, sass/partials/main/_base.scss */
 .menu-overlay {
   width: 100%;
   opacity: 0;
@@ -1063,27 +1064,27 @@ main {
   -webkit-transition: all 0.25s ease-in-out 0s;
   transition: all 0.25s ease-in-out 0s;
 }
-/* line 380, sass/partials/main/_base.scss */
+/* line 382, sass/partials/main/_base.scss */
 .menu-overlay .menu-list {
   margin: 3em 0 0 0;
   padding: 0 10% 34px;
   text-align: center;
   font-size: 2.7rem;
 }
-/* line 386, sass/partials/main/_base.scss */
+/* line 388, sass/partials/main/_base.scss */
 .menu-overlay .menu-list-bullet {
   border-bottom: 1px solid #d0e178;
 }
-/* line 388, sass/partials/main/_base.scss */
+/* line 390, sass/partials/main/_base.scss */
 .menu-overlay .menu-list-bullet:first-child {
   border-top: 1px solid #d0e178;
 }
-/* line 392, sass/partials/main/_base.scss */
+/* line 394, sass/partials/main/_base.scss */
 .menu-overlay .menu-list-link {
   padding: 1em 0;
   display: block;
 }
-/* line 397, sass/partials/main/_base.scss */
+/* line 399, sass/partials/main/_base.scss */
 .menu-overlay .icon-products,
 .menu-overlay .icon-recipes {
   width: 2em;
@@ -1092,18 +1093,18 @@ main {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 404, sass/partials/main/_base.scss */
+/* line 406, sass/partials/main/_base.scss */
 .menu-overlay .icon-products {
   background: url("../img/icons/icon-products-sm.svg") right no-repeat;
   background-size: 45px;
 }
-/* line 409, sass/partials/main/_base.scss */
+/* line 411, sass/partials/main/_base.scss */
 .menu-overlay .icon-recipes {
   background: url("../img/icons/icon-recipes-sm.svg") right no-repeat;
   background-size: 32px;
 }
 
-/* line 416, sass/partials/main/_base.scss */
+/* line 418, sass/partials/main/_base.scss */
 html.menu-fix .menu-overlay {
   opacity: 1;
   z-index: 777;
@@ -1112,31 +1113,31 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Starter
 ------------------------------------------------------------------------ */
-/* line 425, sass/partials/main/_base.scss */
+/* line 427, sass/partials/main/_base.scss */
 .mod-starter {
   padding: 0;
 }
 
-/* line 429, sass/partials/main/_base.scss */
+/* line 431, sass/partials/main/_base.scss */
 .starter-intro {
   background: white;
   padding: 1em 2em 9em;
 }
 
-/* line 434, sass/partials/main/_base.scss */
+/* line 436, sass/partials/main/_base.scss */
 .starter-intro-heading {
   max-width: 12em;
   margin: 0 auto;
   padding-bottom: 0;
 }
 
-/* line 445, sass/partials/main/_base.scss */
+/* line 447, sass/partials/main/_base.scss */
 .starter-col, .starter-classic,
 .starter-berry,
 .starter-halfandhalf {
   padding: 3em 0 2em;
 }
-/* line 447, sass/partials/main/_base.scss */
+/* line 449, sass/partials/main/_base.scss */
 .starter-col .starter-heading, .starter-classic .starter-heading,
 .starter-berry .starter-heading,
 .starter-halfandhalf .starter-heading {
@@ -1144,25 +1145,25 @@ html.menu-fix .menu-overlay {
   color: white;
 }
 
-/* line 459, sass/partials/main/_base.scss */
+/* line 461, sass/partials/main/_base.scss */
 .starter-classic {
   background: #fdf89a;
 }
-/* line 461, sass/partials/main/_base.scss */
+/* line 463, sass/partials/main/_base.scss */
 .starter-classic .starter-heading {
   color: #1c8b3a;
 }
-/* line 464, sass/partials/main/_base.scss */
+/* line 466, sass/partials/main/_base.scss */
 .starter-classic .starter-img {
   margin-top: -10em;
 }
 
-/* line 469, sass/partials/main/_base.scss */
+/* line 471, sass/partials/main/_base.scss */
 .starter-berry {
   background: #eb4d60;
 }
 
-/* line 473, sass/partials/main/_base.scss */
+/* line 475, sass/partials/main/_base.scss */
 .starter-halfandhalf {
   background: #fdf487;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkZjQ4NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iI2ZkZjU4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM4JSIgc3RvcC1jb2xvcj0iI2ZkZWI4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2ZlZTE4OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iI2ZjZGY4NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YxZDA3YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YzY2Y3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YwY2Y3YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2YyY2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2UxYjk2YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iI2RlYjY2YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2Q4YWM2NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2Q0YTg2MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2Q2YTg2MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2QzYTY2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2Q2YTc2MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2QyYTY2MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY0JSIgc3RvcC1jb2xvcj0iI2QyYTM1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iI2NiOWE1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2NjOTk1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2M5OTg1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY3JSIgc3RvcC1jb2xvcj0iI2NiOTk1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY4JSIgc3RvcC1jb2xvcj0iI2M2OTM1NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjczJSIgc3RvcC1jb2xvcj0iI2I4ODA0NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2I0N2M0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2I0N2M0MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc4JSIgc3RvcC1jb2xvcj0iI2FhNmUzYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc4JSIgc3RvcC1jb2xvcj0iI2FjNmUzYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgxJSIgc3RvcC1jb2xvcj0iI2EyNjQzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iI2EyNjIzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iIzllNjAyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iI2ExNjAzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzlkNWUyZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzlmNWUyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iIzliNTkyYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iIzk4NTgyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iIzk2NTUyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iIzk4NTYyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iIzk3NTMyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iIzkzNGUyMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iIzkwNGQyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iIzkyNGMyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzkwNGIxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzhkNDkyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iIzkwNDkxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzg5NDMxYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzhiNDQxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iIzg4NDIxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkyJSIgc3RvcC1jb2xvcj0iIzg5NDAxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkyJSIgc3RvcC1jb2xvcj0iIzg1M2UxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk0JSIgc3RvcC1jb2xvcj0iIzg1M2IxNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk2JSIgc3RvcC1jb2xvcj0iIzdlMzYxMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iIzdmMzIwZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ODJkMGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -1175,7 +1176,7 @@ html.menu-fix .menu-overlay {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdf487', endColorstr='#782d0a',GradientType=0 );
 }
 
-/* line 477, sass/partials/main/_base.scss */
+/* line 479, sass/partials/main/_base.scss */
 .starter-img {
   width: 50%;
   max-width: 15em;
@@ -1183,7 +1184,7 @@ html.menu-fix .menu-overlay {
   margin: auto;
 }
 
-/* line 484, sass/partials/main/_base.scss */
+/* line 486, sass/partials/main/_base.scss */
 .starter-heading {
   margin: 1em auto;
 }
@@ -1191,19 +1192,19 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: How
 ------------------------------------------------------------------------ */
-/* line 491, sass/partials/main/_base.scss */
+/* line 493, sass/partials/main/_base.scss */
 .mod-how {
   padding: 1em 2em 2em;
   background: white;
 }
 
-/* line 496, sass/partials/main/_base.scss */
+/* line 498, sass/partials/main/_base.scss */
 .how-video {
   width: 100%;
   height: auto;
 }
 
-/* line 501, sass/partials/main/_base.scss */
+/* line 503, sass/partials/main/_base.scss */
 .how-social {
   margin-top: 1.5em;
 }
@@ -1211,18 +1212,18 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Steps
 ------------------------------------------------------------------------ */
-/* line 508, sass/partials/main/_base.scss */
+/* line 510, sass/partials/main/_base.scss */
 .mod-steps {
   background: white;
 }
 
-/* line 512, sass/partials/main/_base.scss */
+/* line 514, sass/partials/main/_base.scss */
 .steps-intro {
   padding: 4em 2em;
   background: #92ccea;
 }
 
-/* line 517, sass/partials/main/_base.scss */
+/* line 519, sass/partials/main/_base.scss */
 .steps-heading {
   color: white;
   max-width: 12em;
@@ -1230,13 +1231,13 @@ html.menu-fix .menu-overlay {
   padding-bottom: 0;
 }
 
-/* line 525, sass/partials/main/_base.scss */
+/* line 527, sass/partials/main/_base.scss */
 .steps-intro-desc {
   max-width: 16em;
   color: #555555;
 }
 
-/* line 531, sass/partials/main/_base.scss */
+/* line 533, sass/partials/main/_base.scss */
 .steps-img {
   margin-top: -10%;
   padding-top: 85%;
@@ -1244,32 +1245,32 @@ html.menu-fix .menu-overlay {
   background-size: 150%;
 }
 
-/* line 538, sass/partials/main/_base.scss */
+/* line 540, sass/partials/main/_base.scss */
 .steps-details {
   overflow: hidden;
 }
 
-/* line 542, sass/partials/main/_base.scss */
+/* line 544, sass/partials/main/_base.scss */
 .steps-list {
   max-width: 20em;
   margin: 3em auto;
   padding: 0 2em;
 }
 
-/* line 548, sass/partials/main/_base.scss */
+/* line 550, sass/partials/main/_base.scss */
 .steps-list-bullet {
   margin-bottom: 2.5em;
   position: relative;
 }
 
-/* line 553, sass/partials/main/_base.scss */
+/* line 555, sass/partials/main/_base.scss */
 .steps-list-icon {
   width: 6em;
   margin-right: 1em;
   float: left;
 }
 
-/* line 559, sass/partials/main/_base.scss */
+/* line 561, sass/partials/main/_base.scss */
 .steps-list-detail {
   color: #296c7b;
   font-size: 1.8rem;
@@ -1280,7 +1281,7 @@ html.menu-fix .menu-overlay {
   transform: translateY(-50%);
 }
 
-/* line 570, sass/partials/main/_base.scss */
+/* line 572, sass/partials/main/_base.scss */
 .steps-legal {
   display: block;
   color: #296c7b;
@@ -1292,24 +1293,24 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Products
 ------------------------------------------------------------------------ */
-/* line 581, sass/partials/main/_base.scss */
+/* line 583, sass/partials/main/_base.scss */
 .mod-products {
   padding: 1.5em 2em;
   background: white;
 }
 
-/* line 586, sass/partials/main/_base.scss */
+/* line 588, sass/partials/main/_base.scss */
 .product-wrap {
   margin: auto;
 }
 
-/* line 590, sass/partials/main/_base.scss */
+/* line 592, sass/partials/main/_base.scss */
 .product-col {
   padding: 1em 0;
   border-top: 1px solid #e7e8e9;
 }
 
-/* line 595, sass/partials/main/_base.scss */
+/* line 597, sass/partials/main/_base.scss */
 .product-img {
   width: 30%;
   margin-right: 5%;
@@ -1317,43 +1318,43 @@ html.menu-fix .menu-overlay {
   float: left;
 }
 
-/* line 602, sass/partials/main/_base.scss */
+/* line 604, sass/partials/main/_base.scss */
 .product-details {
   width: 65%;
   max-width: 20em;
   float: left;
 }
 
-/* line 608, sass/partials/main/_base.scss */
+/* line 610, sass/partials/main/_base.scss */
 .product-heading {
   margin-bottom: 0.5em;
   font-size: 1.5em;
   text-align: left;
 }
 
-/* line 615, sass/partials/main/_base.scss */
+/* line 617, sass/partials/main/_base.scss */
 .product-desc {
   margin: 0;
   padding-right: 1em;
-  font-size: 1.7rem;
-  color: #555555;
+  font-size: 1.5rem;
+  color: #FFF;
 }
 
 /* ---------------------------------------------------------------------
  Module: Feed
 ------------------------------------------------------------------------ */
-/* line 625, sass/partials/main/_base.scss */
+/* line 627, sass/partials/main/_base.scss */
 .mod-feed {
   width: 320px;
   margin: auto;
   padding-top: 3em;
 }
-/* line 630, sass/partials/main/_base.scss */
+/* line 632, sass/partials/main/_base.scss */
 .mod-feed .container {
   padding: 0;
 }
 
-/* line 635, sass/partials/main/_base.scss */
+/* line 637, sass/partials/main/_base.scss */
 .ct-feed-item {
   width: 320px;
   padding: 9px;
@@ -1362,61 +1363,61 @@ html.menu-fix .menu-overlay {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 640, sass/partials/main/_base.scss */
+/* line 642, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 643, sass/partials/main/_base.scss */
+/* line 645, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon, .ct-feed-item .ct-social .ct-media > .icon-round, .ct-social .ct-feed-item .ct-media > .icon-round {
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: white;
 }
-/* line 648, sass/partials/main/_base.scss */
+/* line 650, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon:before, .ct-feed-item .ct-social .ct-media > .icon-round:before, .ct-social .ct-feed-item .ct-media > .icon-round:before {
   text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.6);
 }
-/* line 653, sass/partials/main/_base.scss */
+/* line 655, sass/partials/main/_base.scss */
 .ct-feed-item .icon, .ct-feed-item .ct-social .icon-round, .ct-social .ct-feed-item .icon-round {
   font-size: 2.1rem;
 }
-/* line 656, sass/partials/main/_base.scss */
+/* line 658, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile {
   margin-bottom: 10px;
 }
-/* line 658, sass/partials/main/_base.scss */
+/* line 660, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name {
   padding: 0;
   margin: 5px 0 0 58px;
 }
-/* line 661, sass/partials/main/_base.scss */
+/* line 663, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name strong {
   display: block;
 }
-/* line 664, sass/partials/main/_base.scss */
+/* line 666, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name b {
   font-size: 1.2rem;
   color: #969696;
 }
-/* line 669, sass/partials/main/_base.scss */
+/* line 671, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile img {
   float: left;
 }
-/* line 672, sass/partials/main/_base.scss */
+/* line 674, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover {
   text-decoration: none;
 }
-/* line 674, sass/partials/main/_base.scss */
+/* line 676, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong {
   text-decoration: underline;
 }
-/* line 677, sass/partials/main/_base.scss */
+/* line 679, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong, .ct-feed-item .ct-profile a:hover .icon, .ct-feed-item .ct-profile a:hover .ct-social .icon-round, .ct-social .ct-feed-item .ct-profile a:hover .icon-round {
   color: #15682b;
 }
-/* line 682, sass/partials/main/_base.scss */
+/* line 684, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata {
   display: block;
   margin: 15px 0 5px;
@@ -1424,28 +1425,28 @@ html.menu-fix .menu-overlay {
   color: #969696;
   font-size: 1.1rem;
 }
-/* line 688, sass/partials/main/_base.scss */
+/* line 690, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata > * {
   display: inline-block;
 }
-/* line 691, sass/partials/main/_base.scss */
+/* line 693, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata .icon, .ct-feed-item .ct-metadata .ct-social .icon-round, .ct-social .ct-feed-item .ct-metadata .icon-round {
   font-size: 1.8rem;
 }
-/* line 694, sass/partials/main/_base.scss */
+/* line 696, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul {
   list-style: none;
   margin: 0;
 }
-/* line 697, sass/partials/main/_base.scss */
+/* line 699, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul li {
   display: inline-block;
 }
-/* line 703, sass/partials/main/_base.scss */
+/* line 705, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-profile {
   margin-bottom: 15px;
 }
-/* line 706, sass/partials/main/_base.scss */
+/* line 708, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-timestamp {
   margin-top: 6px;
 }
@@ -1453,7 +1454,7 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Footer
 ------------------------------------------------------------------------ */
-/* line 715, sass/partials/main/_base.scss */
+/* line 717, sass/partials/main/_base.scss */
 .mod-footer {
   width: 100%;
   height: 10em;
@@ -1473,13 +1474,13 @@ html.menu-fix .menu-overlay {
   transition: all 0.35s ease-in-out 0s;
 }
 
-/* line 734, sass/partials/main/_base.scss */
+/* line 736, sass/partials/main/_base.scss */
 .ct-footer-menu {
   list-style: none;
   padding: 0;
 }
 
-/* line 739, sass/partials/main/_base.scss */
+/* line 741, sass/partials/main/_base.scss */
 .ct-footer-list {
   display: inline-block;
   padding: 0 0.5em;
@@ -1538,7 +1539,7 @@ html.menu-fix .menu-overlay {
 
   /* line 34, sass/partials/main/_screen-sm.scss */
   .product-desc {
-    padding: 0 1em;
+    padding: 0;
   }
 }
 /* Medium View */
@@ -1805,10 +1806,28 @@ html.menu-fix .menu-overlay {
     padding-top: 5.5em;
   }
 
+  /* products */
+  /* line 220, sass/partials/main/_screen-md.scss */
+  .productsBlock {
+    height: 300px;
+    position: absolute;
+    width: 92%;
+    left: 4%;
+    top: 35%;
+  }
+
+  /* line 227, sass/partials/main/_screen-md.scss */
+  .product {
+    width: 20%;
+    height: 300px;
+    float: left;
+    text-align: center;
+  }
+
   /* ---------------------------------------------------------------------
    Module: New
   ------------------------------------------------------------------------ */
-  /* line 223, sass/partials/main/_screen-md.scss */
+  /* line 237, sass/partials/main/_screen-md.scss */
   .mod-starter {
     display: none;
   }
@@ -1816,7 +1835,7 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Module: How
   ------------------------------------------------------------------------ */
-  /* line 230, sass/partials/main/_screen-md.scss */
+  /* line 244, sass/partials/main/_screen-md.scss */
   .mod-how {
     display: none;
   }
@@ -1824,7 +1843,7 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Module: Steps
   ------------------------------------------------------------------------ */
-  /* line 237, sass/partials/main/_screen-md.scss */
+  /* line 251, sass/partials/main/_screen-md.scss */
   .steps-img {
     margin-top: -5%;
     padding-top: 64%;
@@ -1832,37 +1851,37 @@ html.menu-fix .menu-overlay {
     background-size: 120%;
   }
 
-  /* line 244, sass/partials/main/_screen-md.scss */
+  /* line 258, sass/partials/main/_screen-md.scss */
   .steps-heading {
     max-width: inherit;
   }
 
-  /* line 248, sass/partials/main/_screen-md.scss */
+  /* line 262, sass/partials/main/_screen-md.scss */
   .steps-intro-desc {
     max-width: 22em;
   }
 
-  /* line 252, sass/partials/main/_screen-md.scss */
+  /* line 266, sass/partials/main/_screen-md.scss */
   .steps-list {
     max-width: 50em;
     margin: 2em auto 8em;
   }
 
-  /* line 257, sass/partials/main/_screen-md.scss */
+  /* line 271, sass/partials/main/_screen-md.scss */
   .steps-list-bullet {
     width: 33%;
     margin: 0;
     float: left;
   }
 
-  /* line 263, sass/partials/main/_screen-md.scss */
+  /* line 277, sass/partials/main/_screen-md.scss */
   .steps-list-icon {
     width: 4em;
     margin-right: 1em;
     float: left;
   }
 
-  /* line 269, sass/partials/main/_screen-md.scss */
+  /* line 283, sass/partials/main/_screen-md.scss */
   .steps-list-detail {
     font-size: 1.5rem;
     line-height: 1.3em;
@@ -1872,29 +1891,30 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Products
   ------------------------------------------------------------------------ */
-  /* line 278, sass/partials/main/_screen-md.scss */
+  /* line 292, sass/partials/main/_screen-md.scss */
   .product-col {
     width: 33%;
   }
 
-  /* line 282, sass/partials/main/_screen-md.scss */
+  /* line 296, sass/partials/main/_screen-md.scss */
   .product-heading {
     text-align: center;
+    color: #faf03a;
   }
 
   /* ---------------------------------------------------------------------
    Footer
   ------------------------------------------------------------------------ */
-  /* line 289, sass/partials/main/_screen-md.scss */
+  /* line 304, sass/partials/main/_screen-md.scss */
   .ct-footer-list {
     padding: 0;
   }
-  /* line 291, sass/partials/main/_screen-md.scss */
+  /* line 306, sass/partials/main/_screen-md.scss */
   .ct-footer-list:before {
     content: " | ";
     padding: 0 .5em;
   }
-  /* line 295, sass/partials/main/_screen-md.scss */
+  /* line 310, sass/partials/main/_screen-md.scss */
   .ct-footer-list:first-child:before {
     content: "";
     padding-left: 0;
@@ -1931,10 +1951,27 @@ html.menu-fix .menu-overlay {
     padding: 2em 0;
   }
 
+  /* line 26, sass/partials/main/_screen-lg.scss */
+  .productsBlock {
+    height: 300px;
+    position: absolute;
+    width: 92%;
+    left: 4%;
+    top: 50%;
+  }
+
+  /* line 33, sass/partials/main/_screen-lg.scss */
+  .product {
+    width: 20%;
+    height: 300px;
+    float: left;
+    text-align: center;
+  }
+
   /* ---------------------------------------------------------------------
    Footer
   ------------------------------------------------------------------------ */
-  /* line 30, sass/partials/main/_screen-lg.scss */
+  /* line 42, sass/partials/main/_screen-lg.scss */
   .mod-footer {
     height: 8em;
     bottom: -8em;
@@ -1942,7 +1979,7 @@ html.menu-fix .menu-overlay {
     margin-left: auto;
     font-size: 1.4rem;
   }
-  /* line 38, sass/partials/main/_screen-lg.scss */
+  /* line 50, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon, .mod-footer .ct-social .icon-round {
     font-size: 1.5rem;
     -moz-transition: all 170ms ease-out 0s;
@@ -1950,7 +1987,7 @@ html.menu-fix .menu-overlay {
     -webkit-transition: all 170ms ease-out 0s;
     transition: all 170ms ease-out 0s;
   }
-  /* line 41, sass/partials/main/_screen-lg.scss */
+  /* line 53, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon:hover, .mod-footer .ct-social .icon-round:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
