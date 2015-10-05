@@ -1,0 +1,127 @@
+//
+// css sprite mixins - created with http://www.codeandweb.com/texturepacker
+// exporter created by Rob Moorman
+//
+// $TexturePacker:SmartUpdate:81db1b9748fabca0187057efbd07cd74:d6033db260e383dc72ab85c8ca143880:19c7a99dd2c67db69be8c9fff3037b60$
+
+
+@mixin sprite-btn-download-over($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -0px -0px
+
+@mixin sprite-btn-download-up($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -164px -0px
+
+@mixin sprite-btn-facebook-over($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -328px -0px
+
+@mixin sprite-btn-facebook-up($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -0px -48px
+
+@mixin sprite-btn-products-over($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 90px
+    height: 13px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -164px -48px
+
+@mixin sprite-btn-products-up($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 90px
+    height: 13px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -254px -48px
+
+@mixin sprite-btn-recipes-over($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 73px
+    height: 13px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -344px -48px
+
+@mixin sprite-btn-recipes-up($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 73px
+    height: 13px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -417px -48px
+
+@mixin sprite-btn-twitter-over($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -0px -96px
+
+@mixin sprite-btn-twitter-up($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 164px
+    height: 48px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -164px -96px
+
+@mixin sprite-lemonade($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 597px
+    height: 449px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -0px -144px
+
+@mixin sprite-logo($path: './')
+    display: inline-block
+    overflow: hidden
+    width: 597px
+    height: 184px
+    background:
+        repeat: no-repeat
+        image: url('#{$path}ct-assets-large.png')
+        position: -0px -593px
+

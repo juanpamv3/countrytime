@@ -1,0 +1,15 @@
+<a href="{{item.link}}" target="_blank">
+	<div class="ct-media" ng-if="item.picture">
+		<img width="302px" ng-src="{{facebookPicture(item)}}" />
+	</div>
+</a>
+<div class="ct-profile clearfix">
+	<a class="pull-left" href="http://www.facebook.com/{{item.from.id}}" target="_blank">
+		<strong>{{item.from.name}}</strong>
+	</a>
+</div>
+<p ng-bind-html="linkifiedTextURL(item)"></p>
+
+<div class="clearfix">
+	<div class="fb-like pull-right" data-href="{{item.actions[1].link}}" data-layout="button_count" data-share="true" data-show-faces="false"></div>
+</div>

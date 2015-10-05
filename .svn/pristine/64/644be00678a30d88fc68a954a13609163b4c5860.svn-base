@@ -1,0 +1,34 @@
+[{
+	"products": [
+		{
+			"name": "Strawberry Lemonade",
+			"description": "Big lemon taste with a refreshing burst of berry flavors.",
+			"image": "assets/img/products/products-strawberry-lemonade.png",
+			"alt": "Country Time Strawberry Lemonade"
+		},
+		{
+			"name": "Lemonade",
+			"description": "The Official Lemonade of Lemonade Stands!",
+			"image": "assets/img/products/products-lemonade.png",
+			"alt": "Country Time Lemonade"
+		},	
+		{
+			"name": "Half &amp; Half",
+			"description": "Half Lemonade and Half Iced Tea for that classic taste.",
+			"image": "assets/img/products/products-half-and-half.png",
+			"alt": "Country Time Half &amp; Half"
+		},			
+		{
+			"name": "Pink Lemonade",
+			"description": "A little less tart and a little more Pink!",
+			"image": "assets/img/products/products-pink-lemonade.png",
+			"alt": "Country Time Pink Lemonade"
+		},
+		{
+			"name": "Black Cherry Lemonade",
+			"description": "The taste of Lemonade and Black Cherry get together for a delicious mash-up!",
+			"image": "assets/img/products/products-black-cherry-lemonade.png",
+			"alt": "Country Time Black Cherry Lemonade"
+		}
+	]
+}]

@@ -1,0 +1,36 @@
+/* _screen-sm.scss */
+
+/* ---------------------------------------------------------------------
+ Products
+------------------------------------------------------------------------ */
+.product-col {
+    width: 50%;
+    float: left;
+    border: none;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 16em;
+    margin: 0 auto 2em auto;
+    padding: 0 2em;
+    float: none;
+    @include box-mixin;
+}
+
+.product-heading {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.product-details {
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    float: none;
+    text-align: center; 
+}
+
+.product-desc {
+    padding: 0 1em;
+} 

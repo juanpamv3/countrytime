@@ -1,0 +1,742 @@
+/* ---------------------------------------------------------------------
+ Generic Defs
+------------------------------------------------------------------------ */
+html {
+    /* Set to 62.5% for easy rem resizing 
+       See: http://snook.ca/archives/html_and_css/font-size-with-rem
+    */
+    font-size: 62.5%; 
+}
+
+body {
+    font: 400 1.4em $filsonproregular; /* = 14px */
+    -webkit-font-smoothing: antialiased;
+    @include body-gradient-mixin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; 
+    text-align: left; 
+}
+
+a {
+    text-decoration: none;
+    color: $forest-green;
+    @include transition-mixin(color, .25s, ease-out);
+    &:focus, 
+    &:active {
+        outline: none;
+    }
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: bold;  
+}
+
+small {
+    font-size: 0.6em;
+}
+
+pre {
+    background: $dark;
+    padding: 1.5em;
+    white-space: pre-line;    
+}
+
+input { 
+    font-family: arial, helvetica;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+.list-bullet {
+    list-style: disc;
+    margin: 1em 2em;
+}
+
+.list-number {
+    list-style: decimal;
+    margin: 1em 2em;
+}
+
+*:focus { 
+    outline: none;
+}
+
+/* ---------------------------------------------------------------------
+ Hidden Elements
+------------------------------------------------------------------------ */
+.ir-off {
+	position: absolute;
+	left: -99999em;
+}
+
+.ir-hide {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ir-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ir-display {
+    display: none;
+}
+
+.clearfix:after { 
+    height: 0; 
+    display: block;
+    content: "."; 
+    visibility: hidden; 
+    clear: both;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* ---------------------------------------------------------------------
+ Typography
+------------------------------------------------------------------------ */
+.ct-heading {
+    @include filson-heading; 
+}
+
+.ct-subheading {
+    @include filson-subheading;
+    color: $forest-green;
+}
+
+.ct-strong {
+    @include filson-strong;
+}
+
+.ct-desc {
+    max-width: 12em;
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0 auto;
+    padding-top: 0.5em;
+}
+
+.heading-border {
+    @extend .ct-subheading;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.15em;
+    font-style: normal;
+    display: inline-block;
+    border-bottom: 0.15em solid $forest-green;
+    @include filson-subheading;
+}
+
+.heading-break {
+    display: block;
+}
+
+/* ---------------------------------------------------------------------
+ Structure - Main Containers
+------------------------------------------------------------------------ */
+main {
+    background: $witch-haze;
+    @include box-shadow-mixin(0, 0, 25px, 0, $cement);
+    z-index: 888;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+    @include box-mixin;
+}
+
+.container-outer {
+    width: 100%;
+    position: relative;
+}
+
+/* Inner Container Varieties */
+.container-inner {
+    max-width: 1060px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    @include box-mixin;
+}
+
+.container-inner-content {
+    padding: 0 2em;
+    @extend .container-inner;    
+}
+
+/* ---------------------------------------------------------------------
+ Social Icons
+------------------------------------------------------------------------ */
+.ct-social {
+    position: relative;
+    text-align: center;
+    .icon {
+        font-size: 3.3rem;
+        color: $forest-green;
+        display: inline-block;
+        margin: 0 .5em;
+        @include transition-mixin (all, 0.35s, ease-out);   
+    }    
+    .icon-round {
+        @extend .icon;
+        font-size: 1.7rem;
+        color: $witch-haze;
+        background: $forest-green;
+        border-radius: 50%;
+        &:before {
+            padding: 0.45em 0.35em;
+            display: block;  
+            width: 1.5em;
+            @include box-mixin;           
+        }   
+    }
+}
+
+/* ---------------------------------------------------------------------
+ Module: Intro
+------------------------------------------------------------------------ */
+.mod-intro {
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+
+.intro-day {
+    background: $white url('../img/bg/bg-lake-day.gif') center no-repeat;
+}
+
+.intro-night {
+    background: $white url('../img/bg/bg-lake-night.gif') center no-repeat;
+}
+
+.intro-img {
+    display: none; 
+}
+
+.intro-logo {
+    width: 100px;
+    height: 69px;
+    margin: auto;
+    position: relative;
+    top: 1.5em;
+    background: url('../img/country-time-logo.png') no-repeat;
+    background-size: 100%;
+    text-indent: -1000%;    
+}
+
+.intro-scroll {
+    width: 16em;
+    margin-left: -8em;
+    position: absolute;
+    left: 50%;
+    bottom: 3em;
+}
+
+.intro-link {
+    display: block;
+    background: url('../img/icons/icon-arrow-down.svg') top center no-repeat;
+    text-align: center;
+}
+
+.intro-tease {
+    padding-top: 3.5em;
+    display: block;    
+    font-size: 2rem;
+    font-style: normal;
+    color: $white;
+    white-space: nowrap;
+}
+
+/* burger menu */
+.ct-burger {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    z-index: 9999;
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 6px;
+        width: 100%;
+        background: $forest-green;
+        opacity: 1;
+        @include transition-mixin(all, .25s, ease-in-out);
+        &:nth-child(1) {
+          top: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 12px;
+        }
+        &:nth-child(4) {
+          top: 24px;
+        }
+    }
+    &.open {
+        span {
+            &:nth-child(1) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }   
+            &:nth-child(2) {
+                @include transform-mixin (rotate(45deg));
+            }  
+            &:nth-child(3) {
+                @include transform-mixin (rotate(-45deg));
+            }    
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }                     
+        }
+    }  
+}
+
+.intro-lg {
+    .ct-social {
+        position: absolute;
+        top: 1em;
+    } 
+    .icon-products, 
+    .icon-recipes {
+        height: 2.5em;
+        margin-right: 0.65em;
+        display: inline-block;
+        vertical-align: middle;
+        text-shadow: 0 1px 3px $davys;
+    }    
+    .icon-products {
+        width: 55px;
+        background: url('../img/icons/icon-products-lg.svg') right no-repeat;
+        background-size: 55px;
+    }    
+    .icon-recipes {
+        width: 37px;
+        background: url('../img/icons/icon-recipes-lg.svg') right no-repeat;
+        background-size: 37px;
+    }    
+    .ct-social {
+        padding: 0;
+        right: 3em;
+    }
+    .social-heading {
+        color: $white;
+        font-style: normal;
+    }
+    .icon-round {
+        background: none;
+        color: $white;
+        border: 0.1em solid $white;
+    }
+    .icon-facebook,
+    .icon-twitter {
+        margin: 0;
+        position: absolute;
+        right: 0;
+    }
+    .icon-facebook {
+        top: 1.5em;
+    }    
+    .icon-twitter {
+        top: 4.25em;
+    }    
+}
+
+/* menu overlay */
+.menu-overlay {
+    width: 100%;
+    opacity: 0;
+    background: $witch-haze;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include transition-mixin(all, .25s, ease-in-out);
+    .menu-list {
+        margin: 3em 0 0 0;
+        padding: 0 10% 34px;
+        text-align: center;
+        font-size: 2.7rem;
+    }
+    .menu-list-bullet {
+        border-bottom: 1px solid $yellowgreen;
+        &:first-child {
+            border-top: 1px solid $yellowgreen;
+        }
+    }
+    .menu-list-link {
+        padding: 1em 0;
+        display: block;
+    }
+    .icon-products, 
+    .icon-recipes {
+        width: 2em;
+        height: 37px;
+        margin-right: 0.4em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .icon-products {
+        background: url('../img/icons/icon-products-sm.svg') right no-repeat;
+        background-size: 45px;
+    }
+    
+    .icon-recipes {
+        background: url('../img/icons/icon-recipes-sm.svg') right no-repeat;
+        background-size: 32px;
+    }
+}
+
+html.menu-fix {
+    .menu-overlay {
+        opacity: 1;
+        z-index: 777;
+    }
+}
+		
+/* ---------------------------------------------------------------------
+ Module: Starter
+------------------------------------------------------------------------ */
+.mod-starter {
+    padding: 0;
+}
+
+.starter-intro {
+    background: $white;
+    padding: 1em 2em 9em;
+}
+
+.starter-intro-heading {
+    @extend .ct-heading;
+    max-width: 12em;
+    margin: 0 auto;
+    padding-bottom: 0;       
+}
+
+.starter-intro-desc {
+    @extend .ct-desc;
+}
+
+.starter-col {
+    padding: 3em 0 2em;
+    .starter-heading {
+        font-size: 1.5em;
+        color: $white;
+    }    
+}
+
+.starter-classic,
+.starter-berry,
+.starter-halfandhalf {
+    @extend .starter-col;
+}
+
+.starter-classic {
+    background: $witch-haze;
+    .starter-heading {
+        color: $forest-green;
+    }
+    .starter-img {
+        margin-top: -10em;
+    }
+}
+
+.starter-berry {
+    background: $mandy;
+}
+
+.starter-halfandhalf {
+    @include starter-gradient-mixin;
+}
+
+.starter-img {
+    width: 50%;
+    max-width: 15em;
+    display: block;
+    margin: auto;
+}
+
+.starter-heading {
+    margin: 1em auto;
+}
+            
+/* ---------------------------------------------------------------------
+ Module: How
+------------------------------------------------------------------------ */
+.mod-how {
+    padding: 1em 2em 2em;
+    background: $white;
+}
+
+.how-video {
+    width: 100%;  
+    height: auto; 
+}
+
+.how-social {
+    margin-top: 1.5em;
+}
+
+/* ---------------------------------------------------------------------
+ Module: Steps
+------------------------------------------------------------------------ */
+.mod-steps {
+    background: $white;
+}
+
+.steps-intro {
+    padding: 4em 2em;
+    background: $cornflower;
+}
+
+.steps-heading {
+    @extend .ct-heading;
+    color: $white;
+    max-width: 12em;
+    margin: 0 auto;
+    padding-bottom: 0;       
+}
+
+.steps-intro-desc {
+    @extend .ct-desc;
+    max-width: 16em;
+    color: $davys;
+}
+
+.steps-img {
+    margin-top: -10%;
+    padding-top: 85%;
+    background: $cornflower url('../img/bg/bg-hands.jpg') center no-repeat;    
+    background-size: 150%;
+}
+
+.steps-details {
+    overflow: hidden;
+}
+
+.steps-list {
+    max-width: 20em;
+    margin: 3em auto;
+    padding: 0 2em;
+}
+
+.steps-list-bullet {
+    margin-bottom: 2.5em;
+    position: relative;
+}
+
+.steps-list-icon {   
+    width: 6em;
+    margin-right: 1em;
+    float: left;
+}
+
+.steps-list-detail {
+    @extend .ct-heading;
+    color: $calypso;
+    font-size: 1.8rem;
+    line-height: 1.1em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.steps-legal {
+    display: block;
+    color: $calypso;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Module: Products
+------------------------------------------------------------------------ */
+.mod-products {
+    padding: 1.5em 2em;
+    background: $white;
+}
+
+.product-wrap {
+    margin: auto;
+}
+
+.product-col {
+    padding: 1em 0;
+    border-top: 1px solid $silver;
+}
+
+.product-img {
+    width: 30%;
+    margin-right: 5%;
+    display: block;
+    float: left;    
+}
+
+.product-details {
+    width: 65%;
+    max-width: 20em;
+    float: left;    
+}
+
+.product-heading {
+    @extend .ct-heading;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.product-desc {
+    margin: 0;
+    padding-right: 1em;
+    font-size: 1.7rem;
+    color: $davys;
+}
+
+/* ---------------------------------------------------------------------
+ Module: Feed
+------------------------------------------------------------------------ */
+.mod-feed  {
+    width: 320px;
+    margin: auto;
+    padding-top: 3em;
+    //padding-bottom: 15em;
+    .container {
+        padding: 0;
+    }
+}
+
+.ct-feed-item {
+    width: 320px;
+    padding: 9px;
+    background-color: $white;
+    @include box-mixin;
+    .ct-media {
+        margin-bottom: 10px;
+        position: relative;
+        > .icon {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            color: white;
+            &:before {
+                text-shadow: 0 0.05em 0.2em rgba(0,0,0,0.6);
+            }
+        }
+    }
+    .icon {
+        font-size: 2.1rem;
+    }
+    .ct-profile {
+        margin-bottom: 10px;
+        .ct-profile-name {
+            padding: 0;
+            margin: 5px 0 0 58px;
+            strong {
+                display: block;
+            }
+            b {
+                font-size: 1.2rem;
+                color: $cement;
+            }
+        }
+        img {
+            float: left;
+        }
+        a:hover {
+            text-decoration: none;
+            strong {
+                text-decoration: underline;
+            }
+            strong, .icon {
+                color: $forest-green * 0.75;
+            }
+        }
+    }
+    .ct-metadata {
+        display: block;
+        margin: 15px 0 5px;
+        position: relative;
+        color: $cement;
+        font-size: 1.1rem;
+        > * {
+            display: inline-block;
+        }
+        .icon {
+            font-size: 1.8rem;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    &.ct-twitter {
+        .ct-profile {
+            margin-bottom: 15px;
+        }    
+        .ct-timestamp {
+            margin-top: 6px;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+.mod-footer {
+    width: 100%;
+    height: 10em;
+    bottom: -10em;
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+    line-height: 1.8em;
+    //position: fixed;
+    //left: 0;
+    background-color: $witch-haze;
+    color: $forest-green;
+    text-align: center;
+    @include box-mixin;
+    @include transition-mixin (all, 0.35s, ease-in-out);
+    //&.ct-sticky {
+        //bottom: 0;
+    //}
+}
+
+.ct-footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.ct-footer-list {
+    display: inline-block;
+    padding: 0 0.5em;
+}

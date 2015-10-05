@@ -1,0 +1,6 @@
+<a href="{{item.link}}" target="_blank" ct-track="{{item.tracking}}" ng-if="item.link">
+	<img width="302" ng-src="assets/img/tips/{{item.image}}" />
+</a>
+<span ng-if="!item.link">
+	<img width="302" ng-src="assets/img/tips/{{item.image}}" />
+</span>

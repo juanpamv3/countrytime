@@ -1,0 +1,80 @@
+/* _screen-xl.scss */
+
+/* ---------------------------------------------------------------------
+ Products
+------------------------------------------------------------------------ */
+.product-wrap {
+    border: none;
+}
+
+.mod-products {
+    padding: 2em 4em;
+}
+
+/* ---------------------------------------------------------------------
+ Module: Steps
+------------------------------------------------------------------------ */
+.mod-steps {
+    height: 353px;
+    padding-right: 10%;
+    background: $cornflower url('../img/bg/bg-hands-lg.jpg') no-repeat;    
+    background-position-x: 0;
+}
+
+.steps-intro {
+    width: 535px;
+    margin: 0;
+    background: none;
+    float: right;
+    padding: 5.5em 0 0 0;
+}
+
+.steps-details {
+    margin: 0;
+    float: right;
+    clear: both;
+}
+
+.steps-heading,
+.steps-intro-desc {
+    text-align: left;
+}
+
+.steps-heading {
+    max-width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.steps-intro-desc {
+    max-width: inherit;
+    margin-bottom: 1.5em;
+}
+
+.steps-img {
+    margin: 0;
+    padding: 0;
+    background: none;    
+}
+
+.steps-details {
+    width: 535px;
+    margin: auto;
+}
+
+.steps-list {
+    max-width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.steps-list-detail {
+   font-size: 1.35rem;
+}
+
+.steps-legal {
+    width: 48em;
+    text-align: left;
+    margin-top: 3em;
+    display: block;
+}

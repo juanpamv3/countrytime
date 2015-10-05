@@ -1,0 +1,20 @@
+<a href="{{item.link}}" target="_blank">
+	<div class="ct-media" ng-switch on="item.type">
+		<span ng-switch-when="video">
+			<iframe vspace="0" hspace="0" frameborder="0" scrolling="auto" width="302" height="302" ng-src="{{getPlayerURL(item)}}"></iframe>
+		</span>
+		<span ng-switch-default>
+			<img width="302px" height="302px" ng-src="{{item.images.standard_resolution.url}}" />
+		</span>
+		<i class="icon icon-instagramm"></i>
+	</div>
+</a>
+<div class="ct-profile clearfix">
+	<a class="pull-left" href="http://instagram.com/{{item.user.username}}">
+		<strong>{{item.user.username}}</strong>
+	</a>
+</div>
+<p>{{getInstagramTags(item)}}</p>
+<div class="ct-metadata clearfix">
+	<span class="pull-right">{{item.likes.count}} Likes {{item.comments.count}} Comments</span>
+</div>

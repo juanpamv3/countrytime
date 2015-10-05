@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="no-js ng-app:ctApp" ng-controller="MainCtrl as main" ng-app="ctApp" ng-class="{'menu-fix':main.menuActive}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Country Time Lemonade</title>
+        <meta name="description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+        <!-- OG Tags -->
+        <meta property="og:title" content="Country Time presents the Famtastic Lemonade Stand-tacular"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Country Time Lemonade"/>
+        <meta property="og:image" content="http://www.countrytime.com/img/ct-share-logo.jpg"/>
+        <meta property="og:description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!"/>
+        <meta property="fb:admins" content="100004190174358"/>
+
+        <!-- Twitter Card -->
+        <meta property="twitter:account_id" content="226205342" />
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@counrtytime">
+        <meta name="twitter:url" content="http://www.countrytime.com">
+        <meta name="twitter:title" content="Country Time Lemonade">
+        <meta name="twitter:description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!">
+        <meta name="twitter:image" content="http://www.countrytime.com/img/ct-share-logo.jpg">
+
+        <!-- Mobile -->
+        <link rel="apple-touch-icon" href="ct-favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="ct-favicon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="ct-favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="ct-favicon-152x152.png">
+
+        <link rel="stylesheet" href="assets/css/screen-main.css">
+        <link rel="stylesheet" href="assets/fonts/filsonpro/MyFontsWebfontsKit.css">
+        <script src="bower_components/respond/src/respond.js"></script>
+        <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="//platform.twitter.com/widgets.js"></script>
+
+        <meta name="p:domain_verify" content="09c0cf9d92968b5d9006f2fc4a2163e2"/>
+
+    </head>
+    <body>
+        <main id="ct-content" class="container">
+
+            <!-- mod-intro -->
+            <section class="mod-intro">
+
+              <div class="intro-logo">Country Time</div>
+              <div class="desktop-menu">
+                  <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link"><div class="productsButton"></div></a>
+                  <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link"><div class="recipesButton"></div></a>
+              </div>
+              <!-- desktop -->
+              <div class="intro-wrap" ng-if="main.isDesktop">
+
+                  <!-- day -->
+                  <div class="intro-day">
+                    <img src="assets/img/bg/bg-intro-lg.jpg" class="intro-video-loop" />
+                  </div>
+                  <!-- /day -->
+
+                  <!-- external nav -->
+                  <ul class="ct-external">
+                      <li class="external-list external-list-products">
+                          <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link">
+                              <i class="icon-products"></i>Products
+                              <span class="border-bottom-animate"></span>
+                          </a>
+                      </li>
+                      <li class="external-list external-list-recipes">
+                          <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link">
+                              <i class="icon-recipes"></i>Recipes
+                              <span class="border-bottom-animate"></span>
+                          </a>
+                      </li>
+                  </ul>
+                  <!-- /external nav -->
+
+                  <!-- social icons -->
+                  <dl class="ct-social">
+                      <dt class="social-heading">Share</dt>
+                      <dd><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i><span class="ir-display">Facebook</a></dd>
+                      <dd><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i><span class="ir-display">Twitter</span></a></dd>
+                  </dl>
+                  <!-- /social icons -->
+
+              </div>
+              <!-- /desktop -->
+
+              <!-- mobile -->
+              <div class="intro-wrap" ng-if="!main.isDesktop">
+                  <!-- menu -->
+                  <a href="#" class="menu-link" ng-click="main.menuActive = !main.menuActive">
+                    <div class="ct-burger" ng-class="{'open':main.menuActive}">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </a>
+                  <!--/ menu -->
+
+                  <div class="intro-scroll">
+                      <a href="#" class="intro-link js-intro-scroll" ng-click="main.scrollTop();">
+                          <em class="intro-tease">Make Country Time</em>
+                      </a>
+                  </div>
+
+              </div>
+                <!-- /mobile -->
+            </section>
+            <!-- /mod-intro -->
+
+            <!-- mod-starter (mobile) -->
+            <section class="mod-starter" ng-if="!main.isDesktop">
+                <div class="starter-intro">
+                    <h1 class="starter-intro-heading ct-heading"><em class="ct-subheading heading-border">New</em> <span class="heading-break">Country Time Lemonade Starter</span></h1>
+                    <p class="ct-desc starter-intro-desc">A fresh new way to make lemonade.</p>
+                </div>
+
+                <div class="starter-classic">
+                    <img src="assets/img/products/products-starter-classic.png" class="starter-img" alt="New Classic Lemonade Starter">
+                    <h1 class="ct-heading starter-heading">New Classic Lemonade Starter</h1>
+                </div>
+
+                <div class="starter-berry">
+                    <img src="assets/img/products/products-starter-berry.png" class="starter-img" alt="New Berry Lemonade Starter">
+                    <h1 class="ct-heading starter-heading">New Berry Lemonade Starter</h1>
+                </div>
+
+                <div class="starter-halfandhalf">
+                    <img src="assets/img/products/products-starter-halfandhalf.png" class="starter-img" alt="Half &amp; Half Starter">
+                    <h1 class="ct-heading starter-heading">New Half &amp; Half Starter</h1>
+                </div>
+            </section>
+            <!-- /mod-starter -->
+
+            <!-- mod-how (mobile) -->
+            <section class="mod-how" ng-if="!main.isDesktop">
+                <h1 class="ct-heading"><em class="heading-border">How to</em> <span class="heading-break">Make Country Time</span></h1>
+
+                <!-- day -->
+                <div data-time-of-day="morning" ng-if="main.isMorning" class="day-video">
+                    <video class="how-video js-how-video" preload="none" controls poster="assets/video/country-time-lemonade-starter-day-poster.jpg">
+                        <source src="assets/video/country-time-lemonade-starter-day.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-day.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-day.mp4">
+                    </video>
+                </div>
+                <!-- /day -->
+
+                <!-- night -->
+                <div data-time-of-day="dinner" ng-if="!main.isMorning" class="night-video">
+                    <video class="how-video js-how-video" preload="none" controls poster="assets/video/country-time-lemonade-starter-night-poster.jpg">
+                        <source src="assets/video/country-time-lemonade-starter-night.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-night.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-night.mp4">
+                    </video>
+                </div>
+                <!-- /night -->
+
+                <div class="how-social ct-social">
+                    <a href="https://www.facebook.com/countrytime" target="_blank" ct-track="footerFacebook"><i class="icon icon-facebook"></i></a>
+                    <a href="https://twitter.com/CountryTime" target="_blank" ct-track="footerTwitter"><i class="icon icon-twitter"></i></a>
+                </div>
+            </section>
+            <!-- /mod-how -->
+
+            <!-- mod-steps -->
+            <section class="mod-steps">
+                <div class="steps-intro">
+                    <h1 class="steps-heading">Country Time Lemonade Starter</h1>
+                    <p class="steps-intro-desc">Flavored with real lemon juice.*</p>
+                </div>
+
+                <div class="steps-img"></div>
+
+                <div class="steps-details">
+                    <ul class="steps-list clearfix">
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-add.svg" alt="Just add water" class="steps-list-icon"><span class="steps-list-detail">Just add water</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail">Makes 3 pitchers or 24 glasses**</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-pour.svg" alt="Re-closable bottle" class="steps-list-icon"><span class="steps-list-detail">Re-closable bottle + easy pour spout</span></li>
+                    </ul>
+                    <em class="steps-legal">*Contains 5% lemon juice when diluted in water as directed.<br>**Makes 3x 2 quart pitchers or 24x 8 fl oz glasses.</em>
+                </div>
+
+            </section>
+            <!-- /mod-steps -->
+
+            <!-- mod-products -->
+            <section class="mod-products" ng-controller="ProductCtrl">
+                <div class="product-wrap clearfix">
+                    <div class="product-col clearfix" ng-repeat="product in products">
+                        <img class="product-img" ng-src="{{product.image}}" alt="{{product.alt}}">
+                        <div class="product-details">
+                            <h1 class="product-heading" ng-bind-html="product.name"></h1>
+                            <p class="product-desc" ng-bind-html="product.description"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /mod-products -->
+
+            <!-- mod-feed -->
+            <section id="ct-feed" class="mod-feed">
+                <!-- <div class="container" ng-controller="FeedCtrl" infinite-scroll="loadItems()"> -->
+                <div class="container" ng-controller="FeedCtrl">
+                    <div class="ct-feed-item stamp">
+                        <img src="assets/img/tips/lemonade-uniquestand.jpg" />
+                    </div>
+
+                    <div class="ct-feed-item ct-{{item.network}} ct-category-{{item.category}} clearfix" ng-repeat="item in items" ct-packery>
+                        <div ng-include="getTemplate(item)" onload="templateLoaded()"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /mod-feed -->
+
+            <!-- mod-footer -->
+            <section id="ct-footer" class="mod-footer">
+            <!-- <section id="ct-footer" class="mod-footer ct-sticky" ct-sticky-scroll="bottom"> -->
+                <ul class="ct-footer-menu ct-strong">
+                    <li class="ct-footer-list"><a href="http://kraftfoods.custhelp.com/app/answers/list2/search/1/kw/Country%20Time" target="_blank" ct-track="footerFAQ">FAQ</a></li>
+                    <li class="ct-footer-list"><a href="http://www.kraftrecipes.com/contactus.aspx" target="_blank" ct-track="footerContact">CONTACT US</a></li>
+                    <li class="ct-footer-list"><a href="http://www.kraftrecipes.com/about/PrivacyNotice.aspx" target="_blank" ct-track="footerPrivacy">PRIVACY NOTICE</a></li>
+                    <li class="ct-footer-list"><a href="http://www.kraftrecipes.com/about/UserAgreement.aspx" target="_blank" ct-track="footerTerms">TERMS OF USE</a></li>
+                    <li class="ct-footer-list">&copy; 2015 KRAFT FOODS, INC.</li>
+                    <li class="ct-footer-list"><a href="http://www.kraftrecipes.com/products/category/drinks-606.aspx " target="_blank" ct-track="footerTerms">PRODUCT INFORMATION</a></li>
+                    <li class="ct-footer-list"><a href="http://www.kraftrecipes.com/products/productlocator.aspx" target="_blank" ct-track="footerTerms">PRODUCT LOCATOR</a></li>
+                </ul>
+
+                <div class="ct-social">
+                    <a href="https://www.facebook.com/countrytime" target="_blank" ct-track="footerFacebook"><i class="icon-round icon-facebook"></i></a>
+                    <a href="https://twitter.com/CountryTime" target="_blank" ct-track="footerTwitter"><i class="icon-round icon-twitter"></i></a>
+                </div>
+            </section>
+            <!-- /mod-footer -->
+        </main>
+
+        <!-- menu overlay -->
+        <div class="menu-overlay">
+            <ul class="menu-list ct-social">
+                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="menu-list-link"><i class="icon-products"></i>Products</a></li>
+                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="menu-list-link"><i class="icon-recipes"></i>Recipes</a></li>
+                <li class="menu-list-bullet"><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i>Facebook</a></li>
+                <li class="menu-list-bullet"><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i>Twitter</a></li>
+            </ul>
+        </div>
+        <!-- /menu overlay -->
+
+        <div id="fb-root"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/vendor/packery.pkgd.min.js"></script>
+        <script src="assets/js/vendor/jquery.spritely-0.4.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/controllers/controllers.js"></script>
+        <script src="assets/js/directives/directives.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '168792829945245',
+              status     : true,
+              xfbml      : true
+            });
+          };
+
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/all.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-39978602-3');ga('send','pageview');
+        </script>
+
+        <script>
+            (function () {
+            var tagjs = document.createElement("script");
+            var s = document.getElementsByTagName("script")[0];
+            tagjs.async = true;
+            tagjs.src = "//s.btstatic.com/tag.js#site=KSNUeWE";
+            s.parentNode.insertBefore(tagjs, s);
+            }());
+        </script>
+
+        <noscript>
+            <iframe src="//s.thebrighttag.com/iframe?c=KSNUeWE" width="1" height="1"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </noscript>
+
+    </body>
+</html>

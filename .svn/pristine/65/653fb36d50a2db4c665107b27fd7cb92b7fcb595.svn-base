@@ -1,0 +1,92 @@
+                <h1 class="intro-logo">Country Time</h1>
+            
+                <!-- desktop -->                              
+                <div class="intro-wrap" ng-if="main.isDesktop">
+                    
+                    <!-- day -->
+                    <div data-time-of-day="morning" ng-if="main.isMorning" class="day-video">
+                        <video class="intro-video-loop" autoplay loop poster="assets/video/country-time-lemonade-starter-day-poster.jpg" preload="none">
+                            <source src="assets/video/country-time-lemonade-starter-day-loop.webm" type="video/webm">
+                            <source src="assets/video/country-time-lemonade-starter-day-loop.ogv" type="video/ogg">
+                            <source src="assets/video/country-time-lemonade-starter-day-loop.mp4">
+                        </video>
+                    
+                        <video class="intro-video">
+                            <source src="assets/video/country-time-lemonade-starter-day.webm" type="video/webm">
+                            <source src="assets/video/country-time-lemonade-starter-day.ogv" type="video/ogg">
+                            <source src="assets/video/country-time-lemonade-starter-day.mp4">
+                        </video>
+                    </div>
+                    <!-- /day -->
+                    
+                    <!-- night -->
+                    <div data-time-of-day="dinner" ng-if="!main.isMorning" class="night-video">
+                        <video class="intro-video-loop" autoplay loop poster="assets/video/country-time-lemonade-starter-night-poster.jpg" preload="none">
+                            <source src="assets/video/country-time-lemonade-starter-night-loop.webm" type="video/webm">
+                            <source src="assets/video/country-time-lemonade-starter-night-loop.ogv" type="video/ogg">
+                            <source src="assets/video/country-time-lemonade-starter-night-loop.mp4">
+                        </video>
+                    
+                        <video class="intro-video">
+                            <source src="assets/video/country-time-lemonade-starter-night.webm" type="video/webm">
+                            <source src="assets/video/country-time-lemonade-starter-night.ogv" type="video/ogg">
+                            <source src="assets/video/country-time-lemonade-starter-night.mp4">
+                        </video>
+                    </div>
+                    <!-- /night -->
+
+                    <!-- external nav -->
+                    <ul class="ct-external">
+                        <li class="external-list external-list-products">
+                            <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link">
+                                <i class="icon-products"></i>Products
+                                <span class="border-bottom-animate"></span>
+                            </a>
+                        </li>
+                        <li class="external-list external-list-recipes">
+                            <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link">
+                                <i class="icon-recipes"></i>Recipes
+                                <span class="border-bottom-animate"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /external nav -->
+                    
+                    <!-- social icons -->                              
+                    <dl class="ct-social">
+                        <dt class="social-heading">Share</dt>
+                        <dd><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i><span class="ir-display">Facebook</a></dd>
+                        <dd><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i><span class="ir-display">Twitter</span></a></dd>
+                    </dl>
+                    <!-- /social icons -->  
+                    
+                    <div class="intro-scroll">
+                        <a href="#" class="intro-link js-intro-video" ng-click="main.videoStart();">
+                            <b class="intro-sprite" ng-init="main.introSprite();"></b>
+                            <em class="intro-tease">Make Country Time</em>
+                        </a>
+                    </div>                     
+                </div>
+                <!-- /desktop -->
+            
+                <!-- mobile -->                              
+                <div class="intro-wrap" ng-if="!main.isDesktop">
+                    <!-- menu -->
+                    <a href="#" class="menu-link" ng-click="main.menuActive = !main.menuActive">
+                    	<div class="ct-burger" ng-class="{'open':main.menuActive}">
+                    		<span></span>
+                    		<span></span>
+                    		<span></span>
+                    		<span></span>
+                    	</div>
+                    </a>
+                    <!--/ menu -->
+                                            
+                    <div class="intro-scroll">
+                        <a href="#" class="intro-link js-intro-scroll" ng-click="main.scrollTop();">
+                            <em class="intro-tease">Make Country Time</em>
+                        </a>
+                    </div>                     
+                       
+                </div>
+                <!-- /mobile -->

@@ -1,0 +1,61 @@
+                <div class="big-logo" style="display: block; height: 30px;"></div>
+                <div class="intro-logo">Country Time</div>
+
+                <!-- desktop -->
+                <div class="intro-wrap" ng-if="main.isDesktop">
+
+                    <!-- day -->
+                    <div class="intro-day">
+                      <img src="assets/img/bg/bg-intro-lg.jpg" class="intro-video-loop" />
+                    </div>
+                    <!-- /day -->
+
+                    <!-- external nav -->
+                    <ul class="ct-external">
+                        <li class="external-list external-list-products">
+                            <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link">
+                                <i class="icon-products"></i>Products
+                                <span class="border-bottom-animate"></span>
+                            </a>
+                        </li>
+                        <li class="external-list external-list-recipes">
+                            <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link">
+                                <i class="icon-recipes"></i>Recipes
+                                <span class="border-bottom-animate"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /external nav -->
+
+                    <!-- social icons -->
+                    <dl class="ct-social">
+                        <dt class="social-heading">Share</dt>
+                        <dd><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i><span class="ir-display">Facebook</a></dd>
+                        <dd><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i><span class="ir-display">Twitter</span></a></dd>
+                    </dl>
+                    <!-- /social icons -->
+
+                </div>
+                <!-- /desktop -->
+
+                <!-- mobile -->
+                <div class="intro-wrap" ng-if="!main.isDesktop">
+                    <!-- menu -->
+                    <a href="#" class="menu-link" ng-click="main.menuActive = !main.menuActive">
+                    	<div class="ct-burger" ng-class="{'open':main.menuActive}">
+                    		<span></span>
+                    		<span></span>
+                    		<span></span>
+                    		<span></span>
+                    	</div>
+                    </a>
+                    <!--/ menu -->
+
+                    <div class="intro-scroll">
+                        <a href="#" class="intro-link js-intro-scroll" ng-click="main.scrollTop();">
+                            <em class="intro-tease">Make Country Time</em>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /mobile -->

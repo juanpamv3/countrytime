@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="58px" height="58px" viewBox="0 0 58 58" enable-background="new 0 0 58 58" xml:space="preserve">
+<style>
+	.style0{
+		stroke-width:	2;
+		stroke:	#FFFFFF;
+		stroke-linecap:	round;
+		stroke-miterlimit:	10;
+		fill:	none;
+	}
+	.style1{
+		fill:	none;
+		stroke:	#FFFFFF;
+		stroke-width:	2;
+		stroke-miterlimit:	10;
+		clip-path:	url(#SVGID_2_);
+	}
+</style><polyline points="22.2,30.9 29,38 35.8,30.9" class="style0"/>
+<line x1="29" y1="38" x2="29" y2="20" class="style0"/>
+<g>
+	<defs>
+		<rect width="58" height="58"/>
+	</defs>
+	<clipPath>
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+	
+		<circle cx="29" cy="29" r="28" class="style1"/>
+</g>
+</svg>

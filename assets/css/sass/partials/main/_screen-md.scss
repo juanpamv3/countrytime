@@ -1,0 +1,299 @@
+/* _screen-md.scss */
+
+/* ---------------------------------------------------------------------
+ Generic Defs
+------------------------------------------------------------------------ */
+.mod-feed  {
+    width: 665px;
+    margin: auto;
+    .container {
+        padding: 0;
+    }
+}
+
+/* ---------------------------------------------------------------------
+ Module: Intro
+------------------------------------------------------------------------ */
+.mod-intro {
+    width: 100%;
+    height: auto;
+    background: none;
+    position: relative;
+    .ct-external,
+    .ct-social {
+        position: absolute;
+        top: 1em;
+    }
+    .ct-social {
+        width: 50px;
+        padding: 0;
+        right: 3em;
+    }
+    .social-heading {
+        color: $white;
+        font-style: normal;
+        width: 100%;
+        display: block;
+    }
+    .icon-round {
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 50%;
+        background: none;
+        color: $white;
+        border: 0.1em solid $white;
+        @include transition-mixin (all, 170ms, ease-out);
+        &:before {
+            margin: 0.15em 0 0 0.3em;
+        }
+        &:hover {
+            @include transform-mixin (scale(1.1));
+        }
+    }
+    .icon-facebook,
+    .icon-twitter {
+        margin: 0;
+        position: absolute;
+        right: 0px;
+    }
+    .icon-facebook {
+        top: 1.5em;
+    }
+    .icon-twitter {
+        top: 4.5em;
+    }
+}
+
+.menu-overlay {
+    display: none;
+}
+
+.ct-external {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    opacity: 0;
+    &.video-end {
+        opacity: 1;
+        @include transition-mixin(all, .5s, ease-in);
+    }
+}
+
+.external-list {
+    margin: 0 3%;
+    display: inline-block;
+    position: relative;
+}
+
+.external-list-link {
+    font-size: 1.85rem;
+    color: $witch-haze;
+    text-shadow: 0 1px 2px $davys;
+}
+
+.border-bottom-animate {
+    width: 0;
+    height: 3px;
+    display: block;
+    float: right;
+    position: absolute;
+    top: 1.85em;
+    left: 0;
+    background: $witch-haze;
+    @include box-shadow-mixin(0, 2px, 1px, -1px, $cement);
+    @include transition-mixin (all, 170ms, ease-out);
+}
+
+.external-list-products {
+    .border-bottom-animate {
+        left: 69px;
+    }
+}
+
+.external-list-recipes {
+    .border-bottom-animate {
+        left: 51px;
+    }
+}
+
+.external-list-products:hover {
+    .border-bottom-animate {
+        width: 77px;
+    }
+}
+
+.external-list-recipes:hover {
+    .border-bottom-animate {
+        width: 67px;
+    }
+}
+
+.icon-products,
+.icon-recipes {
+    height: 2.5em;
+    margin-right: 0.65em;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 0 1px 3px $davys;
+}
+  .productsButton{
+    width: 115px;
+    height: 37px;
+    float: left;
+    background: url("../img/menu/products.png ") no-repeat;
+    background-size: 100%;
+    text-indent: -1000%;
+  }
+.recipesButton {
+    background: url('../img/menu/recipes.png') right no-repeat;
+    width: 115px;
+    height: 37px;
+    float: left;
+    background-size: 100%;
+    text-indent: -1000%;
+    margin-left: 60px;
+}
+.desktop-menu{
+  position: absolute;
+  margin-left: -8em;
+  left: 50%;
+  width: 300px;
+  height: 37px;
+  top: 34px;
+}
+
+/* intro logo */
+.intro-logo {
+  width: 100px;
+  height: 69px;
+  position: absolute;
+  left: 59px;
+  top: 34px;
+  background: url("../img/country-time-logo.png") no-repeat;
+  background-size: 100%;
+  text-indent: -1000%;
+}
+
+/* intro video */
+.intro-video-loop {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.intro-video {
+    width: 100%;
+    height: auto;
+    display: none;
+    &.video-show {
+        display: block;
+    }
+}
+
+.intro-scroll {
+    bottom: 35%;
+}
+
+.intro-link {
+    background: none;
+    &.video-played {
+        cursor: default;
+    }
+}
+
+/* sprite */
+.intro-sprite {
+	width: 87px;
+	height: 102px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -43.5px;
+    background: url('../img/sprite/sprite-pitcher.png') 0 0 no-repeat;
+	z-index: 2000;
+}
+
+.intro-tease {
+    padding-top: 5.5em;
+}
+
+/* ---------------------------------------------------------------------
+ Module: New
+------------------------------------------------------------------------ */
+.mod-starter {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Module: How
+------------------------------------------------------------------------ */
+.mod-how {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
+ Module: Steps
+------------------------------------------------------------------------ */
+.steps-img {
+    margin-top: -5%;
+    padding-top: 64%;
+    background: $cornflower url('../img/bg/bg-hands.jpg') 40% no-repeat;
+    background-size: 120%;
+}
+
+.steps-heading {
+    max-width: inherit;
+}
+
+.steps-intro-desc {
+    max-width: 22em;
+}
+
+.steps-list {
+    max-width: 50em;
+    margin: 2em auto 8em;
+}
+
+.steps-list-bullet {
+    width: 33%;
+    margin: 0;
+    float: left;
+}
+
+.steps-list-icon {
+    width: 4em;
+    margin-right: 1em;
+    float: left;
+}
+
+.steps-list-detail {
+   font-size: 1.5rem;
+   line-height: 1.3em;
+   padding-right: 1em;
+}
+
+/* ---------------------------------------------------------------------
+ Products
+------------------------------------------------------------------------ */
+.product-col {
+    width: 33%;
+}
+
+.product-heading {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+.ct-footer-list {
+    padding: 0;
+    &:before {
+        content: " | ";
+        padding: 0 .5em;
+    }
+    &:first-child:before {
+        content: "";
+        padding-left: 0;
+    }
+}

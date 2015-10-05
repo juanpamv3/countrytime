@@ -1,0 +1,45 @@
+/* _screen-lg.scss */
+
+/* ---------------------------------------------------------------------
+ Generic Defs
+------------------------------------------------------------------------ */
+main {
+    max-width: 1280px;
+}
+
+.mod-feed  {
+    width: 995px;
+    margin: auto;
+    .container {
+        padding: 0;
+    }
+}
+
+/* ---------------------------------------------------------------------
+ Products
+------------------------------------------------------------------------ */
+.product-col {
+    width: 20%;
+    max-width: inherit;
+    padding: 2em 0;
+}
+
+/* ---------------------------------------------------------------------
+ Footer
+------------------------------------------------------------------------ */
+.mod-footer {
+    //width: 1280px;
+    height: 8em;
+    bottom: -8em;	
+    padding: 0.5em;
+    //left: 50%;
+    margin-left: auto; //-640px;
+    font-size: 1.4rem;
+    .ct-social .icon {
+        font-size: 1.5rem;
+        @include transition-mixin (all, 170ms, ease-out);
+        &:hover {
+            @include transform-mixin (scale(1.1));
+        }        
+    }	
+}

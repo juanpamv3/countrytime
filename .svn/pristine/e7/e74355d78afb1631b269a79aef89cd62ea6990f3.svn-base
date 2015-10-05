@@ -1,0 +1,17 @@
+/* _screen-ie8.scss */
+
+/* ---------------------------------------------------------------------
+ SCSSS Partial Imports
+------------------------------------------------------------------------ */
+
+/* Because IE8 does not support media queries ... */
+
+/* Small View */
+@import "partials/main/_screen-sm";
+
+/* Medium View */
+@import "partials/main/_screen-md";
+	
+/* Large View */
+@import "partials/main/_screen-lg";
+	
