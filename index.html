@@ -61,27 +61,27 @@
                         <div class="product">
                           <img src="assets/img/products/products-half-and-half.png" />
                           <h1 class="product-heading ng-binding">Half & Half</h1>
-                          <p class="product-desc">Half Lemonade and Half Iced Tea for that classic taste.</p>
+                          <p class="product-desc">Half Lemonade and Half Iced<br />Tea for that classic taste.</p>
                         </div>
                         <div class="product">
                           <img src="assets/img/products/products-lemonade.png" />
                           <h1 class="product-heading ng-binding">Lemonade</h1>
-                          <p class="product-desc">The Official Lemonade of Lemonade Stands!</p>
+                          <p class="product-desc">The Official Lemonade<br />of Lemonade Stands!</p>
                         </div>
                         <div class="product">
                           <img src="assets/img/products/products-pink-lemonade.png" />
                           <h1 class="product-heading ng-binding">Pink Lemonade</h1>
-                          <p class="product-desc">A little less tart and a little more Pink!</p>
+                          <p class="product-desc">A little less tart and a<br />little more Pink!</p>
                         </div>
                         <div class="product">
                           <img src="assets/img/products/products-strawberry-lemonade.png" />
                           <h1 class="product-heading ng-binding">Strawberry Lemonade</h1>
-                          <p class="product-desc">Big lemon taste with a refreshing burst of berry.</p>
+                          <p class="product-desc">Big lemon taste with a refreshing<br />burst of berry.</p>
                         </div>
                         <div class="product">
                           <img src="assets/img/products/products-black-cherry-lemonade.png" />
                           <h1 class="product-heading ng-binding">Black Cherry Lemonade</h1>
-                          <p class="product-desc">A new twist on a favorite classic!</p>
+                          <p class="product-desc">A new twist on a<br />favorite classic!</p>
                         </div>
                       </div>
                     </div>
@@ -142,7 +142,7 @@
                 <!-- /mobile -->
             </section>
             <!-- /mod-intro -->
-            <section class="mod-products" ng-controller="ProductCtrl" ng-if="!main.isDesktop">
+            <section class="mod-products smallDisplay" ng-controller="ProductCtrl">
                 <div class="product-wrap clearfix">
                     <div class="product-col clearfix" ng-repeat="product in products">
                         <img class="product-img" ng-src="{{product.image}}" alt="{{product.alt}}">

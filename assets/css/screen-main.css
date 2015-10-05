@@ -1337,7 +1337,7 @@ html.menu-fix .menu-overlay {
   margin: 0;
   padding-right: 1em;
   font-size: 1.5rem;
-  color: #FFF;
+  color: #555;
 }
 
 /* ---------------------------------------------------------------------
@@ -1724,31 +1724,32 @@ html.menu-fix .menu-overlay {
   /* line 147, sass/partials/main/_screen-md.scss */
   .recipesButton {
     background: url("../img/menu/recipes.png") right no-repeat;
-    width: 115px;
+    width: 131px;
     height: 37px;
     float: left;
     background-size: 100%;
     text-indent: -1000%;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-top: 4px;
   }
 
-  /* line 156, sass/partials/main/_screen-md.scss */
+  /* line 157, sass/partials/main/_screen-md.scss */
   .desktop-menu {
     position: absolute;
-    margin-left: -8em;
+    margin-left: -9.5em;
     left: 50%;
     width: 300px;
     height: 37px;
-    top: 34px;
+    top: 30px;
   }
 
   /* intro logo */
-  /* line 166, sass/partials/main/_screen-md.scss */
+  /* line 167, sass/partials/main/_screen-md.scss */
   .intro-logo {
-    width: 100px;
-    height: 69px;
+    width: 108px;
+    height: 75px;
     position: absolute;
-    left: 59px;
+    left: 57px;
     top: 34px;
     background: url("../img/country-time-logo.png") no-repeat;
     background-size: 100%;
@@ -1756,40 +1757,40 @@ html.menu-fix .menu-overlay {
   }
 
   /* intro video */
-  /* line 178, sass/partials/main/_screen-md.scss */
+  /* line 179, sass/partials/main/_screen-md.scss */
   .intro-video-loop {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  /* line 184, sass/partials/main/_screen-md.scss */
+  /* line 185, sass/partials/main/_screen-md.scss */
   .intro-video {
     width: 100%;
     height: auto;
     display: none;
   }
-  /* line 188, sass/partials/main/_screen-md.scss */
+  /* line 189, sass/partials/main/_screen-md.scss */
   .intro-video.video-show {
     display: block;
   }
 
-  /* line 193, sass/partials/main/_screen-md.scss */
+  /* line 194, sass/partials/main/_screen-md.scss */
   .intro-scroll {
     bottom: 35%;
   }
 
-  /* line 197, sass/partials/main/_screen-md.scss */
+  /* line 198, sass/partials/main/_screen-md.scss */
   .intro-link {
     background: none;
   }
-  /* line 199, sass/partials/main/_screen-md.scss */
+  /* line 200, sass/partials/main/_screen-md.scss */
   .intro-link.video-played {
     cursor: default;
   }
 
   /* sprite */
-  /* line 205, sass/partials/main/_screen-md.scss */
+  /* line 206, sass/partials/main/_screen-md.scss */
   .intro-sprite {
     width: 87px;
     height: 102px;
@@ -1801,22 +1802,22 @@ html.menu-fix .menu-overlay {
     z-index: 2000;
   }
 
-  /* line 216, sass/partials/main/_screen-md.scss */
+  /* line 217, sass/partials/main/_screen-md.scss */
   .intro-tease {
     padding-top: 5.5em;
   }
 
   /* products */
-  /* line 220, sass/partials/main/_screen-md.scss */
+  /* line 221, sass/partials/main/_screen-md.scss */
   .productsBlock {
     height: 300px;
-    position: absolute;
-    width: 92%;
-    left: 4%;
-    top: 35%;
+    display: none;
+    width: 93%;
+    left: 2%;
+    bottom: 65px;
   }
 
-  /* line 227, sass/partials/main/_screen-md.scss */
+  /* line 228, sass/partials/main/_screen-md.scss */
   .product {
     width: 20%;
     height: 300px;
@@ -1827,7 +1828,7 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Module: New
   ------------------------------------------------------------------------ */
-  /* line 237, sass/partials/main/_screen-md.scss */
+  /* line 238, sass/partials/main/_screen-md.scss */
   .mod-starter {
     display: none;
   }
@@ -1835,7 +1836,7 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Module: How
   ------------------------------------------------------------------------ */
-  /* line 244, sass/partials/main/_screen-md.scss */
+  /* line 245, sass/partials/main/_screen-md.scss */
   .mod-how {
     display: none;
   }
@@ -1843,7 +1844,7 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Module: Steps
   ------------------------------------------------------------------------ */
-  /* line 251, sass/partials/main/_screen-md.scss */
+  /* line 252, sass/partials/main/_screen-md.scss */
   .steps-img {
     margin-top: -5%;
     padding-top: 64%;
@@ -1851,37 +1852,37 @@ html.menu-fix .menu-overlay {
     background-size: 120%;
   }
 
-  /* line 258, sass/partials/main/_screen-md.scss */
+  /* line 259, sass/partials/main/_screen-md.scss */
   .steps-heading {
     max-width: inherit;
   }
 
-  /* line 262, sass/partials/main/_screen-md.scss */
+  /* line 263, sass/partials/main/_screen-md.scss */
   .steps-intro-desc {
     max-width: 22em;
   }
 
-  /* line 266, sass/partials/main/_screen-md.scss */
+  /* line 267, sass/partials/main/_screen-md.scss */
   .steps-list {
     max-width: 50em;
     margin: 2em auto 8em;
   }
 
-  /* line 271, sass/partials/main/_screen-md.scss */
+  /* line 272, sass/partials/main/_screen-md.scss */
   .steps-list-bullet {
     width: 33%;
     margin: 0;
     float: left;
   }
 
-  /* line 277, sass/partials/main/_screen-md.scss */
+  /* line 278, sass/partials/main/_screen-md.scss */
   .steps-list-icon {
     width: 4em;
     margin-right: 1em;
     float: left;
   }
 
-  /* line 283, sass/partials/main/_screen-md.scss */
+  /* line 284, sass/partials/main/_screen-md.scss */
   .steps-list-detail {
     font-size: 1.5rem;
     line-height: 1.3em;
@@ -1891,15 +1892,14 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Products
   ------------------------------------------------------------------------ */
-  /* line 292, sass/partials/main/_screen-md.scss */
+  /* line 293, sass/partials/main/_screen-md.scss */
   .product-col {
     width: 33%;
   }
 
-  /* line 296, sass/partials/main/_screen-md.scss */
+  /* line 297, sass/partials/main/_screen-md.scss */
   .product-heading {
     text-align: center;
-    color: #faf03a;
   }
 
   /* ---------------------------------------------------------------------
@@ -1955,12 +1955,13 @@ html.menu-fix .menu-overlay {
   .productsBlock {
     height: 300px;
     position: absolute;
+    display: block;
     width: 92%;
     left: 4%;
-    top: 50%;
+    bottom: 46px;
   }
 
-  /* line 33, sass/partials/main/_screen-lg.scss */
+  /* line 34, sass/partials/main/_screen-lg.scss */
   .product {
     width: 20%;
     height: 300px;
@@ -1968,10 +1969,32 @@ html.menu-fix .menu-overlay {
     text-align: center;
   }
 
+  /* line 40, sass/partials/main/_screen-lg.scss */
+  .smallDisplay {
+    display: none;
+  }
+
+  /* line 43, sass/partials/main/_screen-lg.scss */
+  .product-heading {
+    text-align: center;
+    color: #faf03a;
+    padding-top: 5px;
+  }
+
+  /* line 48, sass/partials/main/_screen-lg.scss */
+  .product-desc {
+    margin: 0;
+    padding-top: 3px;
+    padding-right: 1em;
+    font-size: 1.4rem;
+    color: #FFF;
+    font-weight: bold;
+  }
+
   /* ---------------------------------------------------------------------
    Footer
   ------------------------------------------------------------------------ */
-  /* line 42, sass/partials/main/_screen-lg.scss */
+  /* line 59, sass/partials/main/_screen-lg.scss */
   .mod-footer {
     height: 8em;
     bottom: -8em;
@@ -1979,7 +2002,7 @@ html.menu-fix .menu-overlay {
     margin-left: auto;
     font-size: 1.4rem;
   }
-  /* line 50, sass/partials/main/_screen-lg.scss */
+  /* line 67, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon, .mod-footer .ct-social .icon-round {
     font-size: 1.5rem;
     -moz-transition: all 170ms ease-out 0s;
@@ -1987,7 +2010,7 @@ html.menu-fix .menu-overlay {
     -webkit-transition: all 170ms ease-out 0s;
     transition: all 170ms ease-out 0s;
   }
-  /* line 53, sass/partials/main/_screen-lg.scss */
+  /* line 70, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon:hover, .mod-footer .ct-social .icon-round:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -2016,73 +2039,79 @@ html.menu-fix .menu-overlay {
   ------------------------------------------------------------------------ */
   /* line 17, sass/partials/main/_screen-xl.scss */
   .mod-steps {
-    height: 353px;
+    height: 432px;
     padding-right: 10%;
     background: #92ccea url("../img/bg/bg-hands-lg.jpg") no-repeat;
     background-position-x: 0;
+    background-size: auto;
   }
 
-  /* line 24, sass/partials/main/_screen-xl.scss */
+  /* line 25, sass/partials/main/_screen-xl.scss */
   .steps-intro {
     width: 535px;
     margin: 0;
+    margin-top: 54px;
     background: none;
     float: right;
-    padding: 5.5em 0 0 0;
+    padding: 5.35em 0 0 0;
   }
 
-  /* line 32, sass/partials/main/_screen-xl.scss */
+  /* line 34, sass/partials/main/_screen-xl.scss */
   .steps-details {
     margin: 0;
     float: right;
     clear: both;
   }
 
-  /* line 39, sass/partials/main/_screen-xl.scss */
+  /* line 41, sass/partials/main/_screen-xl.scss */
   .steps-heading,
   .steps-intro-desc {
     text-align: left;
   }
 
-  /* line 43, sass/partials/main/_screen-xl.scss */
+  /* line 45, sass/partials/main/_screen-xl.scss */
   .steps-heading {
     max-width: inherit;
     margin: 0;
     padding: 0;
+    font-size: 2.9rem;
   }
 
-  /* line 49, sass/partials/main/_screen-xl.scss */
+  /* line 52, sass/partials/main/_screen-xl.scss */
   .steps-intro-desc {
     max-width: inherit;
     margin-bottom: 1.5em;
+    font-size: 1.9rem;
+    margin: 0 auto;
+    padding-top: 0.5em;
   }
 
-  /* line 54, sass/partials/main/_screen-xl.scss */
+  /* line 60, sass/partials/main/_screen-xl.scss */
   .steps-img {
     margin: 0;
     padding: 0;
     background: none;
   }
 
-  /* line 60, sass/partials/main/_screen-xl.scss */
+  /* line 66, sass/partials/main/_screen-xl.scss */
   .steps-details {
     width: 535px;
     margin: auto;
   }
 
-  /* line 65, sass/partials/main/_screen-xl.scss */
+  /* line 71, sass/partials/main/_screen-xl.scss */
   .steps-list {
     max-width: inherit;
     margin: 0;
     padding: 0;
   }
 
-  /* line 71, sass/partials/main/_screen-xl.scss */
+  /* line 77, sass/partials/main/_screen-xl.scss */
   .steps-list-detail {
     font-size: 1.35rem;
   }
 
-  /* line 75, sass/partials/main/_screen-xl.scss */
+  /* line 81, sass/partials/main/_screen-xl.scss */
   .steps-legal {
     width: 48em;
     text-align: left;

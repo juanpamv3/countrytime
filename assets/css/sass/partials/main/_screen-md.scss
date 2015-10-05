@@ -146,28 +146,29 @@
   }
 .recipesButton {
     background: url('../img/menu/recipes.png') right no-repeat;
-    width: 115px;
+    width: 131px;
     height: 37px;
     float: left;
     background-size: 100%;
     text-indent: -1000%;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-top: 4px;
 }
 .desktop-menu{
   position: absolute;
-  margin-left: -8em;
+  margin-left: -9.5em;
   left: 50%;
   width: 300px;
   height: 37px;
-  top: 34px;
+  top: 30px;
 }
 
 /* intro logo */
 .intro-logo {
-  width: 100px;
-  height: 69px;
+  width: 108px;
+  height: 75px;
   position: absolute;
-  left: 59px;
+  left: 57px;
   top: 34px;
   background: url("../img/country-time-logo.png") no-repeat;
   background-size: 100%;
@@ -219,10 +220,10 @@
 /* products */
 .productsBlock{
   height: 300px;
-  position: absolute;
-  width: 92%;
-  left: 4%;
-  top: 35%;
+  display: none;
+  width: 93%;
+  left: 2%;
+  bottom: 65px;
 }
 .product{
   width: 20%;
@@ -295,7 +296,6 @@
 
 .product-heading {
     text-align: center;
-    color: #faf03a;
 }
 
 /* ---------------------------------------------------------------------
