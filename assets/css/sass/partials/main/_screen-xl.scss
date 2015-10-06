@@ -16,14 +16,14 @@
 ------------------------------------------------------------------------ */
 .mod-steps {
     height: 432px;
-    padding-right: 10%;
+    padding-right: 6%;
     background: $cornflower url('../img/bg/bg-hands-lg.jpg') no-repeat;
     background-position-x: 0;
     background-size: auto;
 }
 
 .steps-intro {
-    width: 535px;
+    width: 585px;
     margin: 0;
     margin-top: 54px;
     background: none;
@@ -50,10 +50,10 @@
 }
 
 .steps-intro-desc {
-    max-width: inherit;
+    max-width: 90%;
     margin-bottom: 1.5em;
-    font-size: 1.9rem;
-    margin: 0 auto;
+    font-size: 2.1rem;
+    margin:0px;
     padding-top: 0.5em;
 }
 
@@ -64,13 +64,14 @@
 }
 
 .steps-details {
-    width: 535px;
+    width: 585px;
     margin: auto;
 }
 
 .steps-list {
     max-width: inherit;
     margin: 0;
+    margin-top: 40px;
     padding: 0;
 }
 
@@ -83,4 +84,13 @@
     text-align: left;
     margin-top: 3em;
     display: block;
+}
+.slider-heading{
+  font-size: 3.35rem;
+  font-weight: bold;
+}
+.slider-button{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 5px;
 }

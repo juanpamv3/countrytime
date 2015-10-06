@@ -31,6 +31,7 @@
         <link rel="apple-touch-icon" sizes="152x152" href="ct-favicon-152x152.png">
 
         <link rel="stylesheet" href="assets/css/screen-main.css">
+        <link rel="stylesheet" href="assets/css/slider.css" />
         <link rel="stylesheet" href="assets/fonts/filsonpro/MyFontsWebfontsKit.css">
         <script src="bower_components/respond/src/respond.js"></script>
         <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
@@ -222,29 +223,36 @@
                     <ul class="steps-list clearfix">
                         <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-add.svg" alt="Just add water" class="steps-list-icon"><span class="steps-list-detail">Just add water</span></li>
                         <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail">Makes 3 pitchers</span></li>
-                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-no.png" alt="Re-closable bottle" class="steps-list-icon"><span class="steps-list-detail">No artificial flavors or preservatives</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-no.svg" alt="Re-closable bottle" class="steps-list-icon"><span class="steps-list-detail">No artificial flavors or preservatives</span></li>
                     </ul>
                 </div>
 
             </section>
             <!-- /mod-steps -->
 
-            <!-- mod-products -->
-            <section class="mod-products" ng-controller="ProductCtrl">
-                <div class="product-wrap clearfix">
-                    <div class="product-col clearfix" ng-repeat="product in products">
-                        <img class="product-img" ng-src="{{product.image}}" alt="{{product.alt}}">
-                        <div class="product-details">
-                            <h1 class="product-heading" ng-bind-html="product.name"></h1>
-                            <p class="product-desc" ng-bind-html="product.description"></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /mod-products -->
-            <section class="slider" ng-controller="ProductCtrl">
+            <!-- mod-Slider -->
+            <section class="mod-slider">
+
+              <ul id="slippry-demo">
+                <li>
+                  <a href="#slide1"><img src="assets/img/slider/CT_desktop_cucumberthyme_lemonade.jpg" alt="<h1 class='slider-heading'>Cucumber & Thyme<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/cucumber-thyme-lemonade-184146.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+                <li>
+                  <a href="#slide2"><img src="assets/img/slider/CT_desktop_fizzy_pom_lemonade.jpg"  alt="<h1 class='slider-heading'>Fizzy Pomegranate<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/fizzy-pomegranate-lemonade-184242.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+                <li>
+                  <a href="#slide3"><img src="assets/img/slider/CT_desktop_Jalepeno_lemonade.jpg" alt="<h1 class='slider-heading'>Jalapeño<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/jalapeno-lemonade-184205.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+                <li>
+                  <a href="#slide3"><img src="assets/img/slider/CT_desktop_peachtea_lemonade.jpg" alt="<h1 class='slider-heading'>Peach-Tea<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/peach-tea-lemonade-163847.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+                <li>
+                  <a href="#slide3"><img src="assets/img/slider/CT_desktop_sangria.jpg" alt="<h1 class='slider-heading'>Lemonade<br />Sangria</h1><a href='http://www.kraftrecipes.com/recipes/lemonade-sangria-184179.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+              </ul>
 
             </section>
+            <!-- /mod-Slider -->
 
             <!-- mod-feed -->
             <section id="ct-feed" class="mod-feed">
@@ -295,7 +303,7 @@
 
         <div id="fb-root"></div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 
         <script src="bower_components/angular/angular.min.js"></script>
@@ -309,6 +317,8 @@
         <script src="assets/js/controllers/controllers.js"></script>
         <script src="assets/js/directives/directives.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/slippry.min.js"></script>
+
 
         <script>
           window.fbAsyncInit = function() {
@@ -345,6 +355,12 @@
             tagjs.src = "//s.btstatic.com/tag.js#site=KSNUeWE";
             s.parentNode.insertBefore(tagjs, s);
             }());
+        </script>
+        <!-- Slider -->
+        <script>
+          jQuery(document).ready(function(){
+            jQuery('#slippry-demo').slippry()
+          });
         </script>
 
         <noscript>
