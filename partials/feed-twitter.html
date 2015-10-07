@@ -1,4 +1,17 @@
-<div class="ct-profile clearfix">
+<div class="push-content twitter-tile">
+
+	<a class="user-link" href="https://twitter.com/{{item.userName}}" target="_blank"><img src="{{item.userImg}}" alt="{{item.userName}}" target="_blank" />@{{item.userName}} <i class="icon icon-twitter"></i></a>
+	
+	<a href="https://twitter.com/{{item.userName}}/status/{{item.id}}" target="_blank">
+		<img width="302px" src="{{item.image}}" alt="{{item.userName}}" />
+	</a>
+	<span class="twitter-links">
+		<a href="https://twitter.com/intent/tweet?in_reply_to={{item.id}}" target="_blank"><i class="icon icon-reply"></i></a>
+		<a href="https://twitter.com/intent/favorite?tweet_id={{item.id}}" target="_blank"><i class="icon icon-star-filled"></i></a>
+	</span>
+</div>
+
+<!-- <div class="ct-profile clearfix">
 	<a class="pull-left" href="http://twitter.com/{{item.user.screen_name}}" target="_blank">
 		<img ng-src="{{item.user.profile_image_url}}" />
 		<div class="ct-profile-name">
@@ -26,4 +39,4 @@
 		<li><a href="https://twitter.com/intent/retweet?tweet_id={{item.id_str}}" target="_blank"><i class="icon icon-retweet"></i></a></li>
 		<li><a href="https://twitter.com/intent/favorite?tweet_id={{item.id_str}}" target="_blank"><i class="icon icon-star-filled"></i></a></li>
 	</ul>
-</div>
+</div> -->

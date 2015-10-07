@@ -1,0 +1,25 @@
+{
+  "name": "time-of-day",
+  "main": "./dist/time-of-day.js",
+  "version": "0.0.1",
+  "authors": [
+    "Campbell Morgan <campbellmorgan@gmail.com>"
+  ],
+  "description": "Sets a class on any elements that fall within preset times of day",
+  "keywords": [
+    "time",
+    "of",
+    "day",
+    "moment",
+    "now"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/campbellwmorgan/time-of-day",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
