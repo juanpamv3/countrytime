@@ -150,11 +150,9 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	
 	$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
 		.success(function(fbinfo) {
-			console.log(fbinfo.data);
-			//console.log(fbinfo.data[0].picture);
+			//console.log(fbinfo.data);
 
 			for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
-				//console.log(fbinfo.data[i].picture);
 				tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
 			}
 		})
@@ -184,7 +182,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 		$http(twitterGet)
 		.then(function(tweet){
-			console.log(tweet.data);
+			//console.log(tweet.data);
 
 			var imagesTweets = tweet.data.filter(hasImage);
 
