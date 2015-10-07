@@ -430,7 +430,7 @@ html.menu-fix {
 
 .starter-intro {
     background: $white;
-    padding: 1em 2em 9em;
+    padding: 4em 2em 9em;
 }
 
 .starter-intro-heading {
@@ -560,7 +560,7 @@ html.menu-fix {
 .last{
   margin-left: 5px;
 }
-.steps-list-detail {
+.steps-list-detail, .steps-list-detail3  {
     @extend .ct-heading;
     color: $calypso;
     font-size: 1.8rem;
@@ -570,7 +570,6 @@ html.menu-fix {
     top: 38%;
     transform: translateY(-50%);
 }
-
 .steps-legal {
     display: block;
     color: $calypso;
@@ -584,7 +583,7 @@ html.menu-fix {
 ------------------------------------------------------------------------ */
 .mod-products {
     padding: 1.5em 2em;
-    background: $white;
+    background: #fdf89a;
 }
 .product-wrap {
     margin: auto;

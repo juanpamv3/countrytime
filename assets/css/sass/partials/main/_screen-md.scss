@@ -168,7 +168,7 @@
   width: 108px;
   height: 75px;
   position: absolute;
-  left: 57px;
+  left: 60px;
   top: 34px;
   background: url("../img/country-time-logo.png") no-repeat;
   background-size: 100%;
@@ -286,7 +286,17 @@
    line-height: 1.3em;
    padding-right: 1em;
 }
-
+.steps-list-detail3 {
+  color: #296c7b;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  padding-right: 1em;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "FilsonProBold";
+}
 /* ---------------------------------------------------------------------
  Products
 ------------------------------------------------------------------------ */

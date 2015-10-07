@@ -281,7 +281,7 @@
   min-width: 250px;
   bottom: 38%;
   z-index: 12;
-  right: 67px;
+  right: 70px;
   line-height: 2.7em;
 }
   .sy-caption-wrap .sy-caption {
@@ -375,7 +375,7 @@
   }
   .sy-caption-wrap {
     position: absolute;
-    width: 300px;
+    width: 250px;
     bottom: 38%;
     z-index: 12;
     right: 67px;

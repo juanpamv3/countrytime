@@ -731,7 +731,7 @@ ul {
  Typography
 ------------------------------------------------------------------------ */
 /* line 116, sass/partials/main/_base.scss */
-.ct-heading, .starter-intro-heading, .steps-heading, .steps-list-detail, .product-heading {
+.ct-heading, .starter-intro-heading, .steps-heading, .steps-list-detail, .steps-list-detail3, .product-heading {
   font-size: 3.2rem;
   line-height: 1.2em;
   text-align: center;
@@ -1121,7 +1121,7 @@ html.menu-fix .menu-overlay {
 /* line 431, sass/partials/main/_base.scss */
 .starter-intro {
   background: white;
-  padding: 1em 2em 9em;
+  padding: 4em 2em 9em;
 }
 
 /* line 436, sass/partials/main/_base.scss */
@@ -1276,7 +1276,7 @@ html.menu-fix .menu-overlay {
 }
 
 /* line 563, sass/partials/main/_base.scss */
-.steps-list-detail {
+.steps-list-detail, .steps-list-detail3 {
   color: #296c7b;
   font-size: 1.8rem;
   line-height: 1.1em;
@@ -1286,7 +1286,7 @@ html.menu-fix .menu-overlay {
   transform: translateY(-50%);
 }
 
-/* line 574, sass/partials/main/_base.scss */
+/* line 573, sass/partials/main/_base.scss */
 .steps-legal {
   display: block;
   color: #296c7b;
@@ -1298,24 +1298,24 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Products
 ------------------------------------------------------------------------ */
-/* line 585, sass/partials/main/_base.scss */
+/* line 584, sass/partials/main/_base.scss */
 .mod-products {
   padding: 1.5em 2em;
-  background: white;
+  background: #fdf89a;
 }
 
-/* line 589, sass/partials/main/_base.scss */
+/* line 588, sass/partials/main/_base.scss */
 .product-wrap {
   margin: auto;
 }
 
-/* line 593, sass/partials/main/_base.scss */
+/* line 592, sass/partials/main/_base.scss */
 .product-col {
   padding: 1em 0;
   border-top: 1px solid #e7e8e9;
 }
 
-/* line 598, sass/partials/main/_base.scss */
+/* line 597, sass/partials/main/_base.scss */
 .product-img {
   width: 30%;
   margin-right: 5%;
@@ -1323,21 +1323,21 @@ html.menu-fix .menu-overlay {
   float: left;
 }
 
-/* line 605, sass/partials/main/_base.scss */
+/* line 604, sass/partials/main/_base.scss */
 .product-details {
   width: 65%;
   max-width: 20em;
   float: left;
 }
 
-/* line 611, sass/partials/main/_base.scss */
+/* line 610, sass/partials/main/_base.scss */
 .product-heading {
   margin-bottom: 0.5em;
   font-size: 1.5em;
   text-align: left;
 }
 
-/* line 618, sass/partials/main/_base.scss */
+/* line 617, sass/partials/main/_base.scss */
 .product-desc {
   margin: 0;
   padding-right: 1em;
@@ -1348,21 +1348,21 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Slider
 ------------------------------------------------------------------------ */
-/* line 627, sass/partials/main/_base.scss */
+/* line 626, sass/partials/main/_base.scss */
 .mod-slider {
   width: 100%;
   height: auto;
   min-height: 400px;
 }
 
-/* line 632, sass/partials/main/_base.scss */
+/* line 631, sass/partials/main/_base.scss */
 .slider-heading {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 36px;
 }
 
-/* line 638, sass/partials/main/_base.scss */
+/* line 637, sass/partials/main/_base.scss */
 .slider-button {
   font-size: 2rem;
   font-weight: bold;
@@ -1372,18 +1372,18 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Feed
 ------------------------------------------------------------------------ */
-/* line 647, sass/partials/main/_base.scss */
+/* line 646, sass/partials/main/_base.scss */
 .mod-feed {
   width: 320px;
   margin: auto;
   padding-top: 3em;
 }
-/* line 652, sass/partials/main/_base.scss */
+/* line 651, sass/partials/main/_base.scss */
 .mod-feed .container {
   padding: 0;
 }
 
-/* line 657, sass/partials/main/_base.scss */
+/* line 656, sass/partials/main/_base.scss */
 .ct-feed-item {
   width: 320px;
   padding: 9px;
@@ -1392,61 +1392,61 @@ html.menu-fix .menu-overlay {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 662, sass/partials/main/_base.scss */
+/* line 661, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 665, sass/partials/main/_base.scss */
+/* line 664, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon, .ct-feed-item .ct-social .ct-media > .icon-round, .ct-social .ct-feed-item .ct-media > .icon-round {
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: white;
 }
-/* line 670, sass/partials/main/_base.scss */
+/* line 669, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon:before, .ct-feed-item .ct-social .ct-media > .icon-round:before, .ct-social .ct-feed-item .ct-media > .icon-round:before {
   text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.6);
 }
-/* line 675, sass/partials/main/_base.scss */
+/* line 674, sass/partials/main/_base.scss */
 .ct-feed-item .icon, .ct-feed-item .ct-social .icon-round, .ct-social .ct-feed-item .icon-round {
   font-size: 2.1rem;
 }
-/* line 678, sass/partials/main/_base.scss */
+/* line 677, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile {
   margin-bottom: 10px;
 }
-/* line 680, sass/partials/main/_base.scss */
+/* line 679, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name {
   padding: 0;
   margin: 5px 0 0 58px;
 }
-/* line 683, sass/partials/main/_base.scss */
+/* line 682, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name strong {
   display: block;
 }
-/* line 686, sass/partials/main/_base.scss */
+/* line 685, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name b {
   font-size: 1.2rem;
   color: #969696;
 }
-/* line 691, sass/partials/main/_base.scss */
+/* line 690, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile img {
   float: left;
 }
-/* line 694, sass/partials/main/_base.scss */
+/* line 693, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover {
   text-decoration: none;
 }
-/* line 696, sass/partials/main/_base.scss */
+/* line 695, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong {
   text-decoration: underline;
 }
-/* line 699, sass/partials/main/_base.scss */
+/* line 698, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong, .ct-feed-item .ct-profile a:hover .icon, .ct-feed-item .ct-profile a:hover .ct-social .icon-round, .ct-social .ct-feed-item .ct-profile a:hover .icon-round {
   color: #15682b;
 }
-/* line 704, sass/partials/main/_base.scss */
+/* line 703, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata {
   display: block;
   margin: 15px 0 5px;
@@ -1454,28 +1454,28 @@ html.menu-fix .menu-overlay {
   color: #969696;
   font-size: 1.1rem;
 }
-/* line 710, sass/partials/main/_base.scss */
+/* line 709, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata > * {
   display: inline-block;
 }
-/* line 713, sass/partials/main/_base.scss */
+/* line 712, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata .icon, .ct-feed-item .ct-metadata .ct-social .icon-round, .ct-social .ct-feed-item .ct-metadata .icon-round {
   font-size: 1.8rem;
 }
-/* line 716, sass/partials/main/_base.scss */
+/* line 715, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul {
   list-style: none;
   margin: 0;
 }
-/* line 719, sass/partials/main/_base.scss */
+/* line 718, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul li {
   display: inline-block;
 }
-/* line 725, sass/partials/main/_base.scss */
+/* line 724, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-profile {
   margin-bottom: 15px;
 }
-/* line 728, sass/partials/main/_base.scss */
+/* line 727, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-timestamp {
   margin-top: 6px;
 }
@@ -1483,7 +1483,7 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Footer
 ------------------------------------------------------------------------ */
-/* line 737, sass/partials/main/_base.scss */
+/* line 736, sass/partials/main/_base.scss */
 .mod-footer {
   width: 100%;
   height: 10em;
@@ -1503,13 +1503,13 @@ html.menu-fix .menu-overlay {
   transition: all 0.35s ease-in-out 0s;
 }
 
-/* line 756, sass/partials/main/_base.scss */
+/* line 755, sass/partials/main/_base.scss */
 .ct-footer-menu {
   list-style: none;
   padding: 0;
 }
 
-/* line 761, sass/partials/main/_base.scss */
+/* line 760, sass/partials/main/_base.scss */
 .ct-footer-list {
   display: inline-block;
   padding: 0 0.5em;
@@ -1778,7 +1778,7 @@ html.menu-fix .menu-overlay {
     width: 108px;
     height: 75px;
     position: absolute;
-    left: 57px;
+    left: 60px;
     top: 34px;
     background: url("../img/country-time-logo.png") no-repeat;
     background-size: 100%;
@@ -1918,15 +1918,28 @@ html.menu-fix .menu-overlay {
     padding-right: 1em;
   }
 
+  /* line 289, sass/partials/main/_screen-md.scss */
+  .steps-list-detail3 {
+    color: #296c7b;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    padding-right: 1em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FilsonProBold";
+  }
+
   /* ---------------------------------------------------------------------
    Products
   ------------------------------------------------------------------------ */
-  /* line 293, sass/partials/main/_screen-md.scss */
+  /* line 303, sass/partials/main/_screen-md.scss */
   .product-col {
     width: 33%;
   }
 
-  /* line 297, sass/partials/main/_screen-md.scss */
+  /* line 307, sass/partials/main/_screen-md.scss */
   .product-heading {
     text-align: center;
   }
@@ -1934,16 +1947,16 @@ html.menu-fix .menu-overlay {
   /* ---------------------------------------------------------------------
    Footer
   ------------------------------------------------------------------------ */
-  /* line 304, sass/partials/main/_screen-md.scss */
+  /* line 314, sass/partials/main/_screen-md.scss */
   .ct-footer-list {
     padding: 0;
   }
-  /* line 306, sass/partials/main/_screen-md.scss */
+  /* line 316, sass/partials/main/_screen-md.scss */
   .ct-footer-list:before {
     content: " | ";
     padding: 0 .5em;
   }
-  /* line 310, sass/partials/main/_screen-md.scss */
+  /* line 320, sass/partials/main/_screen-md.scss */
   .ct-footer-list:first-child:before {
     content: "";
     padding-left: 0;
@@ -2098,7 +2111,7 @@ html.menu-fix .menu-overlay {
 
   /* line 25, sass/partials/main/_screen-xl.scss */
   .steps-intro {
-    width: 585px;
+    width: 588px;
     margin: 0;
     margin-top: 54px;
     background: none;
@@ -2179,10 +2192,11 @@ html.menu-fix .menu-overlay {
   /* line 91, sass/partials/main/_screen-xl.scss */
   .slider-heading {
     font-size: 3.4rem;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: 2px;
   }
 
-  /* line 95, sass/partials/main/_screen-xl.scss */
+  /* line 96, sass/partials/main/_screen-xl.scss */
   .slider-button {
     font-size: 2.4rem;
     font-weight: bold;
