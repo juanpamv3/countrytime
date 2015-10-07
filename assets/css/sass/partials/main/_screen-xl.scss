@@ -54,7 +54,8 @@
     margin-bottom: 1.5em;
     font-size: 2.1rem;
     margin:0px;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
+    line-height: 2.6rem;
 }
 
 .steps-img {
@@ -64,21 +65,23 @@
 }
 
 .steps-details {
-    width: 585px;
+    width: 595px;
     margin: auto;
 }
 
 .steps-list {
     max-width: inherit;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 37px;
     padding: 0;
 }
 
 .steps-list-detail {
-   font-size: 1.35rem;
+   font-size: 1.5rem;
 }
-
+.steps-list-icon .last{
+  margin-left: 3px;
+}
 .steps-legal {
     width: 48em;
     text-align: left;
@@ -86,11 +89,10 @@
     display: block;
 }
 .slider-heading{
-  font-size: 3.35rem;
+  font-size: 3.4rem;
   font-weight: bold;
 }
 .slider-button{
   font-size: 2.4rem;
   font-weight: bold;
-  margin-top: 5px;
 }

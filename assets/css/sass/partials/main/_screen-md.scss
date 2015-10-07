@@ -27,7 +27,7 @@
     .ct-social {
         width: 50px;
         padding: 0;
-        right: 3em;
+        right: 2.8em
     }
     .social-heading {
         color: $white;
@@ -36,15 +36,15 @@
         display: block;
     }
     .icon-round {
-        width: 2.2em;
-        height: 2.2em;
+        width: 2.4em;
+        height: 2.4em;
         border-radius: 50%;
         background: none;
         color: $white;
         border: 0.1em solid $white;
         @include transition-mixin (all, 170ms, ease-out);
         &:before {
-            margin: 0.15em 0 0 0.3em;
+            margin: 0.17em 0 0 0.4em;
         }
         &:hover {
             @include transform-mixin (scale(1.1));
@@ -270,13 +270,13 @@
 }
 
 .steps-list-bullet {
-    width: 33%;
+    width: 33.334%;
     margin: 0;
     float: left;
 }
 
 .steps-list-icon {
-    width: 4em;
+    width: 4.4em;
     margin-right: 1em;
     float: left;
 }

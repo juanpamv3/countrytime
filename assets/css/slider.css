@@ -101,6 +101,10 @@
     -webkit-transform: translateY(-20%) translateX(-10%);
     transform: translateY(-20%) translateX(-10%); } }
 /* added to the original element calling slippry */
+.sy-box{
+  min-height: 400px;
+}
+
 .sy-box.sy-loading {
   background: url("../img/slider/sy-loader.gif") 50% 50% no-repeat;
   -moz-background-size: 32px;
@@ -273,14 +277,15 @@
 /* captions, styled fo the overlay variant */
 .sy-caption-wrap {
   position: absolute;
-  bottom: 40%;
+  width: 364px;
+  min-width: 250px;
+  bottom: 38%;
   z-index: 12;
-  left: 73.5%;
+  right: 67px;
   line-height: 2.7em;
 }
   .sy-caption-wrap .sy-caption {
     position: relative;
-    left: -50%;
     color: #fff;
     -moz-border-radius: 1.2em;
     -webkit-border-radius: 1.2em;
@@ -289,17 +294,22 @@
       background-color: #19860e;
       -moz-border-radius: 0.2em;
       -webkit-border-radius: 0.2em;
+      margin-top: 20px;
       border-radius: 0.2em;
-      padding: 20px 40px;
+      padding: 20px 50px;
       color: #FFF;
       font-weight: 600;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: left;
+
+     }
     .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
       text-decoration: none; }
   @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
 
       .sy-caption-wrap{
         position: absolute;
+        min-width: 250px;
         bottom: 40%;
         z-index: 12;
         line-height: 2.7em;
@@ -315,7 +325,7 @@
   width: 50%;
   height: 25px;
   margin: 1em 0 0;
-  margin-top: -50px;
+  margin-top: -52px;
   padding: 0;
   padding-left: 30px;
   list-style: none;
@@ -324,9 +334,9 @@
 }
   .sy-pager li {
     display: inline-block;
-    width: 1.2em;
-    height: 1.2em;
-    margin: 0 1em 0 0;
+    width: 1.3em;
+    height: 1.3em;
+    margin: 0 0.8em 0 0;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%; }
@@ -363,6 +373,14 @@
     width: 120%;
     min-height:400px;
   }
+  .sy-caption-wrap {
+    position: absolute;
+    width: 300px;
+    bottom: 38%;
+    z-index: 12;
+    right: 67px;
+    line-height: 2.7em;
+}
 }
 @media screen and (max-width: 640px) {
   .sy-box{
@@ -370,10 +388,6 @@
   }
   .sy-slides-wrap{
     min-height:400px;
-  }
-  .sy-caption-wrap{
-    width: 150px;
-    left: 60%;
   }
   .sy-slide{
     width: 130%;
@@ -386,7 +400,6 @@
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    text-align: right;
   }
   .sy-slide > a > img {
     margin: 0;

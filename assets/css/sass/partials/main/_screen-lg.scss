@@ -48,10 +48,15 @@ main {
 .product-desc {
     margin: 0;
     padding-top: 3px;
-    padding-right: 1em;
     font-size: 1.4rem;
     color: #FFF;
     font-weight: bold;
+}
+.first-product-img{
+  padding-right: 4px;
+}
+.first-product-heading{
+  padding-right: 8px;
 }
 /* ---------------------------------------------------------------------
  Footer
@@ -71,4 +76,15 @@ main {
             @include transform-mixin (scale(1.1));
         }
     }
+}
+.steps-list-detail3 {
+    @extend .ct-heading;
+    color: $calypso;
+    font-size: 1.5rem;
+    line-height: 1.1em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FilsonProBold";
 }

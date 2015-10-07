@@ -41,9 +41,9 @@
 
 /* Transitions and Transforms */
 /* example transform/transition */
-    /* transform
-    @include transform-mixin(translateY(-100%));
-    /* transform transition
+    /* transform 
+    @include transform-mixin(translateY(-100%));   
+    /* transform transition 
     @include transform-transition-mixin(0.3s ease-in-out);
 */
 /* Animation */
@@ -1270,18 +1270,23 @@ html.menu-fix .menu-overlay {
   float: left;
 }
 
-/* line 561, sass/partials/main/_base.scss */
+/* line 560, sass/partials/main/_base.scss */
+.last {
+  margin-left: 5px;
+}
+
+/* line 563, sass/partials/main/_base.scss */
 .steps-list-detail {
   color: #296c7b;
   font-size: 1.8rem;
   line-height: 1.1em;
   text-align: left;
   position: absolute;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%);
 }
 
-/* line 572, sass/partials/main/_base.scss */
+/* line 574, sass/partials/main/_base.scss */
 .steps-legal {
   display: block;
   color: #296c7b;
@@ -1293,30 +1298,24 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Module: Products
 ------------------------------------------------------------------------ */
-/* line 583, sass/partials/main/_base.scss */
+/* line 585, sass/partials/main/_base.scss */
 .mod-products {
   padding: 1.5em 2em;
   background: white;
 }
 
-/* line 587, sass/partials/main/_base.scss */
-.mod-slider {
-  width: 100%;
-  height: auto;
-}
-
-/* line 591, sass/partials/main/_base.scss */
+/* line 589, sass/partials/main/_base.scss */
 .product-wrap {
   margin: auto;
 }
 
-/* line 595, sass/partials/main/_base.scss */
+/* line 593, sass/partials/main/_base.scss */
 .product-col {
   padding: 1em 0;
   border-top: 1px solid #e7e8e9;
 }
 
-/* line 600, sass/partials/main/_base.scss */
+/* line 598, sass/partials/main/_base.scss */
 .product-img {
   width: 30%;
   margin-right: 5%;
@@ -1324,21 +1323,21 @@ html.menu-fix .menu-overlay {
   float: left;
 }
 
-/* line 607, sass/partials/main/_base.scss */
+/* line 605, sass/partials/main/_base.scss */
 .product-details {
   width: 65%;
   max-width: 20em;
   float: left;
 }
 
-/* line 613, sass/partials/main/_base.scss */
+/* line 611, sass/partials/main/_base.scss */
 .product-heading {
   margin-bottom: 0.5em;
   font-size: 1.5em;
   text-align: left;
 }
 
-/* line 620, sass/partials/main/_base.scss */
+/* line 618, sass/partials/main/_base.scss */
 .product-desc {
   margin: 0;
   padding-right: 1em;
@@ -1347,20 +1346,44 @@ html.menu-fix .menu-overlay {
 }
 
 /* ---------------------------------------------------------------------
+ Module: Slider
+------------------------------------------------------------------------ */
+/* line 627, sass/partials/main/_base.scss */
+.mod-slider {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+/* line 632, sass/partials/main/_base.scss */
+.slider-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+
+/* line 638, sass/partials/main/_base.scss */
+.slider-button {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* ---------------------------------------------------------------------
  Module: Feed
 ------------------------------------------------------------------------ */
-/* line 630, sass/partials/main/_base.scss */
+/* line 647, sass/partials/main/_base.scss */
 .mod-feed {
   width: 320px;
   margin: auto;
   padding-top: 3em;
 }
-/* line 635, sass/partials/main/_base.scss */
+/* line 652, sass/partials/main/_base.scss */
 .mod-feed .container {
   padding: 0;
 }
 
-/* line 640, sass/partials/main/_base.scss */
+/* line 657, sass/partials/main/_base.scss */
 .ct-feed-item {
   width: 320px;
   padding: 9px;
@@ -1369,61 +1392,61 @@ html.menu-fix .menu-overlay {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 645, sass/partials/main/_base.scss */
+/* line 662, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 648, sass/partials/main/_base.scss */
+/* line 665, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon, .ct-feed-item .ct-social .ct-media > .icon-round, .ct-social .ct-feed-item .ct-media > .icon-round {
   position: absolute;
   bottom: 5px;
   right: 5px;
   color: white;
 }
-/* line 653, sass/partials/main/_base.scss */
+/* line 670, sass/partials/main/_base.scss */
 .ct-feed-item .ct-media > .icon:before, .ct-feed-item .ct-social .ct-media > .icon-round:before, .ct-social .ct-feed-item .ct-media > .icon-round:before {
   text-shadow: 0 0.05em 0.2em rgba(0, 0, 0, 0.6);
 }
-/* line 658, sass/partials/main/_base.scss */
+/* line 675, sass/partials/main/_base.scss */
 .ct-feed-item .icon, .ct-feed-item .ct-social .icon-round, .ct-social .ct-feed-item .icon-round {
   font-size: 2.1rem;
 }
-/* line 661, sass/partials/main/_base.scss */
+/* line 678, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile {
   margin-bottom: 10px;
 }
-/* line 663, sass/partials/main/_base.scss */
+/* line 680, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name {
   padding: 0;
   margin: 5px 0 0 58px;
 }
-/* line 666, sass/partials/main/_base.scss */
+/* line 683, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name strong {
   display: block;
 }
-/* line 669, sass/partials/main/_base.scss */
+/* line 686, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile .ct-profile-name b {
   font-size: 1.2rem;
   color: #969696;
 }
-/* line 674, sass/partials/main/_base.scss */
+/* line 691, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile img {
   float: left;
 }
-/* line 677, sass/partials/main/_base.scss */
+/* line 694, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover {
   text-decoration: none;
 }
-/* line 679, sass/partials/main/_base.scss */
+/* line 696, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong {
   text-decoration: underline;
 }
-/* line 682, sass/partials/main/_base.scss */
+/* line 699, sass/partials/main/_base.scss */
 .ct-feed-item .ct-profile a:hover strong, .ct-feed-item .ct-profile a:hover .icon, .ct-feed-item .ct-profile a:hover .ct-social .icon-round, .ct-social .ct-feed-item .ct-profile a:hover .icon-round {
   color: #15682b;
 }
-/* line 687, sass/partials/main/_base.scss */
+/* line 704, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata {
   display: block;
   margin: 15px 0 5px;
@@ -1431,28 +1454,28 @@ html.menu-fix .menu-overlay {
   color: #969696;
   font-size: 1.1rem;
 }
-/* line 693, sass/partials/main/_base.scss */
+/* line 710, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata > * {
   display: inline-block;
 }
-/* line 696, sass/partials/main/_base.scss */
+/* line 713, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata .icon, .ct-feed-item .ct-metadata .ct-social .icon-round, .ct-social .ct-feed-item .ct-metadata .icon-round {
   font-size: 1.8rem;
 }
-/* line 699, sass/partials/main/_base.scss */
+/* line 716, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul {
   list-style: none;
   margin: 0;
 }
-/* line 702, sass/partials/main/_base.scss */
+/* line 719, sass/partials/main/_base.scss */
 .ct-feed-item .ct-metadata ul li {
   display: inline-block;
 }
-/* line 708, sass/partials/main/_base.scss */
+/* line 725, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-profile {
   margin-bottom: 15px;
 }
-/* line 711, sass/partials/main/_base.scss */
+/* line 728, sass/partials/main/_base.scss */
 .ct-feed-item.ct-twitter .ct-timestamp {
   margin-top: 6px;
 }
@@ -1460,7 +1483,7 @@ html.menu-fix .menu-overlay {
 /* ---------------------------------------------------------------------
  Footer
 ------------------------------------------------------------------------ */
-/* line 720, sass/partials/main/_base.scss */
+/* line 737, sass/partials/main/_base.scss */
 .mod-footer {
   width: 100%;
   height: 10em;
@@ -1480,13 +1503,13 @@ html.menu-fix .menu-overlay {
   transition: all 0.35s ease-in-out 0s;
 }
 
-/* line 739, sass/partials/main/_base.scss */
+/* line 756, sass/partials/main/_base.scss */
 .ct-footer-menu {
   list-style: none;
   padding: 0;
 }
 
-/* line 744, sass/partials/main/_base.scss */
+/* line 761, sass/partials/main/_base.scss */
 .ct-footer-list {
   display: inline-block;
   padding: 0 0.5em;
@@ -1584,7 +1607,7 @@ html.menu-fix .menu-overlay {
   .mod-intro .ct-social {
     width: 50px;
     padding: 0;
-    right: 3em;
+    right: 2.8em;
   }
   /* line 32, sass/partials/main/_screen-md.scss */
   .mod-intro .social-heading {
@@ -1595,8 +1618,8 @@ html.menu-fix .menu-overlay {
   }
   /* line 38, sass/partials/main/_screen-md.scss */
   .mod-intro .icon-round {
-    width: 2.2em;
-    height: 2.2em;
+    width: 2.4em;
+    height: 2.4em;
     border-radius: 50%;
     background: none;
     color: white;
@@ -1608,7 +1631,7 @@ html.menu-fix .menu-overlay {
   }
   /* line 46, sass/partials/main/_screen-md.scss */
   .mod-intro .icon-round:before {
-    margin: 0.15em 0 0 0.3em;
+    margin: 0.17em 0 0 0.4em;
   }
   /* line 49, sass/partials/main/_screen-md.scss */
   .mod-intro .icon-round:hover {
@@ -1876,14 +1899,14 @@ html.menu-fix .menu-overlay {
 
   /* line 272, sass/partials/main/_screen-md.scss */
   .steps-list-bullet {
-    width: 33%;
+    width: 33.334%;
     margin: 0;
     float: left;
   }
 
   /* line 278, sass/partials/main/_screen-md.scss */
   .steps-list-icon {
-    width: 4em;
+    width: 4.4em;
     margin-right: 1em;
     float: left;
   }
@@ -1991,16 +2014,25 @@ html.menu-fix .menu-overlay {
   .product-desc {
     margin: 0;
     padding-top: 3px;
-    padding-right: 1em;
     font-size: 1.4rem;
     color: #FFF;
     font-weight: bold;
   }
 
+  /* line 55, sass/partials/main/_screen-lg.scss */
+  .first-product-img {
+    padding-right: 4px;
+  }
+
+  /* line 58, sass/partials/main/_screen-lg.scss */
+  .first-product-heading {
+    padding-right: 8px;
+  }
+
   /* ---------------------------------------------------------------------
    Footer
   ------------------------------------------------------------------------ */
-  /* line 59, sass/partials/main/_screen-lg.scss */
+  /* line 64, sass/partials/main/_screen-lg.scss */
   .mod-footer {
     height: 8em;
     bottom: -8em;
@@ -2008,7 +2040,7 @@ html.menu-fix .menu-overlay {
     margin-left: auto;
     font-size: 1.4rem;
   }
-  /* line 67, sass/partials/main/_screen-lg.scss */
+  /* line 72, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon, .mod-footer .ct-social .icon-round {
     font-size: 1.5rem;
     -moz-transition: all 170ms ease-out 0s;
@@ -2016,12 +2048,24 @@ html.menu-fix .menu-overlay {
     -webkit-transition: all 170ms ease-out 0s;
     transition: all 170ms ease-out 0s;
   }
-  /* line 70, sass/partials/main/_screen-lg.scss */
+  /* line 75, sass/partials/main/_screen-lg.scss */
   .mod-footer .ct-social .icon:hover, .mod-footer .ct-social .icon-round:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
+  }
+
+  /* line 80, sass/partials/main/_screen-lg.scss */
+  .steps-list-detail3 {
+    color: #296c7b;
+    font-size: 1.5rem;
+    line-height: 1.1em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FilsonProBold";
   }
 }
 /* X-Large View */
@@ -2089,36 +2133,42 @@ html.menu-fix .menu-overlay {
     margin-bottom: 1.5em;
     font-size: 2.1rem;
     margin: 0px;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
+    line-height: 2.6rem;
   }
 
-  /* line 60, sass/partials/main/_screen-xl.scss */
+  /* line 61, sass/partials/main/_screen-xl.scss */
   .steps-img {
     margin: 0;
     padding: 0;
     background: none;
   }
 
-  /* line 66, sass/partials/main/_screen-xl.scss */
+  /* line 67, sass/partials/main/_screen-xl.scss */
   .steps-details {
-    width: 585px;
+    width: 595px;
     margin: auto;
   }
 
-  /* line 71, sass/partials/main/_screen-xl.scss */
+  /* line 72, sass/partials/main/_screen-xl.scss */
   .steps-list {
     max-width: inherit;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 37px;
     padding: 0;
   }
 
-  /* line 78, sass/partials/main/_screen-xl.scss */
+  /* line 79, sass/partials/main/_screen-xl.scss */
   .steps-list-detail {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   /* line 82, sass/partials/main/_screen-xl.scss */
+  .steps-list-icon .last {
+    margin-left: 3px;
+  }
+
+  /* line 85, sass/partials/main/_screen-xl.scss */
   .steps-legal {
     width: 48em;
     text-align: left;
@@ -2126,16 +2176,15 @@ html.menu-fix .menu-overlay {
     display: block;
   }
 
-  /* line 88, sass/partials/main/_screen-xl.scss */
+  /* line 91, sass/partials/main/_screen-xl.scss */
   .slider-heading {
-    font-size: 3.35rem;
+    font-size: 3.4rem;
     font-weight: bold;
   }
 
-  /* line 92, sass/partials/main/_screen-xl.scss */
+  /* line 95, sass/partials/main/_screen-xl.scss */
   .slider-button {
     font-size: 2.4rem;
     font-weight: bold;
-    margin-top: 5px;
   }
 }
