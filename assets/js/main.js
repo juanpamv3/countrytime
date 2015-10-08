@@ -14,9 +14,9 @@ var VSA = VSA || {};
 
 var packeryContainer = document.querySelector("#ct-feed > .container");
 
-VSA.packery = new Packery(packeryContainer, {gutter:16, isLayoutInstant: true, transitionDuration: "0"});
+VSA.packery = new Packery(packeryContainer, {gutter:0, isLayoutInstant: true, transitionDuration: "0"});
 VSA.packery.bindResize();
-VSA.packery.items.splice(1,1);
+//VSA.packery.items.splice(1,1);
 
 window.onload = function() {
 	VSA.packery.layout();
@@ -30,7 +30,6 @@ var VSA = VSA || {};
 (function($) {
 
     $(function() {
-
         // Initialize fastclick (remove 300ms delay)
         VSA.FastClick.init();
         

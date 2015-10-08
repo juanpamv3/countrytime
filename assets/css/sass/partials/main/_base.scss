@@ -643,20 +643,103 @@ html.menu-fix {
 /* ---------------------------------------------------------------------
  Module: Feed
 ------------------------------------------------------------------------ */
-.mod-feed  {
-    width: 320px;
-    margin: auto;
-    padding-top: 3em;
-    //padding-bottom: 15em;
-    .container {
-        padding: 0;
+.push-content{
+    margin: 0px;
+    padding: 10px 10px 45px;
+    background-color: $white;
+    position: relative;
+}
+
+.user-link{
+    position: relative;
+    color: #71cee7;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 26px;
+    padding: 8px 27px 12px 11px;
+
+    img{
+        width: 26px;
+        height: auto;
+        float: left;
+        margin-right: 5px;
+    }
+
+    i.icon-twitter{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        font-size: 18px;
+        margin-top: -14px;
     }
 }
 
+.twitter-tile{
+    padding-bottom: 84px;
+
+    img{
+        vertical-align: bottom;
+    }
+}
+
+.twitter-links{
+    position: absolute;
+    bottom: 2px;
+    right: 7px;
+
+    .icon-reply{
+        margin-right: 34px;
+    }
+
+    .icon-reply,
+    .icon-star-filled{
+        color: #71cee7;
+    }
+}
+
+.fb-message,
+.fb-title{
+    font-size: 18px;
+    font-family: MyriadPro-Regular, 'Myriad Pro Regular', MyriadPro, 'Myriad Pro', Helvetica, Arial, sans-serif;;
+}
+
+.fb-title{
+    color: #71cee7;
+    margin: 7px 7px 0;
+    font-weight: 600;
+}
+
+.fb-icon{
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 11px;
+}
+
+.fb-message{
+    color: #a9a9a9;
+    margin: 2px 7px 0;
+    line-height: 25px;
+    word-break: break-word;
+}
+
+
+
+.fb-like-box{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -24px; 
+}
+
+.ct-feed-container{
+    min-height: 200px;
+    background: red;
+}
+
 .ct-feed-item {
-    width: 320px;
-    padding: 9px;
-    background-color: $white;
+    width: 342px;
+    padding: 8px;
     @include box-mixin;
     .ct-media {
         margin-bottom: 10px;

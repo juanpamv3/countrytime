@@ -143,7 +143,72 @@ ctControllers.controller("ProductCtrl", ['$scope', '$http', function($scope, $ht
 ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce) {
 	var entityIDs = {good:0, better:0, best:0},
 	locked = false,
-	tips = [
+	tips = [],
+	tweets = [];
+
+	var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
+	
+	$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
+		.success(function(fbinfo) {
+			//console.log(fbinfo.data);
+
+			for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
+				tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
+			}
+		})
+		.then(function(){
+			$scope.loadItems();
+		})
+
+
+		var twitterGet = {
+			method: 'GET',
+			url: 'data/twitter-posts.json',
+			headers: {
+				'Access-Control-Allow-Origin': 'http://stg.seetheworlddigital.com:7008/',
+			    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+			    'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
+				'Authorization': 'OAuth oauth_consumer_key="Xf6eQrmUbzRSRJpp4qt7vuMbk", oauth_nonce="94d998441ab1709d28c672c90067f2f4", oauth_signature="X1MYa8%2FeN2lz8HFVcUZP7qFrP7s%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444248207", oauth_token="226205342-HYuvoXmHTlSo7fdvawKXTnj8Fbp5DOPWkv65D8fg", oauth_version="1.0"'
+			}
+		};
+
+		function hasImage(x){
+			if(x.entities && x.entities.media){
+				if (x.entities.media[0].media_url){
+					return true;
+				}
+			}
+		}
+
+		$http(twitterGet)
+		.then(function(tweet){
+			//console.log(tweet.data);
+
+			var imagesTweets = tweet.data.filter(hasImage);
+
+			for(var i = 0, max = imagesTweets.length; i < max; i+=1){
+
+				tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'})
+
+			}
+
+			//$scope.loadItems();
+
+		});
+
+		// TO TEST IF TWITTER IS RECEAVING INFO
+		/*http(twitterGet)
+		.then(function(tweet){
+			console.log(tweet);
+		}, function(){
+			console.log(':(');
+		});*/
+
+
+	// });
+
+
+	/*tips = [
 		{image: "lemonadestandtacular.jpg", link:"CountryTime-StandPlan.pdf", tracking: null, network:'sip', category:'tip'},
 		{image: "alexlemonadestand.jpg", link:"http://www.alexslemonade.org", tracking: "alexTipPromo", network:'sip', category:'tip'},
 		{image: "berry-lemonade-starter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
@@ -169,7 +234,9 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 		{image: "sipdontguzzle.jpg", link: null, tracking: null, network:'sip', category:'tip'},
 		//{image: "siptip-pretzels.jpg", link: null, tracking: null, network:'sip', category:'tip'},
 		{image: "soeasytomake.jpg", link: null, tracking: null, network:'sip', category:'tip'}
-	];
+	];*/
+
+
 
 	// shuffle(tips);
 
@@ -225,7 +292,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
   //       $scope.items = $scope.items.concat(_newData);	
         
   //       locked = false;
-  		var all = tips.concat(videos);
+  		var all = tips.concat(tweets);
   		shuffle(all);
 
   		$scope.items = $scope.items.concat(all);
@@ -330,7 +397,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 		return array;
 	}
 
-	$scope.loadItems();
+	// $scope.loadItems();
 }]);
 
 

@@ -258,13 +258,11 @@
             <section id="ct-feed" class="mod-feed">
                 <!-- <div class="container" ng-controller="FeedCtrl" infinite-scroll="loadItems()"> -->
                 <div class="container" ng-controller="FeedCtrl">
-                    <div class="ct-feed-item stamp">
-                        <img src="assets/img/tips/lemonade-uniquestand.jpg" />
-                    </div>
 
                     <div class="ct-feed-item ct-{{item.network}} ct-category-{{item.category}} clearfix" ng-repeat="item in items" ct-packery>
                         <div ng-include="getTemplate(item)" onload="templateLoaded()"></div>
                     </div>
+
                 </div>
             </section>
             <!-- /mod-feed -->
@@ -323,7 +321,7 @@
         <script>
           window.fbAsyncInit = function() {
             FB.init({
-              appId      : '168792829945245',
+              appId      : '1499512393676298', //1499512393676298 --> original 168792829945245
               status     : true,
               xfbml      : true
             });
