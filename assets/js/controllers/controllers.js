@@ -106,37 +106,13 @@ ctControllers.controller("FeatureCtrl", ['$scope', '$http', function($scope, $ht
 ctControllers.controller("ProductCtrl", ['$scope', '$http', function($scope, $http) {
 	var _products = [];
 
-	$http.get("data/products.json").success(function(data) {
+	$http.get(window.location.href + "data/products.json").success(function(data) {
 		_products = data[0].products;
 /* 		testMatches(); */
         $scope.products=_products;
 	});
 
-/*
-	function testMatches(e) {
-		var keys = ["sm", "md", "lg"], i = 0, cs = null, _w = $(window).width();
 
-		if (_w > 1024) {
-			cs = "lg";
-		} else if (_w >= 640) {
-			cs = "md";
-		} else {
-			cs = "sm";
-		}
-
-		if (e) {
-			$scope.$apply(function() {
-				$scope.contentScale = cs;
-				$scope.products = cs == "sm" ? [] : _products;
-			});
-		} else {
-			$scope.contentScale = cs;
-			$scope.products = cs == "sm" ? [] : _products;
-		}
-	}
-
-	$(window).resize(testMatches);
-*/
 }]);
 
 /* === Feed === */
@@ -149,48 +125,73 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
 	
 	$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
-		.success(function(fbinfo) {
-			//console.log(fbinfo.data);
+	.success(function(fbinfo) {
+		//console.log(fbinfo.data);
 
-			for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
-				tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
-			}
-		})
-		.then(function(){
-			$scope.loadItems();
-		});
+		for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
+			tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
+		}
+	})
+	.then(function(){
+		$scope.loadItems();
+	});
 
-		// TWITTER GET
-		var twitterGet = {
-			method: 'GET',
-			url: 'data/twitter-posts.json',
-			headers: {
-				'Access-Control-Allow-Origin': 'http://stg.seetheworlddigital.com:7008/',
-			    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
-			    'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With',
-				'Authorization': 'OAuth oauth_consumer_key="Xf6eQrmUbzRSRJpp4qt7vuMbk", oauth_nonce="94d998441ab1709d28c672c90067f2f4", oauth_signature="X1MYa8%2FeN2lz8HFVcUZP7qFrP7s%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444248207", oauth_token="226205342-HYuvoXmHTlSo7fdvawKXTnj8Fbp5DOPWkv65D8fg", oauth_version="1.0"'
-			}
-		};
 
-		// HELPER FOR FILTER FUNCTION
-		function hasImage(x){
-			if(x.entities && x.entities.media){
-				if (x.entities.media[0].media_url){
-					return true;
-				}
+
+
+
+	// TWITTER GET
+	var twitterGet = {
+		method: 'GET',
+		//url: window.location.href + 'data/twitter-posts.json'
+		url: window.location.href + 'data/littleApp.php',
+		dataType: 'jsonp',
+		//url: 'http://stg.seetheworlddigital.com:7008/countrytime/data/twitter-posts.json'
+	};
+
+
+
+	/*$.getJSON('data/tweets_json.php', function(data){
+		console.log(data);
+	});*/
+
+
+
+	// HELPER FOR FILTER FUNCTION
+	function hasImage(x){
+		if(x.entities && x.entities.media){
+			if (x.entities.media[0].media_url){
+				return true;
 			}
 		}
+	}
 
-		/// TRYING TO GET DATA FROM TWITTER - CURRENT OAUTH LAST ONLY 15 MINUTES WE NEED TO UPDATE THEM 
+	///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	$http(twitterGet)
+	.then(function(tweet){
+		console.log(tweet);
+
+		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
+		/*var imagesTweets = tweet.data.filter(hasImage);
+
+		for(var i = 0, max = imagesTweets.length; i < max; i+=1){
+			tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'});
+		}*/
+		//$scope.loadItems();
+	});
+
+
+
+		/// TRYING TO GET DATA FROM TWITTER - CURRENT OAUTH LAST ONLY 15 MINUTES WE NEED TO UPDATE
+
 		/*$.ajax({
 			type: 'GET',
-		     beforeSend: function (request){
+			beforeSend: function (request){
                 request.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:9000');
-                request.setRequestHeader('Authorization',' Authorization: OAuth oauth_consumer_key="Xf6eQrmUbzRSRJpp4qt7vuMbk", oauth_nonce="ed68555efcd6035e15816c914c3410f6", oauth_signature="Vi6Slkm0ueovLnqCDg1oCpIQUHw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444310951", oauth_token="226205342-HYuvoXmHTlSo7fdvawKXTnj8Fbp5DOPWkv65D8fg", oauth_version="1.0"');
+                request.setRequestHeader('Authorization','Authorization: OAuth oauth_consumer_key="yHOm5YxWPAgDO75MfTAdL6lk5", oauth_nonce="49d50918733703323efb8cf8edd0a078", oauth_signature="pboxfp4YXhVR1bKmwnJYfKeQkxY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444325787", oauth_token="226205342-WIqTtD3b8zy8oelc2Ntjp2YwUAGRdV0cXzUkQEmS", oauth_version="1.0"');
             },
-
-			url: 'https://api.twitter.com/1.1/', //?user_id=226205342&include_entities=true',
-			contentType: "application/json",
+			url: 'http://search.twitter.com/search.json?' + $.param(searchTerm), //?user_id=226205342&include_entities=true',
+			//contentType: "application/json",
            	dataType: "jsonp",
 			success: function(data){
 				console.log('WORKED');
@@ -198,7 +199,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 			},
 			error: function(e){
 				console.log('NOT WORKING');
-			  	console.log(e);
+				console.log(e);
 			}
 		});*/
 
@@ -206,22 +207,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 
 
-		///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		$http(twitterGet)
-		.then(function(tweet){
-			//console.log(tweet.data);
-			// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
-			var imagesTweets = tweet.data.filter(hasImage);
-
-			for(var i = 0, max = imagesTweets.length; i < max; i+=1){
-
-				tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'})
-
-			}
-
-			//$scope.loadItems();
-
-		});
+		
 
 
 

@@ -1166,6 +1166,16 @@ html.menu-fix .menu-overlay {
 ------------------------------------------------------------------------ */
 /* XX-Small View */
 /* X-Small View */
+@media screen and (min-width: 28.1em) {
+  /* _screen-xs.scss */
+  /* ---------------------------------------------------------------------
+ Generic Defs
+------------------------------------------------------------------------ */
+  .mod-feed {
+    padding-top: 20px;
+    width: 342px;
+    margin: auto; } }
+
 /* Small View */
 @media screen and (min-width: 40em) {
   /* _screen-sm.scss */
@@ -1195,7 +1205,14 @@ html.menu-fix .menu-overlay {
     float: none;
     text-align: center; }
   .product-desc {
-    padding: 0; } }
+    padding: 0; }
+  /* ---------------------------------------------------------------------
+ Generic Defs
+------------------------------------------------------------------------ */
+  .mod-feed {
+    padding-top: 20px;
+    width: 342px;
+    margin: auto; } }
 
 /* Medium View */
 @media screen and (min-width: 768px) {
@@ -1204,7 +1221,8 @@ html.menu-fix .menu-overlay {
  Generic Defs
 ------------------------------------------------------------------------ */
   .mod-feed {
-    width: 665px;
+    padding-top: 30px;
+    width: 684px;
     margin: auto; }
     .mod-feed .container {
       padding: 0; }
@@ -1403,7 +1421,7 @@ html.menu-fix .menu-overlay {
     max-width: 22em; }
   .steps-list {
     max-width: 50em;
-    margin: 2em auto 8em; }
+    margin: 5em auto; }
   .steps-list-bullet {
     width: 33.334%;
     margin: 0;
@@ -1455,7 +1473,8 @@ html.menu-fix .menu-overlay {
     max-width: 1280px; }
   .mod-feed {
     width: 1026px;
-    margin: auto; }
+    margin: auto;
+    padding: 198px 0 14px; }
     .mod-feed .container {
       padding: 0; }
   /* ---------------------------------------------------------------------
