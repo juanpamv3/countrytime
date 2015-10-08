@@ -146,7 +146,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	tips = [],
 	tweets = [];
 
-	var accessToken = 'CAAVTzGZBPtgoBAOrZBH0nprf0Cb7lmJhtnVLzCii3GT02YmOg73X3kPAXfjrQxj6GDZA0nQRTIpZB2KRkdTZAl7gb1jWfMGLmpYHFFcvetatpckczAcZBcKjSZCfHRdtZAayUnGKaHmQCr6FCAljqdPigySymLao7aBFBCUZB4ioieq4YjMRgKkr5qHA4VPFMPJ8ZD';
+	var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
 	
 	$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
 		.success(function(fbinfo) {
