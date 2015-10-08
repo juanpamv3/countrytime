@@ -158,9 +158,9 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 		})
 		.then(function(){
 			$scope.loadItems();
-		})
+		});
 
-
+		// TWITTER GET
 		var twitterGet = {
 			method: 'GET',
 			url: 'data/twitter-posts.json',
@@ -172,6 +172,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 			}
 		};
 
+		// HELPER FOR FILTER FUNCTION
 		function hasImage(x){
 			if(x.entities && x.entities.media){
 				if (x.entities.media[0].media_url){
@@ -180,10 +181,36 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 			}
 		}
 
+		/// TRYING TO GET DATA FROM TWITTER - CURRENT OAUTH LAST ONLY 15 MINUTES WE NEED TO UPDATE THEM 
+		/*$.ajax({
+			type: 'GET',
+		     beforeSend: function (request){
+                request.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:9000');
+                request.setRequestHeader('Authorization',' Authorization: OAuth oauth_consumer_key="Xf6eQrmUbzRSRJpp4qt7vuMbk", oauth_nonce="ed68555efcd6035e15816c914c3410f6", oauth_signature="Vi6Slkm0ueovLnqCDg1oCpIQUHw%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444310951", oauth_token="226205342-HYuvoXmHTlSo7fdvawKXTnj8Fbp5DOPWkv65D8fg", oauth_version="1.0"');
+            },
+
+			url: 'https://api.twitter.com/1.1/', //?user_id=226205342&include_entities=true',
+			contentType: "application/json",
+           	dataType: "jsonp",
+			success: function(data){
+				console.log('WORKED');
+				console.log(data);
+			},
+			error: function(e){
+				console.log('NOT WORKING');
+			  	console.log(e);
+			}
+		});*/
+
+
+
+
+
+		///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 		$http(twitterGet)
 		.then(function(tweet){
 			//console.log(tweet.data);
-
+			// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
 			var imagesTweets = tweet.data.filter(hasImage);
 
 			for(var i = 0, max = imagesTweets.length; i < max; i+=1){
@@ -196,6 +223,14 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 		});
 
+
+
+
+
+
+
+
+
 		// TO TEST IF TWITTER IS RECEAVING INFO
 		/*http(twitterGet)
 		.then(function(tweet){
@@ -207,34 +242,6 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 	// });
 
-
-	/*tips = [
-		{image: "lemonadestandtacular.jpg", link:"CountryTime-StandPlan.pdf", tracking: null, network:'sip', category:'tip'},
-		{image: "alexlemonadestand.jpg", link:"http://www.alexslemonade.org", tracking: "alexTipPromo", network:'sip', category:'tip'},
-		{image: "berry-lemonade-starter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "classic-lemonade-starter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-        {image: "half-and-half-tarter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-092414.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-092014b.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-090514.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-090914.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-abraham.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-chinesenewyear.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-dayofdead.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-gingerbreadhouse.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-groundhog.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-iceskate.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-leaves.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-lemonadecake.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-lemonwreath.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-pinklemon.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-snowpeople.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ifyoumixit-banner.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "lemon-heart.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "sipdontguzzle.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		//{image: "siptip-pretzels.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "soeasytomake.jpg", link: null, tracking: null, network:'sip', category:'tip'}
-	];*/
 
 
 
