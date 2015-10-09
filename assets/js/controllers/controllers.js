@@ -1,4 +1,56 @@
-var ctControllers = angular.module('ctControllers', ['ngSanitize']);
+var ctControllers = angular.module('ctControllers', ['ngSanitize']).factory('twitterService', function($q) {
+	
+	console.log('initializing');
+
+    var authorizationResult = false;
+
+    return {
+        initialize: function() {
+            //initialize OAuth.io with public key of the application
+            OAuth.initialize('19gVB-kbrzsJWQs5o7Ha2LIeX4I', {cache:true});
+            //try to create an authorization result when the page loads, this means a returning user won't have to click the twitter button again
+            authorizationResult = OAuth.create('twitter');
+        },
+        isReady: function() {
+            return (authorizationResult);
+        },
+        connectTwitter: function() {
+            var deferred = $q.defer();
+            OAuth.popup('twitter', {cache:true}, function(error, result) { //cache means to execute the callback if the tokens are already present
+                if (!error) {
+                    authorizationResult = result;
+                    deferred.resolve();
+                } else {
+                    //do something if there's an error
+
+                }
+            });
+            return deferred.promise;
+        },
+        clearCache: function() {
+            OAuth.clearCache('twitter');
+            authorizationResult = false;
+        },
+        getLatestTweets: function (maxId) {
+            //create a deferred object using Angular's $q service
+            var deferred = $q.defer();
+      			var url='/1.1/statuses/home_timeline.json';
+      			if(maxId){
+      				url+='?include_entities=true&max_id='+maxId;
+      			}
+            var promise = authorizationResult.get(url).done(function(data) { //https://dev.twitter.com/docs/api/1.1/get/statuses/home_timeline
+                //when the data is retrieved resolve the deferred object
+				        deferred.resolve(data);
+            }).fail(function(err) {
+               //in case of any error we reject the promise with the error object
+                deferred.reject(err);
+            });
+            //return the promise of the deferred object
+            return deferred.promise;
+        }
+    }
+
+});
 
 ctControllers.controller("MainCtrl", ['$scope', function($scope) {
     var self = this;
@@ -115,46 +167,88 @@ ctControllers.controller("ProductCtrl", ['$scope', '$http', function($scope, $ht
 
 }]);
 
+
+var tweetsList = null;
+
+/* === Twitter Feed === */
+ctControllers.controller('TwitterController', function($scope, $q, twitterService) {
+	console.log('activates the twitter controller');
+    
+    $scope.tweets=[]; //array of tweets
+
+    twitterService.initialize();
+
+    //using the OAuth authorization result get the latest 20 tweets from twitter for the user
+    $scope.refreshTimeline = function(maxId) {
+        twitterService.getLatestTweets(maxId).then(function(data) {
+            $scope.tweets = $scope.tweets.concat(data);
+            tweetsList = $scope.tweets.concat(data);
+
+            console.log($scope.tweets.length);
+            
+        },function(){
+            $scope.rateLimitError = true;
+        });
+    }
+
+    twitterService.connectTwitter().then(function() {
+        if (twitterService.isReady()) {
+            //if the authorization is successful, hide the connect button and display the tweets
+            $('#connectButton').fadeOut(function(){
+                $('#getTimelineButton, #signOut').fadeIn();
+                $scope.refreshTimeline();
+				          $scope.connectedTwitter = true;
+            });
+        } else {
+        }
+    });
+
+    //sign out clears the OAuth cache, the user will have to reauthenticate when returning
+    $scope.signOut = function() {
+        twitterService.clearCache();
+        $scope.tweets.length = 0;
+        $('#getTimelineButton, #signOut').fadeOut(function(){
+            $('#connectButton').fadeIn();
+			$scope.$apply(function(){$scope.connectedTwitter=false})
+        });
+        $scope.rateLimitError = false;    
+    }
+
+    //if the user is a returning user, hide the sign in button and display the tweets
+    if (twitterService.isReady()) {
+        $('#connectButton').hide();
+        $('#getTimelineButton, #signOut').show();
+     		$scope.connectedTwitter = true;
+        $scope.refreshTimeline();
+        console.log('will work');
+    }
+
+});
+
 /* === Feed === */
-ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce, $q, twitterService) {
 	var entityIDs = {good:0, better:0, best:0},
 	locked = false,
 	tips = [],
-	tweets = [];
+	tweets = [],
+	facebookReady = false,
+	twitterReady = false;
+
 
 	var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
 	
 	$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
 	.success(function(fbinfo) {
 		//console.log(fbinfo.data);
-
 		for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
 			tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
 		}
+
+		facebookReady = true;
 	})
 	.then(function(){
-		$scope.loadItems();
+		console.log('facebook is ready');
 	});
-
-
-
-
-
-	// TWITTER GET
-	var twitterGet = {
-		method: 'GET',
-		//url: window.location.href + 'data/twitter-posts.json'
-		url: window.location.href + 'data/littleApp.php',
-		dataType: 'jsonp',
-		//url: 'http://stg.seetheworlddigital.com:7008/countrytime/data/twitter-posts.json'
-	};
-
-
-
-	/*$.getJSON('data/tweets_json.php', function(data){
-		console.log(data);
-	});*/
-
 
 
 	// HELPER FOR FILTER FUNCTION
@@ -166,54 +260,58 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 		}
 	}
 
-	///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-	$http(twitterGet)
-	.then(function(tweet){
-		console.log(tweet);
 
-		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
-		/*var imagesTweets = tweet.data.filter(hasImage);
+
+	var countLoop = 0;
+
+	var lookForData = setInterval(function() {
+
+		countLoop+=1;
+
+		if(tweetsList && tweetsList.length > 0){
+			console.log('tweets are here');
+
+			console.log(tweetsList);
+
+			getTwitterImages(tweetsList);
+
+			clearInterval(lookForData);
+		} else {
+			console.log('not yet');
+			if(countLoop === 10){
+				clearInterval(lookForData);
+			}
+		}
+	}, 1000);
+
+	
+	function getTwitterImages(tweetData){
+		var imagesTweets = tweetData.filter(hasImage);
+		console.log(imagesTweets.length);
 
 		for(var i = 0, max = imagesTweets.length; i < max; i+=1){
+
 			tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'});
-		}*/
-		//$scope.loadItems();
-	});
-
-
-
-		/// TRYING TO GET DATA FROM TWITTER - CURRENT OAUTH LAST ONLY 15 MINUTES WE NEED TO UPDATE
-
-		/*$.ajax({
-			type: 'GET',
-			beforeSend: function (request){
-                request.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:9000');
-                request.setRequestHeader('Authorization','Authorization: OAuth oauth_consumer_key="yHOm5YxWPAgDO75MfTAdL6lk5", oauth_nonce="49d50918733703323efb8cf8edd0a078", oauth_signature="pboxfp4YXhVR1bKmwnJYfKeQkxY%3D", oauth_signature_method="HMAC-SHA1", oauth_timestamp="1444325787", oauth_token="226205342-WIqTtD3b8zy8oelc2Ntjp2YwUAGRdV0cXzUkQEmS", oauth_version="1.0"');
-            },
-			url: 'http://search.twitter.com/search.json?' + $.param(searchTerm), //?user_id=226205342&include_entities=true',
-			//contentType: "application/json",
-           	dataType: "jsonp",
-			success: function(data){
-				console.log('WORKED');
-				console.log(data);
-			},
-			error: function(e){
-				console.log('NOT WORKING');
-				console.log(e);
+			console.log(tweets);
+			
+			if(facebookReady && i > 3){
+				console.log('sending images');
+				$scope.loadItems();
 			}
+		}
+	}
+
+
+		///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+		/*$http(twitterGet)
+		.then(function(tweet){
+			console.log(tweet.data);
+			// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
+			//var imagesTweets = tweet.data.filter(hasImage);
+
+			
+			//$scope.loadItems();
 		});*/
-
-
-
-
-
-		
-
-
-
-
-
-
 
 
 
@@ -244,47 +342,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 	// shuffle(videos);
 
-/*
-	function getFromURL(url, params, idStore, callback) {
-		var paramArr = [];
-		for (var param in params) {
-			if (params[param] != 0) {
-				paramArr.push(param+"="+params[param]);
-			}
-		}
-		if (paramArr.length > 0) {
-			url = url+"?"+paramArr.join("&");
-		}
-		
-		$http.jsonp("http://api.massrelevance.com/countrytimemr/"+url).success(function(data) {
-			if (data.length) entityIDs[idStore] = data[data.length-1].entity_id;
-			callback(data);
-		});
-	}
-*/
-
 	$scope.loadItems = function() {
-		// if (locked) return;
-		// locked = true;
-
-		// var _newData = [];
-
-		// //for (var i = 0; i<4; i++) {
-		// for (var i = 0; i<tips.length; i++) {
-		// 	var tip = {
-		// 		image: "assets/img/tips/"+tips[0].image,
-		// 		link: tips[0].link,
-		// 		tracking: tips[0].tracking,
-		// 		network: "sip",
-		// 		category: "tip"
-		// 	};
-		// 	_newData.push(tip);
-		// 	tips.push(tips.shift());
-		// }
-        
-  //       $scope.items = $scope.items.concat(_newData);	
-        
-  //       locked = false;
   		var all = tips.concat(tweets);
   		shuffle(all);
 

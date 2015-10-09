@@ -253,10 +253,12 @@
 
             </section>
             <!-- /mod-Slider -->
-
+            <div class="container" ng-controller="TwitterController"></div>
             <!-- mod-feed -->
             <section id="ct-feed" class="mod-feed">
+
                 <!-- <div class="container" ng-controller="FeedCtrl" infinite-scroll="loadItems()"> -->
+                
                 <div class="container" ng-controller="FeedCtrl">
 
                     <div class="ct-feed-item ct-{{item.network}} ct-category-{{item.category}} clearfix" ng-repeat="item in items" ct-packery>
@@ -300,14 +302,17 @@
         <!-- /menu overlay -->
 
         <div id="fb-root"></div>
+        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-
+        <script src="assets/js/oauth.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
         <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
         <script src="bower_components/fastclick/lib/fastclick.js"></script>
+
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/vendor/packery.pkgd.min.js"></script>
         <script src="assets/js/vendor/jquery.spritely-0.4.js"></script>
@@ -316,6 +321,7 @@
         <script src="assets/js/directives/directives.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/slippry.min.js"></script>
+
 
         <script>
 
