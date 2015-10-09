@@ -39,6 +39,9 @@ angular.module('ctControllers.services', []).factory('twitterService', function(
             var promise = authorizationResult.get(url).done(function(data) { //https://dev.twitter.com/docs/api/1.1/get/statuses/home_timeline
                 //when the data is retrieved resolve the deferred object
 				        deferred.resolve(data);
+
+                        console.log('DATA HERE TO SHOW');
+                        console.log(data);
             }).fail(function(err) {
                //in case of any error we reject the promise with the error object
                 deferred.reject(err);

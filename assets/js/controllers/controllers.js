@@ -1,56 +1,4 @@
-var ctControllers = angular.module('ctControllers', ['ngSanitize']).factory('twitterService', function($q) {
-	
-	console.log('initializing');
-
-    var authorizationResult = false;
-
-    return {
-        initialize: function() {
-            //initialize OAuth.io with public key of the application
-            OAuth.initialize('19gVB-kbrzsJWQs5o7Ha2LIeX4I', {cache:true});
-            //try to create an authorization result when the page loads, this means a returning user won't have to click the twitter button again
-            authorizationResult = OAuth.create('twitter');
-        },
-        isReady: function() {
-            return (authorizationResult);
-        },
-        connectTwitter: function() {
-            var deferred = $q.defer();
-            OAuth.popup('twitter', {cache:true}, function(error, result) { //cache means to execute the callback if the tokens are already present
-                if (!error) {
-                    authorizationResult = result;
-                    deferred.resolve();
-                } else {
-                    //do something if there's an error
-
-                }
-            });
-            return deferred.promise;
-        },
-        clearCache: function() {
-            OAuth.clearCache('twitter');
-            authorizationResult = false;
-        },
-        getLatestTweets: function (maxId) {
-            //create a deferred object using Angular's $q service
-            var deferred = $q.defer();
-      			var url='/1.1/statuses/home_timeline.json';
-      			if(maxId){
-      				url+='?include_entities=true&max_id='+maxId;
-      			}
-            var promise = authorizationResult.get(url).done(function(data) { //https://dev.twitter.com/docs/api/1.1/get/statuses/home_timeline
-                //when the data is retrieved resolve the deferred object
-				        deferred.resolve(data);
-            }).fail(function(err) {
-               //in case of any error we reject the promise with the error object
-                deferred.reject(err);
-            });
-            //return the promise of the deferred object
-            return deferred.promise;
-        }
-    }
-
-});
+var ctControllers = angular.module('ctControllers', ['ngSanitize']);
 
 ctControllers.controller("MainCtrl", ['$scope', function($scope) {
     var self = this;
@@ -168,72 +116,15 @@ ctControllers.controller("ProductCtrl", ['$scope', '$http', function($scope, $ht
 }]);
 
 
-var tweetsList = null;
-
-/* === Twitter Feed === */
-ctControllers.controller('TwitterController', function($scope, $q, twitterService) {
-	console.log('activates the twitter controller');
-    
-    $scope.tweets=[]; //array of tweets
-
-    twitterService.initialize();
-
-    //using the OAuth authorization result get the latest 20 tweets from twitter for the user
-    $scope.refreshTimeline = function(maxId) {
-        twitterService.getLatestTweets(maxId).then(function(data) {
-            $scope.tweets = $scope.tweets.concat(data);
-            tweetsList = $scope.tweets.concat(data);
-
-            console.log($scope.tweets.length);
-            
-        },function(){
-            $scope.rateLimitError = true;
-        });
-    }
-
-    twitterService.connectTwitter().then(function() {
-        if (twitterService.isReady()) {
-            //if the authorization is successful, hide the connect button and display the tweets
-            $('#connectButton').fadeOut(function(){
-                $('#getTimelineButton, #signOut').fadeIn();
-                $scope.refreshTimeline();
-				          $scope.connectedTwitter = true;
-            });
-        } else {
-        }
-    });
-
-    //sign out clears the OAuth cache, the user will have to reauthenticate when returning
-    $scope.signOut = function() {
-        twitterService.clearCache();
-        $scope.tweets.length = 0;
-        $('#getTimelineButton, #signOut').fadeOut(function(){
-            $('#connectButton').fadeIn();
-			$scope.$apply(function(){$scope.connectedTwitter=false})
-        });
-        $scope.rateLimitError = false;    
-    }
-
-    //if the user is a returning user, hide the sign in button and display the tweets
-    if (twitterService.isReady()) {
-        $('#connectButton').hide();
-        $('#getTimelineButton, #signOut').show();
-     		$scope.connectedTwitter = true;
-        $scope.refreshTimeline();
-        console.log('will work');
-    }
-
-});
-
 /* === Feed === */
 ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce, $q, twitterService) {
 	var entityIDs = {good:0, better:0, best:0},
 	locked = false,
 	tips = [],
 	tweets = [],
+	count = 0,
 	facebookReady = false,
 	twitterReady = false;
-
 
 	var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
 	
@@ -241,12 +132,13 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	.success(function(fbinfo) {
 		//console.log(fbinfo.data);
 		for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
-			tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', category:'tip', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
+			tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, tracking: null, network:'facebook', message: fbinfo.data[i].message, name: fbinfo.data[i].name})
 		}
 
 		facebookReady = true;
 	})
 	.then(function(){
+		//$scope.loadItems();
 		console.log('facebook is ready');
 	});
 
@@ -261,72 +153,81 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	}
 
 
+	//GETTING INFO FROM TWITTER
+	var authorizationResult = false,
+	url='1.1/statuses/user_timeline.json?user_id=226205342&count=100',
+	//access = {oauth_token: "226205342-WIqTtD3b8zy8oelc2Ntjp2YwUAGRdV0cXzUkQEmS", oauth_token_secret: "tRO66XFbco37qh4zFX1wKZbmiTMqTh7DNaR1rUWnMQAs9"}
+    
+	OAuth.initialize('b2hNLGBMN5K8xGXCBLKuxe5scnY');
 
-	var countLoop = 0;
+	/*OAuth.popup('twitter').done(function(result) {
+	    console.log(result)
+	    // do some stuff with result
+	});*/
 
-	var lookForData = setInterval(function() {
-
-		countLoop+=1;
-
-		if(tweetsList && tweetsList.length > 0){
-			console.log('tweets are here');
-
-			console.log(tweetsList);
-
-			getTwitterImages(tweetsList);
-
-			clearInterval(lookForData);
-		} else {
-			console.log('not yet');
-			if(countLoop === 10){
-				clearInterval(lookForData);
-			}
-		}
-	}, 1000);
-
+	'https://api.twitter.com/oauth/authenticate'
 	
-	function getTwitterImages(tweetData){
-		var imagesTweets = tweetData.filter(hasImage);
+	authorizationResult = OAuth.create('twitter');
+
+	console.log(authorizationResult);
+
+	authorizationResult.get(url).done(function(data){
+		//console.log(data);
+		getTwitterImages(data);
+	});
+
+	function getTwitterImages(tweet){
+		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
+		var imagesTweets = tweet.filter(hasImage);
+
 		console.log(imagesTweets.length);
+		//console.log(imagesTweets);
 
 		for(var i = 0, max = imagesTweets.length; i < max; i+=1){
 
 			tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'});
-			console.log(tweets);
 			
-			if(facebookReady && i > 3){
-				console.log('sending images');
-				$scope.loadItems();
+			//console.log(tweets);
+
+			if(i === 10){
+				console.log('last image done');
+				twitterReady = true;
+				//$scope.loadItems();
+			} else {
+				console.log('not the same #');
+			}
+		}
+		console.log('end');
+		
+	}
+
+	// HELPER FOR FILTER FUNCTION
+	function hasImage(x){
+		if(x.entities && x.entities.media){
+			if (x.entities.media[0].media_url){
+				return true;
 			}
 		}
 	}
+	
+	var expect = setInterval(function() {
+		count+=1;
+    	if(twitterReady && facebookReady){
+    		console.log('all set');
 
+    		$scope.loadItems(tweets,tips);
+   //  		console.log('latest test');
+   //  		console.log(tweets);
+			// console.log(tips);
 
-		///// ALREADY USED <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		/*$http(twitterGet)
-		.then(function(tweet){
-			console.log(tweet.data);
-			// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
-			//var imagesTweets = tweet.data.filter(hasImage);
-
-			
-			//$scope.loadItems();
-		});*/
-
-
-
-		// TO TEST IF TWITTER IS RECEAVING INFO
-		/*http(twitterGet)
-		.then(function(tweet){
-			console.log(tweet);
-		}, function(){
-			console.log(':(');
-		});*/
-
-
-	// });
-
-
+    		clearInterval(expect);
+    	} else {
+    		console.log('not yet');
+    		if (count === 10){
+    			clearInterval(expect);
+    		}
+    	}
+	}, 1000);
 
 
 	// shuffle(tips);
@@ -342,46 +243,19 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 
 	// shuffle(videos);
 
-	$scope.loadItems = function() {
+	$scope.loadItems = function(tweets,tips) {
+		console.log("--Llegamos - load items");
   		var all = tips.concat(tweets);
+
   		shuffle(all);
 
+  		console.log(all);
+  		
   		$scope.items = $scope.items.concat(all);
 
 		imagesLoaded(document.querySelector("#ct-feed > .container"), function() {
 			VSA.packery.layout();
 		});
-        					
-/*
-		getFromURL("standtacular-good.json", {limit:6, start:entityIDs.good, callback:"JSON_CALLBACK"}, "good", function(goodData) {
-			$.each(goodData, function(idx, elem) {
-				elem.category = "good";
-				//_newData.push(elem);
-			});
-
-			if (goodData.length) {
-				// Add sip tips
-			}
-
-			getFromURL("standtacular-better.json", {limit:3, start:entityIDs.better, callback:"JSON_CALLBACK"}, "better", function(betterData) {
-				$.each(betterData, function(idx, elem) {
-					elem.category = "better";
-					//_newData.push(elem);
-				});
-				shuffle(_newData);
-
-				getFromURL("standtacular-best.json", {limit:1, start:entityIDs.best, callback:"JSON_CALLBACK"}, "best", function(bestData) {
-					$.each(bestData, function(idx, elem) {
-						elem.category = "best";
-						//_newData.unshift(elem);
-					});
-
-					locked = false;
-
-				});
-			});
-		});
-*/
 
 	};
 

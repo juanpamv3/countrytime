@@ -253,7 +253,6 @@
 
             </section>
             <!-- /mod-Slider -->
-            <div class="container" ng-controller="TwitterController"></div>
             <!-- mod-feed -->
             <section id="ct-feed" class="mod-feed">
 
@@ -261,7 +260,8 @@
                 
                 <div class="container" ng-controller="FeedCtrl">
 
-                    <div class="ct-feed-item ct-{{item.network}} ct-category-{{item.category}} clearfix" ng-repeat="item in items" ct-packery>
+                    <div class="ct-feed-item ct-{{item.network}} clearfix" ng-repeat="item in items" ct-packery>
+                        <h1>item</h1>
                         <div ng-include="getTemplate(item)" onload="templateLoaded()"></div>
                     </div>
 
