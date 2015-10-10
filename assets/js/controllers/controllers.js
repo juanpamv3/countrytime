@@ -153,62 +153,65 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	}
 
 
-	//GETTING INFO FROM TWITTER
-	var authorizationResult = false,
-	url='1.1/statuses/user_timeline.json?user_id=226205342&count=100',
-	//access = {oauth_token: "226205342-WIqTtD3b8zy8oelc2Ntjp2YwUAGRdV0cXzUkQEmS", oauth_token_secret: "tRO66XFbco37qh4zFX1wKZbmiTMqTh7DNaR1rUWnMQAs9"}
-    
-	OAuth.initialize('b2hNLGBMN5K8xGXCBLKuxe5scnY');
 
-	/*OAuth.popup('twitter').done(function(result) {
-	    console.log(result)
-	    // do some stuff with result
-	});*/
+	var posts = 21;
 
-	'https://api.twitter.com/oauth/authenticate'
-	
-	authorizationResult = OAuth.create('twitter');
+	$.ajax({
+		url: './data/grabtweets.php',
+		type: 'POST',
+		dataType: 'json',
+		data: {q: 'CountryTime', count: posts, api: 'statuses_userTimeline'},
+		success: function(data, textStatus, xhr) {
+		  console.log('Aqui van los datos');
+		  console.log(data);
 
-	console.log(authorizationResult);
+		  //var newData = $.parseJSON(data);
 
-	authorizationResult.get(url).done(function(data){
-		//console.log(data);
-		getTwitterImages(data);
+		  getTwitterImages(data);
+
+
+		}
 	});
 
-	function getTwitterImages(tweet){
-		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
-		var imagesTweets = tweet.filter(hasImage);
-
-		console.log(imagesTweets.length);
-		//console.log(imagesTweets);
-
-		for(var i = 0, max = imagesTweets.length; i < max; i+=1){
-
-			tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'});
-			
-			//console.log(tweets);
-
-			if(i === 10){
-				console.log('last image done');
-				twitterReady = true;
-				//$scope.loadItems();
-			} else {
-				console.log('not the same #');
-			}
-		}
-		console.log('end');
-		
-	}
-
 	// HELPER FOR FILTER FUNCTION
-	function hasImage(x){
+	/*function hasImage(x){
 		if(x.entities && x.entities.media){
 			if (x.entities.media[0].media_url){
 				return true;
 			}
 		}
+	}*/
+
+	function getTwitterImages(tweet){
+		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
+		//var imagesTweets = tweet.filter(hasImage);
+
+		console.log('viene el mop');
+		console.log(tweet.length);
+
+		for(var i = 0; i < posts; i+=1){
+			//console.log(tweet[i]);
+			if (tweet[i].entities && tweet[i].entities.media){
+				if(tweet[i].entities.media[0].media_url){
+					console.log('HERE IS ONE');
+					tweets.push({image: tweet[i].entities.media[0].media_url, userImg: tweet[i].user.profile_image_url, userId: tweet[i].user.id, userName: tweet[i].user.screen_name, id: tweet[i].id_str, network:'twitter'});
+				}
+			}
+			console.log('now tweets');
+			console.log(tweets);
+
+			if(i === 10){
+				console.log('last image done');
+				twitterReady = true;
+				$scope.loadItems();
+			} else {
+				console.log('not the same #');
+			}
+		}
+		console.log('end');
 	}
+
+	
 	
 	var expect = setInterval(function() {
 		count+=1;
@@ -244,7 +247,6 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 	// shuffle(videos);
 
 	$scope.loadItems = function(tweets,tips) {
-		console.log("--Llegamos - load items");
   		var all = tips.concat(tweets);
 
   		shuffle(all);

@@ -325,6 +325,7 @@
 
         <script>
 
+      
 
           window.fbAsyncInit = function() {
             FB.init({
@@ -364,7 +365,20 @@
         <!-- Slider -->
         <script>
           jQuery(document).ready(function(){
-            jQuery('#slippry-demo').slippry()
+            jQuery('#slippry-demo').slippry();
+
+
+            /*$.ajax({
+              url: 'grabtweets.php',
+              type: 'POST',
+              dataType: 'json',
+              data: {q: 'CountryTime', count: 21, api: 'statuses_userTimeline'},
+              success: function(data, textStatus, xhr) {
+                  console.log(data);
+              }
+            });*/
+
+
           });
         </script>
 
