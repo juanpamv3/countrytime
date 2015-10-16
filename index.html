@@ -48,15 +48,46 @@
 
               <div class="intro-logo">Country Time</div>
               <div class="desktop-menu">
-                  <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link"><div class="productsButton"></div></a>
-                  <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link"><div class="recipesButton"></div></a>
+                  <a href="http://www.kraftrecipes.com/products/category/drinks-606.aspx" target="_blank" title="Products" class="external-list-link"><div class="productsButton"></div></a>
+                  <a href="http://www.kraftrecipes.com/recipes/beverages.aspx" target="_blank" title="Recipes" class="external-list-link"><div class="recipesButton"></div></a>
               </div>
               <!-- desktop -->
               <div class="intro-wrap" ng-if="main.isDesktop">
 
+                <!-- day -->
+                <div data-time-of-day="morning" ng-if="main.isMorning" class="day-video">
+                    <video class="intro-video-loop" autoplay loop poster="assets/video/country-time-lemonade-starter-day-poster.jpg" preload="none">
+                        <source src="assets/video/country-time-lemonade-starter-day-loop.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-day-loop.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-day-loop.mp4">
+                    </video>
+
+                    <video class="intro-video">
+                        <source src="assets/video/country-time-lemonade-starter-day.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-day.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-day.mp4">
+                    </video>
+                </div>
+                <!-- /day -->
+
+                <!-- night -->
+                <div data-time-of-day="dinner" ng-if="!main.isMorning" class="night-video">
+                    <video class="intro-video-loop" autoplay loop poster="assets/video/country-time-lemonade-starter-night-poster.jpg" preload="none">
+                        <source src="assets/video/country-time-lemonade-starter-night-loop.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-night-loop.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-night-loop.mp4">
+                    </video>
+
+                    <video class="intro-video">
+                        <source src="assets/video/country-time-lemonade-starter-night.webm" type="video/webm">
+                        <source src="assets/video/country-time-lemonade-starter-night.ogv" type="video/ogg">
+                        <source src="assets/video/country-time-lemonade-starter-night.mp4">
+                    </video>
+                </div>
+                <!-- /night -->
+
                   <!-- day -->
                   <div class="intro-day" >
-                    <img src="assets/img/bg/bg-intro-lg.jpg" class="intro-video-loop" />
                     <div>
                       <div class="productsBlock">
                         <div class="product">
@@ -92,13 +123,13 @@
                   <!-- external nav -->
                   <ul class="ct-external">
                       <li class="external-list external-list-products">
-                          <a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="external-list-link">
+                          <a href="http://www.kraftrecipes.com/products/category/drinks-606.aspx" target="_blank" title="Products" class="external-list-link">
                               <i class="icon-products"></i>Products
                               <span class="border-bottom-animate"></span>
                           </a>
                       </li>
                       <li class="external-list external-list-recipes">
-                          <a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="external-list-link">
+                          <a href="http://www.kraftrecipes.com/recipes/beverages.aspx" target="_blank" title="Recipes" class="external-list-link">
                               <i class="icon-recipes"></i>Recipes
                               <span class="border-bottom-animate"></span>
                           </a>
@@ -108,7 +139,6 @@
 
                   <!-- social icons -->
                   <dl class="ct-social">
-                      <dt class="social-heading">Share</dt>
                       <dd><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i><span class="ir-display">Facebook</a></dd>
                       <dd><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i><span class="ir-display">Twitter</span></a></dd>
                   </dl>
@@ -143,6 +173,7 @@
                 <!-- /mobile -->
             </section>
             <!-- /mod-intro -->
+
             <section class="mod-products smallDisplay" ng-controller="ProductCtrl">
                 <div class="product-wrap clearfix">
                     <div class="product-col clearfix" ng-repeat="product in products">
@@ -154,61 +185,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- mod-starter (mobile) -->
-            <section class="mod-starter" ng-if="!main.isDesktop">
-                <div class="starter-intro">
-                    <h1 class="starter-intro-heading ct-heading"><em class="ct-subheading heading-border">New</em> <span class="heading-break">Country Time Lemonade Starter</span></h1>
-                    <p class="ct-desc starter-intro-desc">A fresh new way to make lemonade.</p>
-                </div>
-
-                <div class="starter-classic">
-                    <img src="assets/img/products/products-starter-classic.png" class="starter-img" alt="New Classic Lemonade Starter">
-                    <h1 class="ct-heading starter-heading">New Classic Lemonade Starter</h1>
-                </div>
-
-                <div class="starter-berry">
-                    <img src="assets/img/products/products-starter-berry.png" class="starter-img" alt="New Berry Lemonade Starter">
-                    <h1 class="ct-heading starter-heading">New Berry Lemonade Starter</h1>
-                </div>
-
-                <div class="starter-halfandhalf">
-                    <img src="assets/img/products/products-starter-halfandhalf.png" class="starter-img" alt="Half &amp; Half Starter">
-                    <h1 class="ct-heading starter-heading">New Half &amp; Half Starter</h1>
-                </div>
-            </section>
-            <!-- /mod-starter -->
-
-            <!-- mod-how (mobile) -->
-            <section class="mod-how" ng-if="!main.isDesktop">
-                <h1 class="ct-heading"><em class="heading-border">How to</em> <span class="heading-break">Make Country Time</span></h1>
-
-                <!-- day -->
-                <div data-time-of-day="morning" ng-if="main.isMorning" class="day-video">
-                    <video class="how-video js-how-video" preload="none" controls poster="assets/video/country-time-lemonade-starter-day-poster.jpg">
-                        <source src="assets/video/country-time-lemonade-starter-day.webm" type="video/webm">
-                        <source src="assets/video/country-time-lemonade-starter-day.ogv" type="video/ogg">
-                        <source src="assets/video/country-time-lemonade-starter-day.mp4">
-                    </video>
-                </div>
-                <!-- /day -->
-
-                <!-- night -->
-                <div data-time-of-day="dinner" ng-if="!main.isMorning" class="night-video">
-                    <video class="how-video js-how-video" preload="none" controls poster="assets/video/country-time-lemonade-starter-night-poster.jpg">
-                        <source src="assets/video/country-time-lemonade-starter-night.webm" type="video/webm">
-                        <source src="assets/video/country-time-lemonade-starter-night.ogv" type="video/ogg">
-                        <source src="assets/video/country-time-lemonade-starter-night.mp4">
-                    </video>
-                </div>
-                <!-- /night -->
-
-                <div class="how-social ct-social">
-                    <a href="https://www.facebook.com/countrytime" target="_blank" ct-track="footerFacebook"><i class="icon icon-facebook"></i></a>
-                    <a href="https://twitter.com/CountryTime" target="_blank" ct-track="footerTwitter"><i class="icon icon-twitter"></i></a>
-                </div>
-            </section>
-            <!-- /mod-how -->
 
             <!-- mod-steps -->
             <section class="mod-steps">
@@ -222,7 +198,7 @@
                 <div class="steps-details">
                     <ul class="steps-list clearfix">
                         <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-add.svg" alt="Just add water" class="steps-list-icon"><span class="steps-list-detail">Just add water</span></li>
-                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail">Makes 3 pitchers</span></li>
+                        <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-makes.svg" alt="Makes 3 pitchers" class="steps-list-icon"><span class="steps-list-detail twolines">Makes 3 <br />pitchers</span></li>
                         <li class="steps-list-bullet clearfix"><img src="assets/img/icons/icon-no.svg" alt="Re-closable bottle" class="steps-list-icon last"><span class="steps-list-detail3">No artificial flavors or preservatives</span></li>
                     </ul>
                 </div>
@@ -235,36 +211,40 @@
 
               <ul id="slippry-demo">
                 <li>
-                  <a href="#slide1"><img src="assets/img/slider/CT_desktop_cucumberthyme_lemonade.jpg" alt="<h1 class='slider-heading'>Cucumber & Thyme<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/cucumber-thyme-lemonade-184146.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                  <a href="#slide1"><img src="assets/img/slider/CT_desktop_peachtea_lemonade.jpg" alt="<h1 class='slider-heading'>Peach-Tea<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/peach-tea-lemonade-163847.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
                 </li>
+
                 <li>
-                  <a href="#slide2"><img src="assets/img/slider/CT_desktop_fizzy_pom_lemonade.jpg"  alt="<h1 class='slider-heading'>Fizzy Pomegranate<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/fizzy-pomegranate-lemonade-184242.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                  <a href="#slide2"><img src="assets/img/slider/CT_desktop_cucumberthyme_lemonade.jpg" alt="<h1 class='slider-heading'>Cucumber & Thyme<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/cucumber-thyme-lemonade-184146.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
                 </li>
-                <li>
-                  <a href="#slide3"><img src="assets/img/slider/CT_desktop_Jalepeno_lemonade.jpg" alt="<h1 class='slider-heading'>Jalapeño<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/jalapeno-lemonade-184205.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
-                </li>
-                <li>
-                  <a href="#slide3"><img src="assets/img/slider/CT_desktop_peachtea_lemonade.jpg" alt="<h1 class='slider-heading'>Peach-Tea<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/peach-tea-lemonade-163847.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
-                </li>
+
                 <li>
                   <a href="#slide3"><img src="assets/img/slider/CT_desktop_sangria.jpg" alt="<h1 class='slider-heading'>Lemonade<br />Sangria</h1><a href='http://www.kraftrecipes.com/recipes/lemonade-sangria-184179.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
                 </li>
+
+                <li>
+                  <a href="#slide4"><img src="assets/img/slider/CT_desktop_fizzy_pom_lemonade.jpg"  alt="<h1 class='slider-heading'>Fizzy Pomegranate<br /> Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/fizzy-pomegranate-lemonade-184242.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+                <li>
+                  <a href="#slide5"><img src="assets/img/slider/CT_desktop_Jalepeno_lemonade.jpg" alt="<h1 class='slider-heading'>Jalapeño<br />Lemonade</h1><a href='http://www.kraftrecipes.com/recipes/jalapeno-lemonade-184205.aspx' class='slider-button' target='_blank'>Get Recipe</a>"></a>
+                </li>
+
+
               </ul>
 
             </section>
             <!-- /mod-Slider -->
-
             <!-- mod-feed -->
             <section id="ct-feed" class="mod-feed">
-                <!-- <div class="container" ng-controller="FeedCtrl" infinite-scroll="loadItems()"> -->
-                <div class="container" ng-controller="FeedCtrl">
-                    <div class="ct-feed-item stamp">
-                        <img src="assets/img/tips/lemonade-uniquestand.jpg" />
-                    </div>
 
-                    <div class="ct-feed-item ct-{{item.network}} ct-category-{{item.category}} clearfix" ng-repeat="item in items" ct-packery>
+                <!-- <div class="container" ng-controller="FeedCtrl" infinite-scroll="loadItems()"> -->
+
+                <div class="container" ng-controller="FeedCtrl">
+
+                    <div class="ct-feed-item ct-{{item.network}} clearfix" ng-repeat="item in items" ct-packery>
                         <div ng-include="getTemplate(item)" onload="templateLoaded()"></div>
                     </div>
+
                 </div>
             </section>
             <!-- /mod-feed -->
@@ -293,8 +273,8 @@
         <!-- menu overlay -->
         <div class="menu-overlay">
             <ul class="menu-list ct-social">
-                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/Products/ProductInfoSearchResults.aspx?CatalogType=1&BrandId=11&SearchText=Country+Time&PageNo=1" target="_blank" title="Products" class="menu-list-link"><i class="icon-products"></i>Products</a></li>
-                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/recipes/search/SearchResults.aspx?searchtext=country%20time&u2=countrytime&start=1&rsort=" target="_blank" title="Recipes" class="menu-list-link"><i class="icon-recipes"></i>Recipes</a></li>
+                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/products/category/drinks-606.aspx" target="_blank" title="Products" class="menu-list-link"><i class="icon-products"></i>Products</a></li>
+                <li class="menu-list-bullet"><a href="http://www.kraftrecipes.com/recipes/beverages.aspx" target="_blank" title="Recipes" class="menu-list-link"><i class="icon-recipes"></i>Recipes</a></li>
                 <li class="menu-list-bullet"><a href="https://www.facebook.com/countrytime" target="_blank" title="Facebook" class="menu-list-link"><i class="icon-round icon-facebook"></i>Facebook</a></li>
                 <li class="menu-list-bullet"><a href="https://twitter.com/CountryTime" target="_blank" title="Twitter" class="menu-list-link"><i class="icon-round icon-twitter"></i>Twitter</a></li>
             </ul>
@@ -303,13 +283,16 @@
 
         <div id="fb-root"></div>
 
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-
+        <script src="assets/js/oauth.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
         <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
         <script src="bower_components/fastclick/lib/fastclick.js"></script>
+
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/vendor/packery.pkgd.min.js"></script>
         <script src="assets/js/vendor/jquery.spritely-0.4.js"></script>
@@ -321,9 +304,12 @@
 
 
         <script>
+
+
+
           window.fbAsyncInit = function() {
             FB.init({
-              appId      : '168792829945245',
+              appId      : '1499512393676298', //1499512393676298 --> original 168792829945245
               status     : true,
               xfbml      : true
             });
@@ -359,10 +345,22 @@
         <!-- Slider -->
         <script>
           jQuery(document).ready(function(){
-            jQuery('#slippry-demo').slippry()
+            jQuery('#slippry-demo').slippry();
+
+
+            /*$.ajax({
+              url: 'grabtweets.php',
+              type: 'POST',
+              dataType: 'json',
+              data: {q: 'CountryTime', count: 21, api: 'statuses_userTimeline'},
+              success: function(data, textStatus, xhr) {
+                  console.log(data);
+              }
+            });*/
+
+
           });
         </script>
-
         <noscript>
             <iframe src="//s.thebrighttag.com/iframe?c=KSNUeWE" width="1" height="1"
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

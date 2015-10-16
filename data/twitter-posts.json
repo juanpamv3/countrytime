@@ -1,0 +1,2381 @@
+[
+    {
+        "created_at": "Wed Sep 09 14:11:36 +0000 2015",
+        "id": 641614938838974500,
+        "id_str": "641614938838974465",
+        "text": "@ryantoconnell We're so glad you love Country Time Lemonade... we do too!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 641391361363705900,
+        "in_reply_to_status_id_str": "641391361363705856",
+        "in_reply_to_user_id": 1600830168,
+        "in_reply_to_user_id_str": "1600830168",
+        "in_reply_to_screen_name": "ryantoconnell",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "ryantoconnell",
+                    "name": "OC Bobby Johnson",
+                    "id": 1600830168,
+                    "id_str": "1600830168",
+                    "indices": [
+                        0,
+                        14
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Sep 09 14:11:24 +0000 2015",
+        "id": 641614886229770200,
+        "id_str": "641614886229770241",
+        "text": "@zachary_098 Appreciate the love.",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 641409706854977500,
+        "in_reply_to_status_id_str": "641409706854977536",
+        "in_reply_to_user_id": 1090213093,
+        "in_reply_to_user_id_str": "1090213093",
+        "in_reply_to_screen_name": "zachary_098",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "zachary_098",
+                    "name": "Zach's Burgers",
+                    "id": 1090213093,
+                    "id_str": "1090213093",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Aug 28 15:38:50 +0000 2015",
+        "id": 637288238273556500,
+        "id_str": "637288238273556480",
+        "text": "@the__BISHOP We're so glad you love Country Time Lemonade... we do too!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 637186083730681900,
+        "in_reply_to_status_id_str": "637186083730681856",
+        "in_reply_to_user_id": 22434077,
+        "in_reply_to_user_id_str": "22434077",
+        "in_reply_to_screen_name": "the__BISHOP",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "the__BISHOP",
+                    "name": "Jude Scumaci",
+                    "id": 22434077,
+                    "id_str": "22434077",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Aug 26 14:43:15 +0000 2015",
+        "id": 636549471451484200,
+        "id_str": "636549471451484160",
+        "text": "@TAMUC_O_TEAM We're so glad you love Country Time Lemonade... we do too!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 636545693956476900,
+        "in_reply_to_status_id_str": "636545693956476930",
+        "in_reply_to_user_id": 550395738,
+        "in_reply_to_user_id_str": "550395738",
+        "in_reply_to_screen_name": "TAMUC_O_TEAM",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "TAMUC_O_TEAM",
+                    "name": "A&M-Commerce O-Team",
+                    "id": 550395738,
+                    "id_str": "550395738",
+                    "indices": [
+                        0,
+                        13
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Aug 25 14:31:54 +0000 2015",
+        "id": 636184230695796700,
+        "id_str": "636184230695796736",
+        "text": "@catherinec1389 We're so glad you love Country Time Lemonade... we do too!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 634797391703621600,
+        "in_reply_to_status_id_str": "634797391703621632",
+        "in_reply_to_user_id": 1470816139,
+        "in_reply_to_user_id_str": "1470816139",
+        "in_reply_to_screen_name": "catherinec1389",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "catherinec1389",
+                    "name": "cath",
+                    "id": 1470816139,
+                    "id_str": "1470816139",
+                    "indices": [
+                        0,
+                        15
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 06 13:24:40 +0000 2015",
+        "id": 618047914623942700,
+        "id_str": "618047914623942657",
+        "text": "@TED_LILLY Appreciate the love.",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 617145697670987800,
+        "in_reply_to_status_id_str": "617145697670987776",
+        "in_reply_to_user_id": 321158329,
+        "in_reply_to_user_id_str": "321158329",
+        "in_reply_to_screen_name": "TED_LILLY",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "TED_LILLY",
+                    "name": "Ted Lilly",
+                    "id": 321158329,
+                    "id_str": "321158329",
+                    "indices": [
+                        0,
+                        10
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 29 14:16:16 +0000 2015",
+        "id": 615524186543407100,
+        "id_str": "615524186543407104",
+        "text": "@BBQinDC Appreciate the love.",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 614890072798851100,
+        "in_reply_to_status_id_str": "614890072798851074",
+        "in_reply_to_user_id": 138575224,
+        "in_reply_to_user_id_str": "138575224",
+        "in_reply_to_screen_name": "BBQinDC",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "BBQinDC",
+                    "name": "Giant BBQ Battle ",
+                    "id": 138575224,
+                    "id_str": "138575224",
+                    "indices": [
+                        0,
+                        8
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 05 14:08:02 +0000 2015",
+        "id": 606824806303080400,
+        "id_str": "606824806303080448",
+        "text": "@onemoredadblog Good luck with your lemonade stand! We're so glad you love Country Time!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 606507216020115500,
+        "in_reply_to_status_id_str": "606507216020115456",
+        "in_reply_to_user_id": 2999751945,
+        "in_reply_to_user_id_str": "2999751945",
+        "in_reply_to_screen_name": "onemoredadblog",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "onemoredadblog",
+                    "name": "One More Dad Blog",
+                    "id": 2999751945,
+                    "id_str": "2999751945",
+                    "indices": [
+                        0,
+                        15
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri May 01 20:48:02 +0000 2015",
+        "id": 594241893258633200,
+        "id_str": "594241893258633216",
+        "text": "@OGMaseGod We're so glad you love our lemonade... we do too!",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 594049508847259600,
+        "in_reply_to_status_id_str": "594049508847259648",
+        "in_reply_to_user_id": 277533489,
+        "in_reply_to_user_id_str": "277533489",
+        "in_reply_to_screen_name": "OGMaseGod",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "OGMaseGod",
+                    "name": "mason",
+                    "id": 277533489,
+                    "id_str": "277533489",
+                    "indices": [
+                        0,
+                        10
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri May 01 17:55:25 +0000 2015",
+        "id": 594198452881371100,
+        "id_str": "594198452881371136",
+        "text": "Take a refreshing break from spring cleaning with Country Time Lemonade Starter. Flavored with real lemon juice. http://t.co/1JNUeoo62C",
+        "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 23,
+        "favorite_count": 106,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 594198452696850400,
+                    "id_str": "594198452696850432",
+                    "indices": [
+                        113,
+                        135
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CD8EWDMVIAAPAgE.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CD8EWDMVIAAPAgE.png",
+                    "url": "http://t.co/1JNUeoo62C",
+                    "display_url": "pic.twitter.com/1JNUeoo62C",
+                    "expanded_url": "http://twitter.com/CountryTime/status/594198452881371136/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 594198452696850400,
+                    "id_str": "594198452696850432",
+                    "indices": [
+                        113,
+                        135
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CD8EWDMVIAAPAgE.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CD8EWDMVIAAPAgE.png",
+                    "url": "http://t.co/1JNUeoo62C",
+                    "display_url": "pic.twitter.com/1JNUeoo62C",
+                    "expanded_url": "http://twitter.com/CountryTime/status/594198452881371136/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "scopes": {
+            "followers": false
+        },
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Apr 26 15:34:58 +0000 2015",
+        "id": 592351170007470100,
+        "id_str": "592351170007470080",
+        "text": "Summer is almost here. Are you excited? If you answered berry, you should try this cheesecake. http://t.co/BIelRQId8J http://t.co/yEmqRbAN82",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 7,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "http://t.co/BIelRQId8J",
+                    "expanded_url": "http://goo.gl/5ahGCA",
+                    "display_url": "goo.gl/5ahGCA",
+                    "indices": [
+                        95,
+                        117
+                    ]
+                }
+            ],
+            "media": [
+                {
+                    "id": 592351169357426700,
+                    "id_str": "592351169357426688",
+                    "indices": [
+                        118,
+                        140
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CDh0QAfWMAAUDh7.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CDh0QAfWMAAUDh7.png",
+                    "url": "http://t.co/yEmqRbAN82",
+                    "display_url": "pic.twitter.com/yEmqRbAN82",
+                    "expanded_url": "http://twitter.com/CountryTime/status/592351170007470080/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 592351169357426700,
+                    "id_str": "592351169357426688",
+                    "indices": [
+                        118,
+                        140
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CDh0QAfWMAAUDh7.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CDh0QAfWMAAUDh7.png",
+                    "url": "http://t.co/yEmqRbAN82",
+                    "display_url": "pic.twitter.com/yEmqRbAN82",
+                    "expanded_url": "http://twitter.com/CountryTime/status/592351170007470080/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Apr 22 14:28:28 +0000 2015",
+        "id": 590884882819244000,
+        "id_str": "590884882819244032",
+        "text": "@DollFaceDeee Appreciate the love.",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 590549955867185200,
+        "in_reply_to_status_id_str": "590549955867185153",
+        "in_reply_to_user_id": 425227950,
+        "in_reply_to_user_id_str": "425227950",
+        "in_reply_to_screen_name": "DollFaceDeee",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "DollFaceDeee",
+                    "name": "shawty",
+                    "id": 425227950,
+                    "id_str": "425227950",
+                    "indices": [
+                        0,
+                        13
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Apr 18 14:46:15 +0000 2015",
+        "id": 589439807350132700,
+        "id_str": "589439807350132737",
+        "text": "Wishing everyone a Happy National Poetry Month with a sweet haiku. http://t.co/ZvhQoYNQFB",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 2,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 589439806393831400,
+                    "id_str": "589439806393831426",
+                    "indices": [
+                        67,
+                        89
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CC4cYYSUUAI745a.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CC4cYYSUUAI745a.png",
+                    "url": "http://t.co/ZvhQoYNQFB",
+                    "display_url": "pic.twitter.com/ZvhQoYNQFB",
+                    "expanded_url": "http://twitter.com/CountryTime/status/589439807350132737/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 589439806393831400,
+                    "id_str": "589439806393831426",
+                    "indices": [
+                        67,
+                        89
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CC4cYYSUUAI745a.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CC4cYYSUUAI745a.png",
+                    "url": "http://t.co/ZvhQoYNQFB",
+                    "display_url": "pic.twitter.com/ZvhQoYNQFB",
+                    "expanded_url": "http://twitter.com/CountryTime/status/589439807350132737/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 472,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 283,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Apr 13 18:58:19 +0000 2015",
+        "id": 587691302130741200,
+        "id_str": "587691302130741248",
+        "text": "@Lazybutt_jess Appreciate the love.",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 587661306292936700,
+        "in_reply_to_status_id_str": "587661306292936704",
+        "in_reply_to_user_id": 607420082,
+        "in_reply_to_user_id_str": "607420082",
+        "in_reply_to_screen_name": "Lazybutt_jess",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "Lazybutt_jess",
+                    "name": "jessica",
+                    "id": 607420082,
+                    "id_str": "607420082",
+                    "indices": [
+                        0,
+                        14
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Apr 12 16:03:09 +0000 2015",
+        "id": 587284831114891300,
+        "id_str": "587284831114891266",
+        "text": "Introducing new Country Time Lemonade Starter. Just add water. And friends who appreciate delicious beverages. http://t.co/7bZ5RbMLLw",
+        "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 298,
+        "favorite_count": 1009,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 587284830930370600,
+                    "id_str": "587284830930370561",
+                    "indices": [
+                        111,
+                        133
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CCZ0cTGUgAEmPbm.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CCZ0cTGUgAEmPbm.png",
+                    "url": "http://t.co/7bZ5RbMLLw",
+                    "display_url": "pic.twitter.com/7bZ5RbMLLw",
+                    "expanded_url": "http://twitter.com/CountryTime/status/587284831114891266/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 282,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 474,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 474,
+                            "h": 394,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 587284830930370600,
+                    "id_str": "587284830930370561",
+                    "indices": [
+                        111,
+                        133
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/CCZ0cTGUgAEmPbm.png",
+                    "media_url_https": "https://pbs.twimg.com/media/CCZ0cTGUgAEmPbm.png",
+                    "url": "http://t.co/7bZ5RbMLLw",
+                    "display_url": "pic.twitter.com/7bZ5RbMLLw",
+                    "expanded_url": "http://twitter.com/CountryTime/status/587284831114891266/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 282,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 474,
+                            "h": 394,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 474,
+                            "h": 394,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "scopes": {
+            "followers": false
+        },
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Apr 09 18:43:59 +0000 2015",
+        "id": 586238143851929600,
+        "id_str": "586238143851929600",
+        "text": "Take Time to Make Country Time. See what we mean here.\nhttps://t.co/01SuTYejW8",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": [
+            1357290470
+        ],
+        "is_quote_status": false,
+        "retweet_count": 142,
+        "favorite_count": 563,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/01SuTYejW8",
+                    "expanded_url": "https://amp.twimg.com/v/db5ee692-da7b-4269-a974-cc1ceb145f06",
+                    "display_url": "amp.twimg.com/v/db5ee692-da7…",
+                    "indices": [
+                        55,
+                        78
+                    ]
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "scopes": {
+            "followers": false
+        },
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Mar 09 16:32:08 +0000 2015",
+        "id": 574970938506285060,
+        "id_str": "574970938506285056",
+        "text": "A lemonade toast to the guy who gave America its name. HBD Amerigo Vespucci. http://t.co/S9mxvIMW9h",
+        "source": "<a href=\"http://www.apple.com\" rel=\"nofollow\">iOS</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 574970938418139140,
+                    "id_str": "574970938418139136",
+                    "indices": [
+                        77,
+                        99
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/B_q1BayWEAAtyt8.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/B_q1BayWEAAtyt8.jpg",
+                    "url": "http://t.co/S9mxvIMW9h",
+                    "display_url": "pic.twitter.com/S9mxvIMW9h",
+                    "expanded_url": "http://twitter.com/CountryTime/status/574970938506285056/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 500,
+                            "h": 500,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 340,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 500,
+                            "h": 500,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 574970938418139140,
+                    "id_str": "574970938418139136",
+                    "indices": [
+                        77,
+                        99
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/B_q1BayWEAAtyt8.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/B_q1BayWEAAtyt8.jpg",
+                    "url": "http://t.co/S9mxvIMW9h",
+                    "display_url": "pic.twitter.com/S9mxvIMW9h",
+                    "expanded_url": "http://twitter.com/CountryTime/status/574970938506285056/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 500,
+                            "h": 500,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 340,
+                            "h": 340,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 500,
+                            "h": 500,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Feb 23 01:15:38 +0000 2015",
+        "id": 569666861463445500,
+        "id_str": "569666861463445504",
+        "text": "Love you too! :) RT @BLOW_Bubblles: I love you so much 😍😩😋. @CountryTime",
+        "source": "<a href=\"http://expion.com\" rel=\"nofollow\">ExpionDev</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 569572457444708350,
+        "in_reply_to_status_id_str": "569572457444708352",
+        "in_reply_to_user_id": 57455360,
+        "in_reply_to_user_id_str": "57455360",
+        "in_reply_to_screen_name": "BLOW_Bubblles",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "BLOW_Bubblles",
+                    "name": "DejLoaf",
+                    "id": 57455360,
+                    "id_str": "57455360",
+                    "indices": [
+                        20,
+                        34
+                    ]
+                },
+                {
+                    "screen_name": "CountryTime",
+                    "name": "CountryTime",
+                    "id": 226205342,
+                    "id_str": "226205342",
+                    "indices": [
+                        60,
+                        72
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Feb 20 00:35:16 +0000 2015",
+        "id": 568569541904752640,
+        "id_str": "568569541904752640",
+        "text": "Love you too! :) RT @2gorjuss_: I love country time lemonade 😻",
+        "source": "<a href=\"http://expion.com\" rel=\"nofollow\">ExpionDev</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 568172149216833540,
+        "in_reply_to_status_id_str": "568172149216833536",
+        "in_reply_to_user_id": 334267146,
+        "in_reply_to_user_id_str": "334267146",
+        "in_reply_to_screen_name": "2gorjuss_",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "2gorjuss_",
+                    "name": "✨✨✨✨✨",
+                    "id": 334267146,
+                    "id_str": "334267146",
+                    "indices": [
+                        20,
+                        30
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Feb 16 05:07:35 +0000 2015",
+        "id": 567188521069608960,
+        "id_str": "567188521069608960",
+        "text": "Perfect combo! #hotandcold RT @ItsMeAmberf3: Country Time Lemonade and Hot Cheetos 🙌",
+        "source": "<a href=\"http://expion.com\" rel=\"nofollow\">ExpionDev</a>",
+        "truncated": false,
+        "in_reply_to_status_id": 566830878249455600,
+        "in_reply_to_status_id_str": "566830878249455616",
+        "in_reply_to_user_id": 480791995,
+        "in_reply_to_user_id_str": "480791995",
+        "in_reply_to_screen_name": "ItsMeAmberf3",
+        "user": {
+            "id": 226205342,
+            "id_str": "226205342",
+            "name": "CountryTime",
+            "screen_name": "CountryTime",
+            "location": "",
+            "description": "Welcome to the Twitter page of the official lemonade of lemonade stands. Who's thirsty?",
+            "url": "http://t.co/vsAb3zCnOu",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/vsAb3zCnOu",
+                            "expanded_url": "http://www.CountryTime.com",
+                            "display_url": "CountryTime.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1981,
+            "friends_count": 1218,
+            "listed_count": 17,
+            "created_at": "Mon Dec 13 15:58:21 +0000 2010",
+            "favourites_count": 229,
+            "utc_offset": -18000,
+            "time_zone": "Central Time (US & Canada)",
+            "geo_enabled": false,
+            "verified": true,
+            "statuses_count": 1175,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "FFFFFF",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596721579452575744/wTA0Jtb_.jpg",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/567847390464327680/Jb8yx80v_normal.jpeg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/226205342/1367439565",
+            "profile_link_color": "125907",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFF200",
+            "profile_text_color": "000000",
+            "profile_use_background_image": true,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 1,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "hotandcold",
+                    "indices": [
+                        15,
+                        26
+                    ]
+                }
+            ],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "ItsMeAmberf3",
+                    "name": "Snow ❄️",
+                    "id": 480791995,
+                    "id_str": "480791995",
+                    "indices": [
+                        30,
+                        43
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    }
+]

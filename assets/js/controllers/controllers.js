@@ -5,12 +5,12 @@ ctControllers.controller("MainCtrl", ['$scope', function($scope) {
 
     /* ---------------------------------------------------------------------
     Test window size (desktop/mobile break)
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     self.isDesktop = true;
-    
+
     function testWindow(e) {
         _w = $(window).width();
-        
+
 		if (e) {
 			$scope.$apply(function() {
                 self.isDesktop = _w >= 768;
@@ -18,63 +18,63 @@ ctControllers.controller("MainCtrl", ['$scope', function($scope) {
 		} else {
 			self.isDesktop = _w >= 768;
 		}
-    };  
-        
+    };
+
     $(window).resize(testWindow);
-    
+
     testWindow();
 
     /* ---------------------------------------------------------------------
     Burger menu
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     self.menuActive = false;
-    
+
     /* ---------------------------------------------------------------------
     Scroll to video
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     self.scrollTop = function(){
         $('html, body').animate({
             scrollTop: $('.mod-how').offset().top
-        }, 1000);       
+        }, 1000);
     };
-    
+
     /* ---------------------------------------------------------------------
     Loop video, initiate full video
-    ------------------------------------------------------------------------ */    
-    self.videoStart = function(){    
+    ------------------------------------------------------------------------ */
+    self.videoStart = function(){
         // pause loop and hide
         $('.intro-video-loop').toggleClass('loop-hide');
         $('.intro-video-loop').trigger('pause');
-        
+
         // show video and begin
         $('.intro-video').toggleClass('video-show');
         $('.intro-video').trigger('play');
-        
+
         // hide start button
         $('.intro-link').fadeOut( "slow" );
-        
+
         self.videoEnd();
     };
-    
+
     /* ---------------------------------------------------------------------
     Video end callback function
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     self.videoEnd = function(){
         $('.intro-video').on('ended',function(){
             $('.ct-external').addClass('video-end');
-        });   
+        });
     }
 
     /* ---------------------------------------------------------------------
     Pitcher animation
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     self.introSprite = function(){
         $('.intro-sprite').sprite({fps: 24, no_of_frames: 28});
     }
 
     /* ---------------------------------------------------------------------
     Night and day
-    ------------------------------------------------------------------------ */    
+    ------------------------------------------------------------------------ */
     var d = new Date().getHours();
     self.isMorning = d >= 7 && d <= 20;
 
@@ -106,164 +106,122 @@ ctControllers.controller("FeatureCtrl", ['$scope', '$http', function($scope, $ht
 ctControllers.controller("ProductCtrl", ['$scope', '$http', function($scope, $http) {
 	var _products = [];
 
-	$http.get("data/products.json").success(function(data) {
+	$http.get(window.location.href + "data/products.json").success(function(data) {
 		_products = data[0].products;
 /* 		testMatches(); */
         $scope.products=_products;
 	});
 
-/*
-	function testMatches(e) {
-		var keys = ["sm", "md", "lg"], i = 0, cs = null, _w = $(window).width();
 
-		if (_w > 1024) {
-			cs = "lg";
-		} else if (_w >= 640) {
-			cs = "md";
-		} else {
-			cs = "sm";
-		}
+}]);
 
-		if (e) {
-			$scope.$apply(function() {
-				$scope.contentScale = cs;
-				$scope.products = cs == "sm" ? [] : _products;
-			});
-		} else {
-			$scope.contentScale = cs;
-			$scope.products = cs == "sm" ? [] : _products;
+
+/* === Feed === */
+ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce, $q, twitterService) {
+	var entityIDs = {good:0, better:0, best:0},
+	locked = false,
+	tips = [],
+	tweets = [],
+  pictures = [],
+	count = 0,
+	facebookReady = false,
+	twitterReady = false;
+
+
+
+
+	// HELPER FOR FILTER FUNCTION
+	function hasImage(x){
+		if(x.entities && x.entities.media){
+			if (x.entities.media[0].media_url){
+				return true;
+			}
 		}
 	}
 
-	$(window).resize(testMatches);
-*/
-}]);
 
-/* === Feed === */
-ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope, $http, $sce) {
-	var entityIDs = {good:0, better:0, best:0},
-	locked = false,
-	tips = [
-		{image: "lemonadestandtacular.jpg", link:"CountryTime-StandPlan.pdf", tracking: null, network:'sip', category:'tip'},
-		{image: "alexlemonadestand.jpg", link:"http://www.alexslemonade.org", tracking: "alexTipPromo", network:'sip', category:'tip'},
-		{image: "berry-lemonade-starter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "classic-lemonade-starter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-        {image: "half-and-half-tarter.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-092414.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-092014b.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-090514.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-090914.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-abraham.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-chinesenewyear.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-dayofdead.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-gingerbreadhouse.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-groundhog.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-iceskate.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-leaves.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-lemonadecake.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-lemonwreath.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-pinklemon.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ct-snowpeople.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "ifyoumixit-banner.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "lemon-heart.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "sipdontguzzle.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		//{image: "siptip-pretzels.jpg", link: null, tracking: null, network:'sip', category:'tip'},
-		{image: "soeasytomake.jpg", link: null, tracking: null, network:'sip', category:'tip'}
-	];
 
-	// shuffle(tips);
+	$.ajax({
+		url: 'data/grabtweets.php',
+		type: 'POST',
+		dataType: 'json',
+		data: {q: 'CountryTime', count: 50, api: 'statuses_userTimeline'},
+		success: function(data, textStatus, xhr) {
+
+			var arr = $.map(data, function(el) { return el });
+
+			getTwitterImages(arr);
+		}
+	});
+
+	// HELPER FOR FILTER FUNCTION
+	function hasImage(x){
+		if(x.entities && x.entities.media){
+			if (x.entities.media[0].media_url){
+				return true;
+			}tweets
+		}
+	}
+
+  // GET STATIC IMAGES
+    $.getJSON( "data/static-posts.json", function( data ) {
+      pictures = data;
+      });
+
+	// FACEBOOK GET INFO
+	function getTwitterImages(tweet){
+		// CREATES NEW ARRAY WITH ONLY THE OBJECTS THAT HAVE IMAGES
+		var imagesTweets = tweet.filter(hasImage);
+
+		//console.log('hay ' + imagesTweets.length + ' images');
+
+		for(var i = 0, max = imagesTweets.length; i < max; i+=1){
+
+			tweets.push({image: imagesTweets[i].entities.media[0].media_url, userImg: imagesTweets[i].user.profile_image_url, userId: imagesTweets[i].user.id, userName: imagesTweets[i].user.screen_name, id: imagesTweets[i].id_str, network:'twitter'});
+      //console.log(tweets);
+		}
+
+		getFacebook();
+
+	}
+
+	function getFacebook(){
+
+		// FACEBOOK GET INFO
+		var accessToken = 'CAAVTzGZBPtgoBAEB0XtA4brt6Rt4wwElZBe9rhZCkGvkMwdqshZCjCHe90Pu4r5hK0xCtgtKFZBvNEMjfC2sqliHpwbIQXuH0u24nEXZBgTvXx0JrG31JZCAde74iFuEuECsWI1t4B2yJvEAunTUYPOCs7fZCAeSFTEgLrzKbwsZCYXDbDEu0tJGz5CEs7wpyocUZD';
+
+		$http.get('https://graph.facebook.com/166348773401455/posts?fields=id,link,full_picture,description,name,message&limit=10&access_token='+accessToken)
+		.success(function(fbinfo) {
+			//console.log(fbinfo.data);
+			for(var i = 0, max = fbinfo.data.length; i < max; i+=1){
+
+				tips.push({image: fbinfo.data[i].full_picture, link: fbinfo.data[i].link, id: fbinfo.data[i].id, network:'facebook', message: fbinfo.data[i].message, name: fbinfo.data[i].name, type: fbinfo.data[i].link.search('video') >= 0 ? 'fb-video' : 'fb-post'})
+			}
+
+			//console.log(fbinfo.data);
+
+			facebookReady = true;
+		})
+		.then(function(){
+			$scope.loadItems();
+			//console.log('facebook is ready');
+
+		});
+
+	}
 
 	$scope.items = [];
 
-	var videos = [
-		//{video: 'caterpillar', poster: 'assets/img/posters/video-anthem.jpg', network: 'video'},
-		//{video: 'caterpillar', poster: 'assets/img/posters/video-caterpillar.jpg', network: 'video'},
-		//{video: 'run', poster: 'assets/img/posters/video-run.jpg', network: 'video'},
-		//{video: 'sunscreen', poster: 'assets/img/posters/video-sunscreen.jpg', network: 'video'}
-	];
-
-	// shuffle(videos);
-
-/*
-	function getFromURL(url, params, idStore, callback) {
-		var paramArr = [];
-		for (var param in params) {
-			if (params[param] != 0) {
-				paramArr.push(param+"="+params[param]);
-			}
-		}
-		if (paramArr.length > 0) {
-			url = url+"?"+paramArr.join("&");
-		}
-		
-		$http.jsonp("http://api.massrelevance.com/countrytimemr/"+url).success(function(data) {
-			if (data.length) entityIDs[idStore] = data[data.length-1].entity_id;
-			callback(data);
-		});
-	}
-*/
-
 	$scope.loadItems = function() {
-		// if (locked) return;
-		// locked = true;
-
-		// var _newData = [];
-
-		// //for (var i = 0; i<4; i++) {
-		// for (var i = 0; i<tips.length; i++) {
-		// 	var tip = {
-		// 		image: "assets/img/tips/"+tips[0].image,
-		// 		link: tips[0].link,
-		// 		tracking: tips[0].tracking,
-		// 		network: "sip",
-		// 		category: "tip"
-		// 	};
-		// 	_newData.push(tip);
-		// 	tips.push(tips.shift());
-		// }
-        
-  //       $scope.items = $scope.items.concat(_newData);	
-        
-  //       locked = false;
-  		var all = tips.concat(videos);
+  		var all = tips.concat(tweets).concat(pictures);
   		shuffle(all);
+      //console.log(all);
 
   		$scope.items = $scope.items.concat(all);
 
 		imagesLoaded(document.querySelector("#ct-feed > .container"), function() {
 			VSA.packery.layout();
 		});
-        					
-/*
-		getFromURL("standtacular-good.json", {limit:6, start:entityIDs.good, callback:"JSON_CALLBACK"}, "good", function(goodData) {
-			$.each(goodData, function(idx, elem) {
-				elem.category = "good";
-				//_newData.push(elem);
-			});
-
-			if (goodData.length) {
-				// Add sip tips
-			}
-
-			getFromURL("standtacular-better.json", {limit:3, start:entityIDs.better, callback:"JSON_CALLBACK"}, "better", function(betterData) {
-				$.each(betterData, function(idx, elem) {
-					elem.category = "better";
-					//_newData.push(elem);
-				});
-				shuffle(_newData);
-
-				getFromURL("standtacular-best.json", {limit:1, start:entityIDs.best, callback:"JSON_CALLBACK"}, "best", function(bestData) {
-					$.each(bestData, function(idx, elem) {
-						elem.category = "best";
-						//_newData.unshift(elem);
-					});
-
-					locked = false;
-
-				});
-			});
-		});
-*/
 
 	};
 
@@ -330,7 +288,7 @@ ctControllers.controller("FeedCtrl", ['$scope', '$http', '$sce', function($scope
 		return array;
 	}
 
-	$scope.loadItems();
+	// $scope.loadItems();
 }]);
 
 

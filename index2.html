@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js ng-app:ctApp" ng-controller="MainCtrl as main" ng-app="ctApp" ng-class="{'menu-fix':main.menuActive}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Country Time Lemonade</title>
+        <meta name="description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+        <!-- OG Tags -->
+        <meta property="og:title" content="Country Time presents the Famtastic Lemonade Stand-tacular"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Country Time Lemonade"/>
+        <meta property="og:image" content="http://www.countrytime.com/img/ct-share-logo.jpg"/>
+        <meta property="og:description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!"/>
+        <meta property="fb:admins" content="100004190174358"/>
+
+        <!-- Twitter Card -->
+        <meta property="twitter:account_id" content="226205342" />
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@counrtytime">
+        <meta name="twitter:url" content="http://www.countrytime.com">
+        <meta name="twitter:title" content="Country Time Lemonade">
+        <meta name="twitter:description" content="Gather the fam together for the most Stand-tacular lemonade stand ever! Get your Stand Plan today!">
+        <meta name="twitter:image" content="http://www.countrytime.com/img/ct-share-logo.jpg">
+
+        <!-- Mobile -->
+        <link rel="apple-touch-icon" href="ct-favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="ct-favicon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="ct-favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="ct-favicon-152x152.png">
+
+        <link rel="stylesheet" href="assets/css/screen-main.css">
+        <link rel="stylesheet" href="assets/css/slider.css" />
+        <link rel="stylesheet" href="assets/fonts/filsonpro/MyFontsWebfontsKit.css">
+        <script src="bower_components/respond/src/respond.js"></script>
+        <script src="assets/js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="//platform.twitter.com/widgets.js"></script>
+
+        <meta name="p:domain_verify" content="09c0cf9d92968b5d9006f2fc4a2163e2"/>
+
+    </head>
+    <body>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+        <script>
+
+          $.getJSON( "data/static-posts.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+              items.push( "<img id='" + key + "' src='"+ val +"' alt=''>" );
+            });
+            console.log(items);
+            });
+        </script>
+
+        <noscript>
+            <iframe src="//s.thebrighttag.com/iframe?c=KSNUeWE" width="1" height="1"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </noscript>
+
+    </body>
+</html>
